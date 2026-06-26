@@ -7,10 +7,11 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?> >
+<?php wp_body_open(); ?>
 <header class="site-header">
     <h1 class="site-header__logo">
-        <a href="/" class="site-header__logo-link">厚生労働大臣指定 保育士養成施設 こども學舎</a>
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="site-header__logo-link"><?php bloginfo('name'); ?></a>
     </h1>
 
     <button class="site-header__toggle" aria-controls="global-nav" aria-expanded="false">
@@ -21,10 +22,21 @@
     </button>
 
     <nav id="global-nav" class="global-nav">
-        <ul class="global-nav__list">
-            <li class="global-nav__item">
-                <a href="/" class="global-nav__link">ホーム</a>
-            </li>
-        </ul>
+        <?php
+        if (has_nav_menu('global-nav')) {
+            wp_nav_menu([
+                'theme_location' => 'global-nav',
+                'container' => false,
+                'menu_class' => 'global-nav__list',
+                'items_wrap' => '<ul class="global-nav__list">%3$s</ul>',
+            ]);
+        } else {
+            wp_page_menu([
+                'show_home' => true,
+                'menu_class' => 'global-nav__list',
+                'depth' => 1,
+            ]);
+        }
+        ?>
     </nav>
 </header>
