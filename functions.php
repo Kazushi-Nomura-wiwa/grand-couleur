@@ -3,6 +3,7 @@
 /**
  * テーマのセットアップ
  */
+add_filter('show_admin_bar', '__return_false');
 function grand_couleur_setup() {
 
     // titleタグをWordPressに任せる
@@ -44,6 +45,14 @@ function grand_couleur_enqueue() {
     wp_enqueue_style(
         'google-fonts',
         'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap',
+        [],
+        null
+    );
+
+    // Google Fonts
+    wp_enqueue_style(
+        'google-fonts-serif',
+        '<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">',
         [],
         null
     );
