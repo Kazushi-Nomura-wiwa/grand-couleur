@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 	var toggle = document.querySelector('.site-header__toggle');
-	var nav = document.querySelector('.global-nav');
+	var nav = document.querySelector('.global-navi');
 	if (!toggle || !nav) return;
 
 	function setExpandedState() {

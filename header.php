@@ -21,7 +21,7 @@
         <span class="site-header__toggle-text">MENU</span>
     </button>
 
-    <nav id="global-nav" class="global-nav">
+    <nav id="global-nav" class="global-navi">
         <?php
         if (has_nav_menu('global-nav')) {
             wp_nav_menu([

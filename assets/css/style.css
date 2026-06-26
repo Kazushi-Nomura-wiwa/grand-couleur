@@ -2,7 +2,7 @@
 :root {
     /* color */
     --color-main: rgba(220 238 249 / 100%);
-    --color-sub: rgba(70 164 156 / 100%);
+    --color-sub: rgba(16 128 195 / 100%);
     --color-sub-light: rgba(205 234 231 / 100%);
     --color-sec-pink: rgba(226 187 190 / 100%);
     --color-sec-yellow: rgba(247 255 180 / 100%);
@@ -14,6 +14,7 @@
     --color-text-card: rgba(103 103 103 / 100%);
     --color-contact-text: rgba(202 213 226 / 100%);
     --color-required: rgba(229 106 106 / 100%);
+    --color-bg-staff: rgba(254 234 234 / 100%);
 
     /* size */
     --size-heading_h1: 3rem;
@@ -30,7 +31,7 @@
     --radius-pill: 999px;
 
     /* shadow */
-    --shadow-elevation-3: 0 1px 2px 0 rgb(0 0 0 / 0.30), 0 2px 6px 2px rgb(0 0 0 / 0.15);
+    --shadow-base: 0px 0px 10px rgba(0, 0, 0, 0.05);
 }
 html {
     font-size: 100%;
@@ -49,4 +50,69 @@ main {
 .container {
     width: 90%;
     margin-inline: auto;
+}
+
+/* header menu */
+.site-header {
+    position: relative;
+}
+/* toggle button */
+.site-header__toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 3rem;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.site-header__toggle.active {
+    display: flex;
+}
+.site-header__toggle span:not(.site-header__toggle-text) {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: var(--color-sub);
+    border-radius: 999px;
+}
+.site-header__toggle-text {
+    margin-top: 2px;
+
+    font-size: 0.5rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    color: var(--color-sub);
+}
+.site-header__toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.site-header__toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+.site-header__toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.site-header__toggle span:not(.site-header__toggle-text) {
+    transition: transform .3s, opacity .3s;
+}
+/* toggle menu */
+.global-navi {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 9999;
+}
+.global-navi.is-open {
+    transform: translateY(0);
 }
