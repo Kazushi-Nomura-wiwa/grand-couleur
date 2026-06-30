@@ -41,9 +41,46 @@
             <h3 class="job-description__subtitle">あなたに合った働き方を選べます</h3>
             <ul class="job-description__list">
                 <li class="job-description__item">
-                    <img src="" class="job-description__image" alt="">
-
+                    <img src="" class="job-description__item-image" alt="">
+                    <h4 class="job-description__item-title">Webページ制作</h4>
+                    <p class="job-description__item-text">ホームページ制作を中心に、HTML・CSS・PHPなどを使用した開発に携わります。<br>CMSやフレームワークを活用し幅広い制作に取り組むことができます。</p>
                 </li>
+                <li class="job-description__item">
+                    <img src="" class="job-description__item-image" alt="">
+                    <h4 class="job-description__item-title">動画編集</h4>
+                    <p class="job-description__item-text">当事業所では動画制作にも積極的に取り組んでいます。さまざまなジャンルの制作を通して得意なことを活かせる機会があります。</p>
+                </li>
+                <li class="job-description__item">
+                    <img src="" class="job-description__item-image" alt="">
+                    <h4 class="job-description__item-title">PC作業</h4>
+                    <p class="job-description__item-text">専用システムを使用した各種データ入力を行っていただきます。データ入力のほか、パソコンを使ったさまざまな作業があります。</p>
+                </li>
+                <li class="job-description__item">
+                    <img src="" class="job-description__item-image" alt="">
+                    <h4 class="job-description__item-title">各デザイン業務</h4>
+                    <p class="job-description__item-text">社内案件や外部からの受注案件がありCanvaやPhotoshopやIllustratorを使用して制作を行います。チラシ・パンフレット・名刺・店舗POP・SNS画像など幅広い媒体に携わることができます。</p>
+                </li>
+                <li class="job-description__item">
+                    <img src="" class="job-description__item-image" alt="">
+                    <h4 class="job-description__item-title">飲食業務</h4>
+                    <p class="job-description__item-text">当事業所内には「ゔぇーるくれーる東区役所駅前店」と「どさんこシェフ」の2店舗があります。パン屋での開店準備・陳列・レジ打ち・袋詰めや、お弁当のお惣菜の調理補助・ラベル貼りなどを行います。</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="voice">
+        <div class="flow-container">
+            <p class="eyeblow">VOICE</p>
+            <h2 class="voice__title">利用者の声</h2>
+            <h3 class="voice__subtitle">ダミー</h3>
+            <ul class="voice__list">
+                <li class="voice__item">
+                    <article class="voice-card">
+                        <h4>利用者Tさんの声</h4>
+
+                    </article>
+                </li>
+            </ul>
         </div>
     </section>
 </main>
