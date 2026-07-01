@@ -194,6 +194,16 @@
             <p class="eyeblow">FAQ</p>
             <h2 class="about__title">よくある質問</h2>
             <h3 class="about__subtitle">ダミー</h3>
+            <div class="faq__list">
+                <article class="faq__item">
+                    <div class="faq__question">
+                        <span class="faq__number">Q1.</span>
+                        <span class="faq__question-text">A型事業所ってどんなところですか？</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">働きたい気持ちを大切にしながら、就労に不安がある方がサポートを受 けながら『働く習慣』や『自分に合った働き方』を身につけていく場所です。不器用な一面や苦手なことがあっても自分の強みを活かしながら環境や周囲のサポートを上手に活用する方法を身につけ自分らしく働き続ける力を育んでいきます。仕事だけでなく体調や生活面も含めて一緒に整えていきます。</p>
+                </article>
+            </div>
         </div>
     </section>
 </main>
