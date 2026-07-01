@@ -201,8 +201,154 @@
                         <span class="faq__question-text">A型事業所ってどんなところですか？</span>
                     </div>
                     <div class="faq__answer">
-                        <p class="faq__answer-text">働きたい気持ちを大切にしながら、就労に不安がある方がサポートを受 けながら『働く習慣』や『自分に合った働き方』を身につけていく場所です。不器用な一面や苦手なことがあっても自分の強みを活かしながら環境や周囲のサポートを上手に活用する方法を身につけ自分らしく働き続ける力を育んでいきます。仕事だけでなく体調や生活面も含めて一緒に整えていきます。</p>
+                        <p class="faq__answer-text">働きたい気持ちを大切にしながら、就労に不安がある方がサポートを受けながら『働く習慣』や『自分に合った働き方』を身につけていく場所です。不器用な一面や苦手なことがあっても自分の強みを活かしながら環境や周囲のサポートを上手に活用する方法を身につけ自分らしく働き続ける力を育んでいきます。仕事だけでなく体調や生活面も含めて一緒に整えていきます。</p>
+                    </div>
                 </article>
+                <article class="faq__item">
+                    <div class="faq__question">
+                        <span class="faq__number">Q2.</span>
+                        <span class="faq__question-text">就労継続支援B型や就労移行支援との違いは何ですか？</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">A型事業所は、雇用契約を結び、働いた分の賃金を受け取りながら実際の仕事を経験できることが特徴です。グランクルールでは、一人ひとりの個性や得意なことを大切にしながら、実務を通して自信とスキルを育てていきます。また、希望される方には一般就労へのステップアップも支援しています。</p>
+                    </div>
+                </article>
+                <article class="faq__item">
+                    <div class="faq__question">
+                        <span class="faq__number">Q3.</span>
+                        <span class="faq__question-text">利用するために必要なものはありますか？</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">障害福祉サービス受給者証が必要になりますが、見学や体験の段階ではお持ちでなくても大丈夫です。『何から始めたらいいかわからない』『手続きが不安』という方も一つひとつ確認して進めていきますので安心してご相談ください。</p>
+                    </div>
+                </article>
+                <article class="faq__item">
+                    <div class="faq__question">
+                        <span class="faq__number">Q4.</span>
+                        <span class="faq__question-text">どんな仕事がありますか？</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">IT・クリエイティブ・事務・マーケティング・飲食など、幅広い仕事があります。ホームページ制作やデザイン、動画編集、SNS運用、AI活用、一般事務補助、調理補助など、一人ひとりの目標や目指す姿に合わせて、得意なことや強みを活かせる作業を提供しています。未経験からスタートされる方も多く実務を通して少しずつ自信とスキルを身につけていける環境です。</p>
+                    </div>
+                </article>
+                <article class="faq__item">
+                    <div class="faq__question">
+                        <span class="faq__number">Q5.</span>
+                        <span class="faq__question-text">週に何日、1日何時間から働けますか？</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">基本の勤務時間は9:30～15:00（実働4.5時間）です。雇用保険への加入を確保しており、体調や通院状況に合わせて勤務時間や日数についてもご相談いただけます。一人ひとりの状態や目標に合わせて無理のないペースで働けるようサポートしています。</p>
+                    </div>
+                </article>
+                <article class="faq__item">
+                    <div class="faq__question">
+                        <span class="faq__number">Q6.</span>
+                        <span class="faq__question-text">未経験ですが大丈夫でしょうか？</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">もちろん大丈夫です。利用されている方の多くが未経験からスタートされています。業務のやり方や仕事の意味をお伝えしながら、一人ひとりのペースに合わせてサポートしています。また、グランクルールは「働く場」です。スタッフが一方的に教えるだけではなく、ご自身でも学ぶ姿勢や挑戦する気持ちを大切にしながら、実務を通して少しずつ『できること』を増やし自信とスキルを育てていける環境です。</p>
+                    </div>
+                </article>
+                <article class="faq__item">
+                    <div class="faq__question">
+                        <span class="faq__number">Q7.</span>
+                        <span class="faq__question-text">A型事業所ってどんなところですか？</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">はい、通院や体調、生活状況に合わせて業務内容や負荷の調整を行っています。一人ひとりの状態や目標に合わせて無理なく継続できる働き方を一緒に考えていきます。安心して働ける環境づくりを大切にしながら少しずつ『できること』を増やしていけるようサポートしています。</p>
+                    </div>
+                </article>
+                <article class="faq__item">
+                    <div class="faq__question">
+                        <span class="faq__number">Q8.</span>
+                        <span class="faq__question-text">お給料はいくらですか？</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">雇用契約を結んだうえで最低賃金以上となる時給1,075円から勤務していただけます。勤務日数や時間によって月々の賃金は変わりますが実績や取り組みに応じて昇給もあります。詳細については見学や面談の際にご説明いたします。</p>
+                    </div>
+                </article>
+                <article class="faq__item">
+                    <div class="faq__question">
+                        <span class="faq__number">Q9.</span>
+                        <span class="faq__question-text">社会保険には入れますか？</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">雇用保険には加入していただける勤務条件を確保しています。健康保険や厚生年金などの社会保険は、勤務時間などの条件を満たした場合に加入できます。基本の勤務時間では対象外となりますが作業面や体調面の安定に合わせて勤務時間を延長することもあり、その際には社会保険加入の対象となる場合があります。</p>
+                    </div>
+                </article>
+                <article class="faq__item">
+                    <div class="faq__question">
+                        <span class="faq__number">Q10.</span>
+                        <span class="faq__question-text">スタッフの方はどんな人たちですか？</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">福祉や医療の現場、フリーランス、IT関連、一般企業などさまざまな経験を持つスタッフが在籍しています。仕事のやり方だけでなく仕事への向き合い方や考え方、体調や生活面についても相談しながら一緒に成長していくことを大切にしています。</p>
+                    </div>
+                </article>
+                <article class="faq__item">
+                    <div class="faq__question">
+                        <span class="faq__number">Q11.</span>
+                        <span class="faq__question-text">いきなり通い始めるのが不安です。</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">ご安心ください。『まずは話だけ聞いてみたい』『雰囲気を知りたい』という方も多くいらっしゃいます。見学や体験利用を通して実際の仕事内容や事業所の雰囲気を確認していただき、ご自身に合うかどうかをじっくり考えていただけます。また、不安や心配ごとについても一緒に整理しながら無理のないペースで利用開始に向けた準備を進めていきます。</p>
+                    </div>
+                </article>
+                <article class="faq__item">
+                    <div class="faq__question">
+                        <span class="faq__number">Q12.</span>
+                        <span class="faq__question-text">見学には予約が必要ですか？</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">はい。見学者の方一人ひとりのお話をしっかり伺い、事業所の雰囲気や仕事内容について丁寧にご案内するため事前予約をお願いしています。お電話やメールSNSからお気軽にお問い合わせください。『まずは話だけ聞いてみたい』『見学だけしてみたい』という方も歓迎しています。</p>
+                    </div>
+                </article>
+                <article class="faq__item">
+                    <div class="faq__question">
+                        <span class="faq__number">Q13.</span>
+                        <span class="faq__question-text">通所するのに必要な手続きは誰に相談すればいいですか？</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">お住まいの市町村窓口や現在利用されている相談支援事業所、通院先の病院などにご相談ください。すでに担当の相談支援専門員がいる場合は、その方を通して手続きを進めることもできます。『何から始めればいいかわからない』『相談先がわからない』という方も、見学時に現在の状況を確認しながら一緒に必要な手続きや流れを整理していきますのでお気軽にご相談ください。</p>
+                    </div>
+                </article>
+                <article class="faq__item">
+                    <div class="faq__question">
+                        <span class="faq__number">Q14.</span>
+                        <span class="faq__question-text"> 昼食について</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">昼食は『どさんこシェフ』のお弁当を 日替わりで提供しております。 利用者の皆様からもおいしいと大好評です。一食200円で提供しております（※食事提供加算の非対象者は300円）</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="access">
+        <div class="container">
+            <p class="eyeblow">ACCESS</p>
+            <h2 class="flow__title">アクセス</h2>
+            <h3 class="flow__subtitle">グランクルールへのご案内</h3>
+            <div class="location">
+                <h4 class="location__heading">位置情報</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.2719526830892!2d141.363957!3d43.07777759999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b29144a38b6cb%3A0x21b389a93dcc4621!2z44K744Os44K544K_5pyt5bmM!5e0!3m2!1sja!2sjp!4v1782868014563!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <h4 class="location__heading">最寄り駅</h4>
+                <p class="location__text">札幌市営地下鉄東豊線 東区役所前駅4番出口から徒歩1分</p>
+                <h4 class="location__heading">対応可能時間</h4>
+                <p class="location__text">月〜金 10:00～17:00</p>
+            </div>
+            <div class="company">
+                <h4 class="company__heading">会社概要</h4>
+                <dl>
+                    <dt>事業所名</dt>
+                    <dd>グランクルール</dd>
+                    <dt>事業所番号</dt>
+                    <dd>0110302684</dd>
+                    <dt>所在地</dt>
+                    <dd>〒065-0012 札幌市東区北12条東7丁目1-15 セレスタ札幌1F</dd>
+                    <dt>代表者</dt>
+                    <dd>酒井麻衣</dd>
+                </dl>
             </div>
         </div>
     </section>
