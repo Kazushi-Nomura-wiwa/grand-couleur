@@ -129,9 +129,71 @@
     <section class="flow">
         <div class="container">
             <p class="eyeblow">FLOW</p>
-            <h2 class="staffs-voice__title">ご利用の流れ</h2>
-            <h3 class="staffs-voice__subtitle">サービスご利用の流れを紹介いたします。</h3>
-
+            <h2 class="flow__title">ご利用の流れ</h2>
+            <h3 class="flow__subtitle">サービスご利用の流れを紹介いたします。</h3>
+            <ol class="flow__list">
+                <li class="flow__item">
+                    <div class="flow__aside">
+                        <p class="flow__step-number">STEP 01</p>
+                        <img src="" alt="STEP 01"  class="flow__step-image">
+                    </div>
+                    <div class="flow__content">
+                        <h4 class="flow-item__title">お問い合わせ・見学</h4>
+                        <p class="flow-item__text">ホームページやパンフレット、元気さーちなどをご覧いただきお電話、またはメールにてお問い合わせください。お電話でのやり取りですとスムーズに日程を決定することができます。</p>
+                    </div>
+                </li>
+                <li class="flow__item">
+                    <div class="flow__aside">
+                        <p class="flow__step-number">STEP 02</p>
+                        <img src="" alt="STEP 02"  class="flow__step-image">
+                    </div>
+                    <div class="flow__content">
+                        <h4 class="flow-item__title">ハローワークにて紹介状の発行</h4>
+                        <p class="flow-item__text">お住まいの近くにあるハローワークにて当事業所の求人に応募し紹介状を発行していただきますようお願いします。ハローワークからのお電話上にて面接日時を決定いたします。</p>
+                    </div>
+                </li>
+                <li class="flow__item">
+                    <div class="flow__aside">
+                        <p class="flow__step-number">STEP 03</p>
+                        <img src="" alt="STEP 03"  class="flow__step-image">
+                    </div>
+                    <div class="flow__content">
+                        <h4 class="flow-item__title">面接</h4>
+                        <p class="flow-item__text">ハローワークからの紹介状を必ずお持ちください。面接では見学時の感想をお聞きしながら仕事内容や勤務に関するご本人の希望をお伺いします。</p>
+                    </div>
+                </li>
+                <li class="flow__item">
+                    <div class="flow__aside">
+                        <p class="flow__step-number">STEP 04</p>
+                        <img src="" alt="STEP 04"  class="flow__step-image">
+                    </div>
+                    <div class="flow__content">
+                        <h4 class="flow-item__title">雇用確定・受給者証交付申請</h4>
+                        <p class="flow-item__text">面接後、採用／不採用に関わらず、1週間以内にお電話にて結果をご連絡いたします。採用となった場合はお住まいの区役所の福祉窓口にて福祉サービス受給者証の交付申請をお願いします。</p>
+                    </div>
+                </li>
+                <li class="flow__item">
+                    <div class="flow__aside">
+                        <p class="flow__step-number">STEP 05</p>
+                        <img src="" alt="STEP 05"  class="flow__step-image">
+                    </div>
+                    <div class="flow__content">
+                        <h4 class="flow-item__title">利用開始・雇用契約締結</h4>
+                        <p class="flow-item__text">雇用契約を結び、業務開始となります。勤務にあたりご不明点等があれば、いつでもスタッフへお尋ねください。</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section class="inquiry">
+        <h2>まずはお気軽にご相談ください</h2>
+        <a href="#" class="inquiry__button">お問い合わせはこちら</a>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <p class="eyeblow">FAQ</p>
+            <h2 class="about__title">よくある質問</h2>
+            <h3 class="about__subtitle">ダミー</h3>
         </div>
     </section>
 </main>
