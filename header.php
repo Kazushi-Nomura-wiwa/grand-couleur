@@ -23,20 +23,13 @@
 
     <nav id="global-nav" class="global-nav">
         <?php
-        if (has_nav_menu('global-nav')) {
             wp_nav_menu([
                 'theme_location' => 'global-nav',
-                'container' => false,
-                'menu_class' => 'global-nav__list',
-                'items_wrap' => '<ul class="global-nav__list">%3$s</ul>',
+                'container'     => false,
+                'menu_class'    => 'global-nav__list',
+                'items_wrap'    => '<ul class="%2$s">%3$s</ul>',
+                'fallback_cb'   => false,
             ]);
-        } else {
-            wp_page_menu([
-                'show_home' => true,
-                'menu_class' => 'global-nav__list',
-                'depth' => 1,
-            ]);
-        }
         ?>
     </nav>
 </header>
