@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main class="front-page">
     <section class="hero">
-        <div class="contaier">
+        <div class="container">
             <h2 class="hero__title">合同会社グランクルール</h2>
             <h3 class="hero__catch">一歩ずつ、夢を形に</h3>
             <h4 class="hero__lead">あなたの夢を一緒に育てる</h4>
