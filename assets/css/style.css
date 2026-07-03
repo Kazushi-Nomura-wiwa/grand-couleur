@@ -264,3 +264,10 @@ main {
     font-size: var(--size-text-extra-small);
     color: var(--color-sub);
 }
+
+
+.worries__title{
+    font-size: var(--size-heading_h3);
+    color: var(--color-header-text);
+    font-family: "Noto Serif JP", serif;
+}
