@@ -259,3 +259,8 @@ main {
     background-color: var(--color-main);
     text-decoration: none;
 }
+
+.eyeblow {
+    font-size: var(--size-text-extra-small);
+    color: var(--color-sub);
+}
