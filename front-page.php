@@ -15,12 +15,12 @@
             <p class="eyeblow">WORREIS</p>
             <h2 class="worries__title">こんなお悩みありませんか？</h2>
             <ul class="worries__list">
-                <li class="worries__item"><img src="assets/img/worries_01.png" alt="お悩み1">働きたいけれど自信がない</li>
-                <li class="worries__item"><img src="assets/img/worries_02.png" alt="お悩み2">自分に合う仕事を見つけたい</li>
-                <li class="worries__item"><img src="assets/img/worries_03.png" alt="お悩み3">就職を目指したい</li>
-                <li class="worries__item"><img src="assets/img/worries_04.png" alt="お悩み4">IT・デザインを学びたい</li>
-                <li class="worries__item"><img src="assets/img/worries_05.png" alt="お悩み5">人間関係に不安がある</li>
-                <li class="worries__item"><img src="assets/img/worries_06.png" alt="お悩み6">自分のペースで少しずつ始めたい</li>
+                <li class="worries__item"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/worries_01.png'); ?>" alt="お悩み1">働きたいけれど自信がない</li>
+                <li class="worries__item"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/worries_02.png'); ?>" alt="お悩み2">自分に合う仕事を見つけたい</li>
+                <li class="worries__item"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/worries_03.png'); ?>" alt="お悩み3">就職を目指したい</li>
+                <li class="worries__item"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/worries_04.png'); ?>" alt="お悩み4">IT・デザインを学びたい</li>
+                <li class="worries__item"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/worries_05.png'); ?>" alt="お悩み5">人間関係に不安がある</li>
+                <li class="worries__item"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/worries_06.png'); ?>" alt="お悩み6">自分のペースで少しずつ始めたい</li>
             </ul>
             <p class="worries__text"><strong class="worries__emphasis">一人で抱え込まないでも大丈夫</strong><br>そんな思いに<strong class="worries__emphasis">寄り添いながら</strong><br>一人ひとりのペースを大切に<br><strong class="worries__emphasis">サポートします</strong></p>
         </div>

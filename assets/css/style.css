@@ -12,6 +12,8 @@
     --color-text-body: rgba(51 51 51 / 100%);
     --color-text-small: rgba(141 141 141 / 100%);
     --color-text-card: rgba(103 103 103 / 100%);
+    --color-text-card-bg: rgba(230 243 251 / 100%);
+    --color-text-card-border: rgba(16 128 195 / 40%);
     --color-contact-text: rgba(202 213 226 / 100%);
     --color-required: rgba(229 106 106 / 100%);
     --color-bg-staff: rgba(254 234 234 / 100%);
@@ -33,7 +35,7 @@
     --radius-pill: 999px;
 
     /* shadow */
-    --shadow-base: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    --shadow-base: 0 3px 3px rgba(0, 0, 0, 0.25);
 
     /* font weight */
     --font-weight-extra-light: 200;
@@ -266,8 +268,35 @@ main {
 }
 
 
-.worries__title{
+.worries__title {
     font-size: var(--size-heading_h3);
     color: var(--color-header-text);
     font-family: "Noto Serif JP", serif;
+}
+.worries__item {
+    background: linear-gradient(135deg, var(--color-bg) 0%,var(--color-text-card-bg) 100%);
+    box-shadow: var(--shadow-base);
+    border-radius: var(--radius-regular);
+    border: 1px solid var(--color-text-card-border);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: var(--size-text-body);
+    color: var(--color-sub);
+    font-weight: var(--font-weight-bold);
+    padding: 1rem;
+}
+.worries__item img {
+    margin-inline: auto;
+    margin-bottom: 10px;
+}
+.worries__text {
+    font-family: "Noto Serif JP", serif;
+    font-size: var(--size-heading_h4);
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--color-header-text);
+    text-align: center;
+}
+.worries__text strong {
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--color-sub);
 }
