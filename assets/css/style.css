@@ -278,8 +278,13 @@ main {
     padding: 0.5rem 1rem;
     font-size: var(--size-text-small);
     font-weight: var(--font-weight-medium);
-    color: var(--color-bg);
-    background-color: var(--color-sub);
+    color: var(--color-sub);
+    background-color: var(--color-sec-yellow);
+    border: 1px solid var(--color-sub);
     border-radius: var(--radius-pill);
     transition: background-color 0.3s ease;
+}
+.hero .hero__link:after {
+    content: "";
+    
 }
