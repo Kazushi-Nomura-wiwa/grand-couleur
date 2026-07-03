@@ -286,5 +286,15 @@ main {
 }
 .hero .hero__link:after {
     content: "";
-    
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.5em;
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(45deg) translateY(-2px);
+}
+.hero .hero__link:hover {
+    background-color: var(--color-main);
+    text-decoration: none;
 }
