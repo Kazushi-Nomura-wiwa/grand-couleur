@@ -264,6 +264,7 @@ main {
 
 .eyeblow {
     font-size: var(--size-text-extra-small);
+    font-weight: var(--font-weight-bold);
     color: var(--color-sub);
 }
 /* worries */
@@ -351,10 +352,21 @@ main {
     height: 9rem;
     background: url("../img/job-description_bg_footer_sp.svg") top center / 100% auto no-repeat, linear-gradient(var(--color-main) 4rem,var(--color-bg) 7rem);
 }
+.job-description .eyeblow,
+.job-description .job-description__title,
+.job-description .job-description__subtitle {
+    text-align: center;
+}
+.job-description .job-description__title {
+    font-size: var(--size-heading_h4);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-header-text);
+    margin-bottom: 0.5rem;
+}
 .job-description .job-description__item {
     border-radius: var(--radius-regular);
     box-shadow: var(--shadow-base);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     background: linear-gradient(135deg,var(--color-bg) 55%, var(--color-text-card-bg) 100%);
 }
 .job-description .job-description__item .job-description__item-image {
@@ -366,7 +378,7 @@ main {
 .job-description .job-description__item .job-description__item-title {
     font-size: var(--size-heading_h3);
     font-weight: var(--font-weight-medium);
-    color: var(--color-header-text);
+    color: var(--color-sub);
     margin-bottom: 0.5rem;
 }
 
