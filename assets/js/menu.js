@@ -63,16 +63,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const dots = [...pagination.querySelectorAll(".users-voice__dot")];
 
-    function updateSlider() {
-        list.style.transform = `translateX(${-100 * currentIndex}%)`;
+	function updateSlider() {
+		const offset = items[currentIndex].offsetLeft;
 
-        prevButton.disabled = currentIndex === 0;
-        nextButton.disabled = currentIndex === items.length - 1;
+		list.style.transform = `translateX(${-offset}px)`;
 
-        dots.forEach((dot, index) => {
-            dot.classList.toggle("is-active", index === currentIndex);
-        });
-    }
+		prevButton.disabled = currentIndex === 0;
+		nextButton.disabled = currentIndex === items.length - 1;
+
+		dots.forEach((dot, index) => {
+			dot.classList.toggle("is-active", index === currentIndex);
+		});
+	}
 
     function goPrev() {
         if (currentIndex > 0) {

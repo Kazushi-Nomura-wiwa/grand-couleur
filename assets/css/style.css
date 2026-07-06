@@ -390,7 +390,66 @@ main {
     transition: transform 0.3s ease;
 }
 .users-voice__item {
-    flex: 0 0 100%;
+    flex: 0 0 78%;
+    padding: 0 6px;
+}
+
+.users-voice-card {
+    height: 100%;
+    padding: 1rem;
+    border: 1px solid var(--color-text-card-border);
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: var(--shadow-base);
+}
+
+.users-voice-card__figure {
+    float: left;
+    width: 64px;
+    margin: 0 10px 6px 0;
+}
+
+.users-voice-card__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.users-voice-card__title {
+    font-size: var(--size-heading_h4);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-sub);
+}
+
+.users-voice-card__position {
+    font-size: var(--size-text-small);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-header-text);
+}
+
+.users-voice-card__section {
+    clear: both;
+}
+
+.users-voice-card__heading {
+    font-size: var(--size-text-body);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-sub);
+    border-bottom: 2px solid var(--color-main);
+}
+
+.users-voice-card__label {
+    font-size: var(--size-text-small);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-sub);
+}
+
+.users-voice-card__text {
+    margin: 0;
+    font-size: var(--size-text-body);
+    line-height: 1.7;
+    color: var(--color-header-text);
 }
 .users-voice__button {
     display: grid;

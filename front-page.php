@@ -94,7 +94,7 @@
                 <li class="users-voice__item">
                     <article class="users-voice-card">
                         <figure class="users-voice-card__figure">
-                            <img src="assets/" class="users-voice-card__image" alt="利用者Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_01.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
                         </figure>
                         <h4 class="users-voice-card__title">利用者Tさんの声1</h4>
                         <p class="users-voice-card__position">担当業務：事務</p>
@@ -110,7 +110,7 @@
                 <li class="users-voice__item">
                     <article class="users-voice-card">
                         <figure class="users-voice-card__figure">
-                            <img src="" class="users-voice-card__image" alt="利用者Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_02.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
                         </figure>
                         <h4 class="users-voice-card__title">利用者Tさんの声2</h4>
                         <p class="users-voice-card__position">担当業務：事務</p>
@@ -126,7 +126,7 @@
                 <li class="users-voice__item">
                     <article class="users-voice-card">
                         <figure class="users-voice-card__figure">
-                            <img src="" class="users-voice-card__image" alt="利用者Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_03.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
                         </figure>
                         <h4 class="users-voice-card__title">利用者Tさんの声3</h4>
                         <p class="users-voice-card__position">担当業務：事務</p>
@@ -142,7 +142,7 @@
                 <li class="users-voice__item">
                     <article class="users-voice-card">
                         <figure class="users-voice-card__figure">
-                            <img src="" class="users-voice-card__image" alt="利用者Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_04.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
                         </figure>
                         <h4 class="users-voice-card__title">利用者Tさんの声4</h4>
                         <p class="users-voice-card__position">担当業務：事務</p>
@@ -158,7 +158,7 @@
                 <li class="users-voice__item">
                     <article class="users-voice-card">
                         <figure class="users-voice-card__figure">
-                            <img src="" class="users-voice-card__image" alt="利用者Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_05.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
                         </figure>
                         <h4 class="users-voice-card__title">利用者Tさんの声5</h4>
                         <p class="users-voice-card__position">担当業務：事務</p>
