@@ -27,13 +27,18 @@
     </section>
     <section class="about">
         <div class="container">
-            <p class="eyeblow">ABOUT</p>
-            <h2 class="about__title">事務所について</h2>
-            <h3 class="about__subtitle">あなたらしく働きながら<br>夢を形にできる場所です。</h3>
-            <img src="" class="about__image" alt="事務所風景">
-            <p class="about__text">就労継続支援A型事業所「グランクルール」では利用者一人ひとりのスキルアップと一般就労を目指した支援を行っています。<br>未経験の方も丁寧にサポートし、安心して取り組める環境を整えています。</p>
-            <p class="about__text">事業所には<strong class="about__emphasis">元医療従事者の支援員</strong>が在籍しており日常の小さな悩みや健康相談にも対応しています。</p>
-            <p class="about__text">「<strong class="about__emphasis">一歩ずつ、夢を形に ～あなたの夢を一緒に育てる</strong>」をモットーに、皆さんの目標を支援していきます。</p>
+            <div class="about__image">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/about_img_pc.webp'); ?>" class="about__image-pc" alt="事務所風景">
+            </div>
+            <div class="about__content">
+                <p class="eyeblow">ABOUT</p>
+                <h2 class="about__title">事務所について</h2>
+                <h3 class="about__subtitle">あなたらしく働きながら<br>夢を形にできる場所です。</h3>
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/about_img_sp.webp'); ?>" class="about__image-sp" alt="事務所風景">
+                <p class="about__text">就労継続支援A型事業所「グランクルール」では利用者一人ひとりのスキルアップと一般就労を目指した支援を行っています。<br>未経験の方も丁寧にサポートし、安心して取り組める環境を整えています。</p>
+                <p class="about__text">事業所には<strong class="about__emphasis">元医療従事者の支援員</strong>が在籍しており日常の小さな悩みや健康相談にも対応しています。</p>
+                <p class="about__text">「<strong class="about__emphasis">一歩ずつ、夢を形に ～あなたの夢を一緒に育てる</strong>」をモットーに、皆さんの目標を支援していきます。</p>
+            </div>
         </div>
     </section>
     <section class="job-description">
@@ -43,29 +48,39 @@
             <h3 class="job-description__subtitle">あなたに合った働き方を選べます</h3>
             <ul class="job-description__list">
                 <li class="job-description__item">
-                    <img src="" class="job-description__item-image" alt="">
-                    <h4 class="job-description__item-title">Webページ制作</h4>
-                    <p class="job-description__item-text">ホームページ制作を中心に、HTML・CSS・PHPなどを使用した開発に携わります。<br>CMSやフレームワークを活用し幅広い制作に取り組むことができます。</p>
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/job01.webp'); ?>" class="job-description__item-image" alt="Webページ制作">
+                    <div class="job-description__content">
+                        <h4 class="job-description__item-title">Webページ制作</h4>
+                        <p class="job-description__item-text">ホームページ制作を中心に、HTML・CSS・PHPなどを使用した開発に携わります。<br>CMSやフレームワークを活用し幅広い制作に取り組むことができます。</p>
+                    </div>
                 </li>
                 <li class="job-description__item">
-                    <img src="" class="job-description__item-image" alt="">
-                    <h4 class="job-description__item-title">動画編集</h4>
-                    <p class="job-description__item-text">当事業所では動画制作にも積極的に取り組んでいます。さまざまなジャンルの制作を通して得意なことを活かせる機会があります。</p>
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/job02.webp'); ?>" class="job-description__item-image" alt="動画編集">
+                    <div class="job-description__content">
+                        <h4 class="job-description__item-title">動画編集</h4>
+                        <p class="job-description__item-text">当事業所では動画制作にも積極的に取り組んでいます。さまざまなジャンルの制作を通して得意なことを活かせる機会があります。</p>
+                    </div>
                 </li>
                 <li class="job-description__item">
-                    <img src="" class="job-description__item-image" alt="">
-                    <h4 class="job-description__item-title">PC作業</h4>
-                    <p class="job-description__item-text">専用システムを使用した各種データ入力を行っていただきます。データ入力のほか、パソコンを使ったさまざまな作業があります。</p>
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/job03.webp'); ?>" class="job-description__item-image" alt="PC作業">
+                    <div class="job-description__content">
+                        <h4 class="job-description__item-title">PC作業</h4>
+                        <p class="job-description__item-text">専用システムを使用した各種データ入力を行っていただきます。データ入力のほか、パソコンを使ったさまざまな作業があります。</p>
+                    </div>
                 </li>
                 <li class="job-description__item">
-                    <img src="" class="job-description__item-image" alt="">
-                    <h4 class="job-description__item-title">各デザイン業務</h4>
-                    <p class="job-description__item-text">社内案件や外部からの受注案件がありCanvaやPhotoshopやIllustratorを使用して制作を行います。チラシ・パンフレット・名刺・店舗POP・SNS画像など幅広い媒体に携わることができます。</p>
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/job04.webp'); ?>" class="job-description__item-image" alt="各デザイン業務">
+                    <div class="job-description__content">
+                        <h4 class="job-description__item-title">各デザイン業務</h4>
+                        <p class="job-description__item-text">社内案件や外部からの受注案件がありCanvaやPhotoshopやIllustratorを使用して制作を行います。チラシ・パンフレット・名刺・店舗POP・SNS画像など幅広い媒体に携わることができます。</p>
+                    </div>
                 </li>
                 <li class="job-description__item">
-                    <img src="" class="job-description__item-image" alt="">
-                    <h4 class="job-description__item-title">飲食業務</h4>
-                    <p class="job-description__item-text">当事業所内には「ゔぇーるくれーる東区役所駅前店」と「どさんこシェフ」の2店舗があります。パン屋での開店準備・陳列・レジ打ち・袋詰めや、お弁当のお惣菜の調理補助・ラベル貼りなどを行います。</p>
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/job05.webp'); ?>" class="job-description__item-image" alt="飲食業務">
+                    <div class="job-description__content">
+                        <h4 class="job-description__item-title">飲食業務</h4>
+                        <p class="job-description__item-text">当事業所内には「ゔぇーるくれーる東区役所駅前店」と「どさんこシェフ」の2店舗があります。パン屋での開店準備・陳列・レジ打ち・袋詰めや、お弁当のお惣菜の調理補助・ラベル貼りなどを行います。</p>
+                    </div>
                 </li>
             </ul>
         </div>
