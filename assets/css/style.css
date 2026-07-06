@@ -381,6 +381,52 @@ main {
     color: var(--color-sub);
     margin-bottom: 0.5rem;
 }
+/* users-voice */
+.users-voice {
+    overflow: hidden;
+}
+.users-voice__list {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+.users-voice__item {
+    flex: 0 0 100%;
+}
+.users-voice__button {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid var(--color-main);
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+.users-voice__button::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid var(--color-main);
+    border-right: 2px solid var(--color-main);
+}
+.users-voice__button--prev::before {
+    transform: rotate(-135deg);
+}
+.users-voice__button--next::before {
+    transform: rotate(45deg);
+}
+.users-voice__button:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+.users-voice__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+}
 
 @media (min-width: 1024px) {
     .about .container{
