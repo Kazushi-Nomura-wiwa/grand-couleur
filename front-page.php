@@ -94,7 +94,7 @@
                 <li class="users-voice__item">
                     <article class="users-voice-card">
                         <figure class="users-voice-card__figure">
-                            <img src="" class="users-voice-card__image" alt="利用者Tさん">
+                            <img src="assets/" class="users-voice-card__image" alt="利用者Tさん">
                         </figure>
                         <h4 class="users-voice-card__title">利用者Tさんの声1</h4>
                         <p class="users-voice-card__position">担当業務：事務</p>

@@ -33,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	setExpandedState();
 	updateToggleText();
 
+
+	// ユーザーの声スライダー
 	const voice = document.querySelector(".users-voice");
     if (!voice) return;
 
