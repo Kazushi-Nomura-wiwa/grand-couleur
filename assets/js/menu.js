@@ -35,85 +35,187 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	// ユーザーの声スライダー
-	const voice = document.querySelector(".users-voice");
-    if (!voice) return;
+	const userVoice = document.querySelector(".users-voice");
+    if (!userVoice) return;
 
-    const list = voice.querySelector(".users-voice__list");
-    const items = [...voice.querySelectorAll(".users-voice__item")];
-    const prevButton = voice.querySelector(".users-voice__button--prev");
-    const nextButton = voice.querySelector(".users-voice__button--next");
-    const pagination = voice.querySelector(".users-voice__pagination");
+    const userList = userVoice.querySelector(".users-voice__list");
+    const userItems = [...userVoice.querySelectorAll(".users-voice__item")];
+    const userPrevButton = userVoice.querySelector(".users-voice__button--prev");
+    const userNextButton = userVoice.querySelector(".users-voice__button--next");
+    const userPagination = userVoice.querySelector(".users-voice__pagination");
 
-    let currentIndex = 0;
+    let userCurrentIndex = 0;
 
     // ドット生成
-    items.forEach((_, index) => {
-        const dot = document.createElement("button");
-        dot.type = "button";
-        dot.className = "users-voice__dot";
-        dot.setAttribute("aria-label", `${index + 1}枚目へ`);
+    userItems.forEach((_, index) => {
+        const userDot = document.createElement("button");
+        userDot.type = "button";
+        userDot.className = "users-voice__dot";
+        userDot.setAttribute("aria-label", `${index + 1}枚目へ`);
 
-        dot.addEventListener("click", () => {
-            currentIndex = index;
-            updateSlider();
+        userDot.addEventListener("click", () => {
+            userCurrentIndex = index;
+            userUpdateSlider();
         });
 
-        pagination.appendChild(dot);
+        userPagination.appendChild(userDot);
     });
 
-    const dots = [...pagination.querySelectorAll(".users-voice__dot")];
+    const userDots = [...userPagination.querySelectorAll(".users-voice__dot")];
 
-	function updateSlider() {
-		const offset = items[currentIndex].offsetLeft;
+    function userUpdateSlider() {
+        const userContainerWidth = userVoice.querySelector(".flow-container").clientWidth;
+        const userItemWidth = userItems[userCurrentIndex].offsetWidth;
 
-		list.style.transform = `translateX(${-offset}px)`;
+        const userOffset =
+            userItems[userCurrentIndex].offsetLeft
+            - (userContainerWidth - userItemWidth) / 2;
 
-		prevButton.disabled = currentIndex === 0;
-		nextButton.disabled = currentIndex === items.length - 1;
+        userList.style.transform = `translateX(${-userOffset}px)`;
 
-		dots.forEach((dot, index) => {
-			dot.classList.toggle("is-active", index === currentIndex);
-		});
-	}
+        userPrevButton.disabled = userCurrentIndex === 0;
+        userNextButton.disabled = userCurrentIndex === userItems.length - 1;
 
-    function goPrev() {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateSlider();
+        userDots.forEach((dot, index) => {
+            dot.classList.toggle("is-active", index === userCurrentIndex);
+        });
+
+        userItems.forEach((item, index) => {
+            item.classList.toggle("is-active", index === userCurrentIndex);
+        });
+    }
+
+    function userGoPrev() {
+        if (userCurrentIndex > 0) {
+            userCurrentIndex--;
+            userUpdateSlider();
         }
     }
 
-    function goNext() {
-        if (currentIndex < items.length - 1) {
-            currentIndex++;
-            updateSlider();
+    function userGoNext() {
+        if (userCurrentIndex < userItems.length - 1) {
+            userCurrentIndex++;
+            userUpdateSlider();
         }
     }
 
-    prevButton.addEventListener("click", goPrev);
-    nextButton.addEventListener("click", goNext);
+    userPrevButton.addEventListener("click", userGoPrev);
+    userNextButton.addEventListener("click", userGoNext);
 
     // スワイプ
-    let startX = 0;
-    let currentX = 0;
+    let userStartX = 0;
+    let userCurrentX = 0;
 
-    list.addEventListener("touchstart", e => {
-        startX = e.touches[0].clientX;
+    userList.addEventListener("touchstart", e => {
+        userStartX = e.touches[0].clientX;
     });
 
-    list.addEventListener("touchmove", e => {
-        currentX = e.touches[0].clientX;
+    userList.addEventListener("touchmove", e => {
+        userCurrentX = e.touches[0].clientX;
     });
 
-    list.addEventListener("touchend", () => {
-        const diff = currentX - startX;
+    userList.addEventListener("touchend", () => {
+        const diff = userCurrentX - userStartX;
 
-        if (diff > 50) goPrev();
-        if (diff < -50) goNext();
+        if (diff > 50) userGoPrev();
+        if (diff < -50) userGoNext();
 
-        startX = 0;
-        currentX = 0;
+        userStartX = 0;
+        userCurrentX = 0;
     });
 
-    updateSlider();
+    userUpdateSlider();
+
+    // 職員の声スライダー
+	const staffVoice = document.querySelector(".staffs-voice");
+    if (!staffVoice) return;
+
+    const staffList = staffVoice.querySelector(".staffs-voice__list");
+    const staffItems = [...staffVoice.querySelectorAll(".staffs-voice__item")];
+    const staffPrevButton = staffVoice.querySelector(".staffs-voice__button--prev");
+    const staffNextButton = staffVoice.querySelector(".staffs-voice__button--next");
+    const staffPagination = staffVoice.querySelector(".staffs-voice__pagination");
+
+    let staffCurrentIndex = 0;
+
+    // ドット生成
+    staffItems.forEach((_, index) => {
+        const staffDot = document.createElement("button");
+        staffDot.type = "button";
+        staffDot.className = "staffs-voice__dot";
+        staffDot.setAttribute("aria-label", `${index + 1}枚目へ`);
+
+        staffDot.addEventListener("click", () => {
+            staffCurrentIndex = index;
+            staffUpdateSlider();
+        });
+
+        staffPagination.appendChild(staffDot);
+    });
+
+    const staffDots = [...staffPagination.querySelectorAll(".staffs-voice__dot")];
+
+    function staffUpdateSlider() {
+        const staffContainerWidth = staffVoice.querySelector(".flow-container").clientWidth;
+        const staffItemWidth = staffItems[staffCurrentIndex].offsetWidth;
+
+        const staffOffset =
+            staffItems[staffCurrentIndex].offsetLeft
+            - (staffContainerWidth - staffItemWidth) / 2;
+
+        staffList.style.transform = `translateX(${-staffOffset}px)`;
+
+        staffPrevButton.disabled = staffCurrentIndex === 0;
+        staffNextButton.disabled = staffCurrentIndex === staffItems.length - 1;
+
+        staffDots.forEach((dot, index) => {
+            dot.classList.toggle("is-active", index === staffCurrentIndex);
+        });
+
+        staffItems.forEach((item, index) => {
+            item.classList.toggle("is-active", index === staffCurrentIndex);
+        });
+    }
+
+    function staffGoPrev() {
+        if (staffCurrentIndex > 0) {
+            staffCurrentIndex--;
+            staffUpdateSlider();
+        }
+    }
+
+    function staffGoNext() {
+        if (staffCurrentIndex < staffItems.length - 1) {
+            staffCurrentIndex++;
+            staffUpdateSlider();
+        }
+    }
+
+    staffPrevButton.addEventListener("click", staffGoPrev);
+    staffNextButton.addEventListener("click", staffGoNext);
+
+    // スワイプ
+    let staffStartX = 0;
+    let staffCurrentX = 0;
+
+    staffList.addEventListener("touchstart", e => {
+        staffStartX = e.touches[0].clientX;
+    });
+
+    staffList.addEventListener("touchmove", e => {
+        staffCurrentX = e.touches[0].clientX;
+    });
+
+    staffList.addEventListener("touchend", () => {
+        const diff = staffCurrentX - staffStartX;
+
+        if (diff > 50) staffGoPrev();
+        if (diff < -50) staffGoNext();
+
+        staffStartX = 0;
+        staffCurrentX = 0;
+    });
+
+    staffUpdateSlider();
+
 });

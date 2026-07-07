@@ -89,14 +89,13 @@
         <div class="flow-container">
             <p class="eyeblow">VOICE</p>
             <h2 class="users-voice__title">利用者の声</h2>
-            <h3 class="users-voice__subtitle">ダミー</h3>
             <ul class="users-voice__list">
                 <li class="users-voice__item">
                     <article class="users-voice-card">
                         <figure class="users-voice-card__figure">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_01.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
                         </figure>
-                        <h4 class="users-voice-card__title">利用者Tさんの声1</h4>
+                        <h3 class="users-voice-card__title">利用者Tさんの声1</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
                             <h5 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
@@ -112,7 +111,7 @@
                         <figure class="users-voice-card__figure">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_02.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
                         </figure>
-                        <h4 class="users-voice-card__title">利用者Tさんの声2</h4>
+                        <h3 class="users-voice-card__title">利用者Tさんの声2</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
                             <h5 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
@@ -128,7 +127,7 @@
                         <figure class="users-voice-card__figure">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_03.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
                         </figure>
-                        <h4 class="users-voice-card__title">利用者Tさんの声3</h4>
+                        <h3 class="users-voice-card__title">利用者Tさんの声3</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
                             <h5 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
@@ -144,7 +143,7 @@
                         <figure class="users-voice-card__figure">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_04.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
                         </figure>
-                        <h4 class="users-voice-card__title">利用者Tさんの声4</h4>
+                        <h3 class="users-voice-card__title">利用者Tさんの声4</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
                             <h5 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
@@ -160,7 +159,7 @@
                         <figure class="users-voice-card__figure">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_05.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
                         </figure>
-                        <h4 class="users-voice-card__title">利用者Tさんの声5</h4>
+                        <h3 class="users-voice-card__title">利用者Tさんの声5</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
                             <h5 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
@@ -183,14 +182,13 @@
         <div class="flow-container">
             <p class="eyeblow">VOICE</p>
             <h2 class="staffs-voice__title">職員の声</h2>
-            <h3 class="staffs-voice__subtitle">ダミー</h3>
             <ul class="staffs-voice__list">
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="" class="staffs-voice-card__image" alt="利用者Tさん">
+                            <img src="" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
-                        <h4 class="staffs-voice-card__title">利用者Tさんの声</h4>
+                        <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
                         <section class="staffs-voice-card__section">
                             <h5 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
@@ -204,9 +202,9 @@
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="" class="staffs-voice-card__image" alt="利用者Tさん">
+                            <img src="" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
-                        <h4 class="staffs-voice-card__title">利用者Tさんの声</h4>
+                        <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
                         <section class="staffs-voice-card__section">
                             <h5 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
@@ -220,9 +218,9 @@
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="" class="staffs-voice-card__image" alt="利用者Tさん">
+                            <img src="" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
-                        <h4 class="staffs-voice-card__title">利用者Tさんの声</h4>
+                        <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
                         <section class="staffs-voice-card__section">
                             <h5 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
@@ -236,9 +234,9 @@
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="" class="staffs-voice-card__image" alt="利用者Tさん">
+                            <img src="" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
-                        <h4 class="staffs-voice-card__title">利用者Tさんの声</h4>
+                        <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
                         <section class="staffs-voice-card__section">
                             <h5 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
@@ -252,9 +250,9 @@
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="" class="staffs-voice-card__image" alt="利用者Tさん">
+                            <img src="" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
-                        <h4 class="staffs-voice-card__title">利用者Tさんの声</h4>
+                        <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
                         <section class="staffs-voice-card__section">
                             <h5 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
@@ -268,9 +266,9 @@
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="" class="staffs-voice-card__image" alt="利用者Tさん">
+                            <img src="" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
-                        <h4 class="staffs-voice-card__title">利用者Tさんの声</h4>
+                        <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
                         <section class="staffs-voice-card__section">
                             <h5 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
@@ -284,8 +282,9 @@
             </ul>
         </div>
         <div class="staffs-voice__controls">
-            <button type="button" class="staffs-voice__button users-voice__button--prev" aria-label="前の声へ"></button>
-            <button type="button" class="staffs-voice__button users-voice__button--next" aria-label="次の声へ"></button>
+            <button type="button" class="staffs-voice__button staffs-voice__button--prev" aria-label="前の声へ"></button>
+            <div class="staffs-voice__pagination"></div>
+            <button type="button" class="staffs-voice__button staffs-voice__button--next" aria-label="次の声へ"></button>
         </div>
     </section>
     <section class="flow">
