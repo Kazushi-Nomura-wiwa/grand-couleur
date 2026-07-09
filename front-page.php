@@ -284,8 +284,8 @@
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/flow01.webp'); ?>" alt="STEP 01"  class="flow__step-image">
                     </div>
                     <div class="flow__content">
-                        <h4 class="flow-item__title">お問い合わせ・見学</h4>
-                        <p class="flow-item__text">ホームページやパンフレット、元気さーちなどをご覧いただきお電話、またはメールにてお問い合わせください。お電話でのやり取りですとスムーズに日程を決定することができます。</p>
+                        <h4 class="flow__item-title">お問い合わせ・見学</h4>
+                        <p class="flow__item-text">ホームページやパンフレット、元気さーちなどをご覧いただきお電話、またはメールにてお問い合わせください。お電話でのやり取りですとスムーズに日程を決定することができます。</p>
                     </div>
                 </li>
                 <li class="flow__item">
@@ -294,8 +294,8 @@
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/flow02.webp'); ?>" alt="STEP 02"  class="flow__step-image">
                     </div>
                     <div class="flow__content">
-                        <h4 class="flow-item__title">ハローワークにて紹介状の発行</h4>
-                        <p class="flow-item__text">お住まいの近くにあるハローワークにて当事業所の求人に応募し紹介状を発行していただきますようお願いします。ハローワークからのお電話上にて面接日時を決定いたします。</p>
+                        <h4 class="flow__item-title">ハローワークにて紹介状の発行</h4>
+                        <p class="flow__item-text">お住まいの近くにあるハローワークにて当事業所の求人に応募し紹介状を発行していただきますようお願いします。ハローワークからのお電話上にて面接日時を決定いたします。</p>
                     </div>
                 </li>
                 <li class="flow__item">
@@ -304,8 +304,8 @@
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/flow03.webp'); ?>" alt="STEP 03"  class="flow__step-image">
                     </div>
                     <div class="flow__content">
-                        <h4 class="flow-item__title">面接</h4>
-                        <p class="flow-item__text">ハローワークからの紹介状を必ずお持ちください。面接では見学時の感想をお聞きしながら仕事内容や勤務に関するご本人の希望をお伺いします。</p>
+                        <h4 class="flow__item-title">面接</h4>
+                        <p class="flow__item-text">ハローワークからの紹介状を必ずお持ちください。面接では見学時の感想をお聞きしながら仕事内容や勤務に関するご本人の希望をお伺いします。</p>
                     </div>
                 </li>
                 <li class="flow__item">
@@ -314,8 +314,8 @@
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/flow04.webp'); ?>" alt="STEP 04"  class="flow__step-image">
                     </div>
                     <div class="flow__content">
-                        <h4 class="flow-item__title">雇用確定・受給者証交付申請</h4>
-                        <p class="flow-item__text">面接後、採用／不採用に関わらず、1週間以内にお電話にて結果をご連絡いたします。採用となった場合はお住まいの区役所の福祉窓口にて福祉サービス受給者証の交付申請をお願いします。</p>
+                        <h4 class="flow__item-title">雇用確定・受給者証交付申請</h4>
+                        <p class="flow__item-text">面接後、採用／不採用に関わらず、1週間以内にお電話にて結果をご連絡いたします。採用となった場合はお住まいの区役所の福祉窓口にて福祉サービス受給者証の交付申請をお願いします。</p>
                     </div>
                 </li>
                 <li class="flow__item">
@@ -324,8 +324,8 @@
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/flow05.webp'); ?>" alt="STEP 05"  class="flow__step-image">
                     </div>
                     <div class="flow__content">
-                        <h4 class="flow-item__title">利用開始・雇用契約締結</h4>
-                        <p class="flow-item__text">雇用契約を結び、業務開始となります。勤務にあたりご不明点等があれば、いつでもスタッフへお尋ねください。</p>
+                        <h4 class="flow__item-title">利用開始・雇用契約締結</h4>
+                        <p class="flow__item-text">雇用契約を結び、業務開始となります。勤務にあたりご不明点等があれば、いつでもスタッフへお尋ねください。</p>
                     </div>
                 </li>
             </ol>
