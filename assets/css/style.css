@@ -7,6 +7,7 @@
     --color-sec-pink: rgba(226 187 190 / 100%);
     --color-sec-yellow: rgba(247 255 180 / 100%);
     --color-bg: rgba(255 255 255 / 100%);
+    --color-bg2: rgba(246 244 200 / 100%);
     --color-header-text: rgba(34 61 100 / 100%);
     --color-text-bg: rgba(242 249 253 / 100%);
     --color-text-body: rgba(51 51 51 / 100%);
@@ -350,7 +351,7 @@ main {
     content: "";
     display: block;
     width: 100%;
-    height: 9rem;
+    aspect-ratio: 375 / 147;
     background: url("../img/job-description_bg_footer_sp.svg") top center / 100% auto no-repeat, linear-gradient(var(--color-main) 4rem,var(--color-bg) 7rem);
 }
 .job-description .eyeblow,
@@ -385,7 +386,30 @@ main {
 /* users-voice */
 .users-voice {
     overflow: hidden;
+    background-color: var(--color-text-bg);
 }
+
+/* 白背景 + 波SVG */
+.users-voice::before {
+    content: "";
+    display: block;
+    width: 100%;
+    aspect-ratio: 375 / 212;
+    background-color: #fff;
+    background-image:
+    url("../img/users-voice__header.svg"),
+    linear-gradient(
+        to bottom,
+        #fff 0%,
+        #fff 58%,
+        var(--color-text-bg) 58%,
+        var(--color-text-bg) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+}
+
 .users-voice .eyeblow,
 .users-voice .users-voice__title {
     text-align: center;
@@ -530,7 +554,28 @@ main {
 /* staffs voice */
 .staffs-voice {
     overflow: hidden;
+    background-color: var(--color-bg2);
 }
+.staffs-voice::before {
+    content: "";
+    display: block;
+    width: 100%;
+    aspect-ratio: 375 / 133;
+    background-color: #fff;
+    background-image:
+    url("../img/staffs-voice__header.svg"),
+    linear-gradient(
+        to bottom,
+        var(--color-text-bg) 0%,
+        var(--color-text-bg) 58%,
+        var(--color-bg2) 58%,
+        var(--color-bg2) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
 .staffs-voice .eyeblow,
 .staffs-voice .staffs-voice__title {
     text-align: center;
@@ -672,7 +717,9 @@ main {
 .staffs-voice__dot.is-active {
     background-color: var(--color-sub);
 }
-
+.flow {
+    
+}
 @media (min-width: 1024px) {
     .about .container{
         display: flex;

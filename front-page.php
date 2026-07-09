@@ -98,7 +98,7 @@
                         <h3 class="users-voice-card__title">利用者Tさんの声1</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
-                            <h5 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
+                            <h4 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
                             <p class="users-voice-card__label">印象に残っているエピソードや工夫</p>
                             <p class="users-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
                             <p class="users-voice-card__label">魅力・今後の目標</p>
@@ -114,7 +114,7 @@
                         <h3 class="users-voice-card__title">利用者Tさんの声2</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
-                            <h5 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
+                            <h4 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
                             <p class="users-voice-card__label">印象に残っているエピソードや工夫</p>
                             <p class="users-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
                             <p class="users-voice-card__label">魅力・今後の目標</p>
@@ -130,7 +130,7 @@
                         <h3 class="users-voice-card__title">利用者Tさんの声3</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
-                            <h5 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
+                            <h4 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
                             <p class="users-voice-card__label">印象に残っているエピソードや工夫</p>
                             <p class="users-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
                             <p class="users-voice-card__label">魅力・今後の目標</p>
@@ -146,7 +146,7 @@
                         <h3 class="users-voice-card__title">利用者Tさんの声4</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
-                            <h5 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
+                            <h4 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
                             <p class="users-voice-card__label">印象に残っているエピソードや工夫</p>
                             <p class="users-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
                             <p class="users-voice-card__label">魅力・今後の目標</p>
@@ -162,7 +162,7 @@
                         <h3 class="users-voice-card__title">利用者Tさんの声5</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
-                            <h5 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
+                            <h4 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
                             <p class="users-voice-card__label">印象に残っているエピソードや工夫</p>
                             <p class="users-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
                             <p class="users-voice-card__label">魅力・今後の目標</p>
@@ -191,7 +191,7 @@
                         <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
                         <section class="staffs-voice-card__section">
-                            <h5 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
+                            <h4 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
                             <p class="staffs-voice-card__label">印象に残っているエピソードや工夫</p>
                             <p class="staffs-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
                             <p class="staffs-voice-card__label">魅力・今後の目標</p>
@@ -207,7 +207,7 @@
                         <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
                         <section class="staffs-voice-card__section">
-                            <h5 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
+                            <h4 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
                             <p class="staffs-voice-card__label">印象に残っているエピソードや工夫</p>
                             <p class="staffs-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
                             <p class="staffs-voice-card__label">魅力・今後の目標</p>
@@ -223,7 +223,7 @@
                         <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
                         <section class="staffs-voice-card__section">
-                            <h5 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
+                            <h4 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
                             <p class="staffs-voice-card__label">印象に残っているエピソードや工夫</p>
                             <p class="staffs-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
                             <p class="staffs-voice-card__label">魅力・今後の目標</p>
@@ -239,7 +239,7 @@
                         <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
                         <section class="staffs-voice-card__section">
-                            <h5 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
+                            <h4 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
                             <p class="staffs-voice-card__label">印象に残っているエピソードや工夫</p>
                             <p class="staffs-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
                             <p class="staffs-voice-card__label">魅力・今後の目標</p>
@@ -255,7 +255,7 @@
                         <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
                         <section class="staffs-voice-card__section">
-                            <h5 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
+                            <h4 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
                             <p class="staffs-voice-card__label">印象に残っているエピソードや工夫</p>
                             <p class="staffs-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
                             <p class="staffs-voice-card__label">魅力・今後の目標</p>
@@ -271,7 +271,7 @@
                         <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
                         <section class="staffs-voice-card__section">
-                            <h5 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h5>
+                            <h4 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
                             <p class="staffs-voice-card__label">印象に残っているエピソードや工夫</p>
                             <p class="staffs-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
                             <p class="staffs-voice-card__label">魅力・今後の目標</p>
