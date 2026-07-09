@@ -287,60 +287,60 @@
             <button type="button" class="staffs-voice__button staffs-voice__button--next" aria-label="次の声へ"></button>
         </div>
     </section>
-    <section class="flow">
+    <section class="step">
         <div class="container">
             <p class="eyeblow">FLOW</p>
-            <h2 class="flow__title">ご利用の流れ</h2>
-            <h3 class="flow__subtitle">サービスご利用の流れを紹介いたします。</h3>
-            <ol class="flow__list">
-                <li class="flow__item">
-                    <div class="flow__aside">
-                        <p class="flow__step-number">STEP 01</p>
-                        <img src="" alt="STEP 01"  class="flow__step-image">
+            <h2 class="step__title">ご利用の流れ</h2>
+            <h3 class="step__subtitle">サービスご利用の流れを紹介いたします。</h3>
+            <ol class="step__list">
+                <li class="step__item">
+                    <div class="step__aside">
+                        <p class="step__number">STEP 01</p>
+                        <img src="" alt="STEP 01"  class="step__step-image">
                     </div>
-                    <div class="flow__content">
-                        <h4 class="flow-item__title">お問い合わせ・見学</h4>
-                        <p class="flow-item__text">ホームページやパンフレット、元気さーちなどをご覧いただきお電話、またはメールにてお問い合わせください。お電話でのやり取りですとスムーズに日程を決定することができます。</p>
-                    </div>
-                </li>
-                <li class="flow__item">
-                    <div class="flow__aside">
-                        <p class="flow__step-number">STEP 02</p>
-                        <img src="" alt="STEP 02"  class="flow__step-image">
-                    </div>
-                    <div class="flow__content">
-                        <h4 class="flow-item__title">ハローワークにて紹介状の発行</h4>
-                        <p class="flow-item__text">お住まいの近くにあるハローワークにて当事業所の求人に応募し紹介状を発行していただきますようお願いします。ハローワークからのお電話上にて面接日時を決定いたします。</p>
+                    <div class="step__content">
+                        <h4 class="step-item__title">お問い合わせ・見学</h4>
+                        <p class="step-item__text">ホームページやパンフレット、元気さーちなどをご覧いただきお電話、またはメールにてお問い合わせください。お電話でのやり取りですとスムーズに日程を決定することができます。</p>
                     </div>
                 </li>
-                <li class="flow__item">
-                    <div class="flow__aside">
-                        <p class="flow__step-number">STEP 03</p>
-                        <img src="" alt="STEP 03"  class="flow__step-image">
+                <li class="step__item">
+                    <div class="step__aside">
+                        <p class="step__number">STEP 02</p>
+                        <img src="" alt="STEP 02"  class="step__step-image">
                     </div>
-                    <div class="flow__content">
-                        <h4 class="flow-item__title">面接</h4>
-                        <p class="flow-item__text">ハローワークからの紹介状を必ずお持ちください。面接では見学時の感想をお聞きしながら仕事内容や勤務に関するご本人の希望をお伺いします。</p>
-                    </div>
-                </li>
-                <li class="flow__item">
-                    <div class="flow__aside">
-                        <p class="flow__step-number">STEP 04</p>
-                        <img src="" alt="STEP 04"  class="flow__step-image">
-                    </div>
-                    <div class="flow__content">
-                        <h4 class="flow-item__title">雇用確定・受給者証交付申請</h4>
-                        <p class="flow-item__text">面接後、採用／不採用に関わらず、1週間以内にお電話にて結果をご連絡いたします。採用となった場合はお住まいの区役所の福祉窓口にて福祉サービス受給者証の交付申請をお願いします。</p>
+                    <div class="step__content">
+                        <h4 class="step-item__title">ハローワークにて紹介状の発行</h4>
+                        <p class="step-item__text">お住まいの近くにあるハローワークにて当事業所の求人に応募し紹介状を発行していただきますようお願いします。ハローワークからのお電話上にて面接日時を決定いたします。</p>
                     </div>
                 </li>
-                <li class="flow__item">
-                    <div class="flow__aside">
-                        <p class="flow__step-number">STEP 05</p>
-                        <img src="" alt="STEP 05"  class="flow__step-image">
+                <li class="step__item">
+                    <div class="step__aside">
+                        <p class="step__number">STEP 03</p>
+                        <img src="" alt="STEP 03"  class="step__step-image">
                     </div>
-                    <div class="flow__content">
-                        <h4 class="flow-item__title">利用開始・雇用契約締結</h4>
-                        <p class="flow-item__text">雇用契約を結び、業務開始となります。勤務にあたりご不明点等があれば、いつでもスタッフへお尋ねください。</p>
+                    <div class="step__content">
+                        <h4 class="step-item__title">面接</h4>
+                        <p class="step-item__text">ハローワークからの紹介状を必ずお持ちください。面接では見学時の感想をお聞きしながら仕事内容や勤務に関するご本人の希望をお伺いします。</p>
+                    </div>
+                </li>
+                <li class="step__item">
+                    <div class="step__aside">
+                        <p class="step__number">STEP 04</p>
+                        <img src="" alt="STEP 04"  class="step__step-image">
+                    </div>
+                    <div class="step__content">
+                        <h4 class="step-item__title">雇用確定・受給者証交付申請</h4>
+                        <p class="step-item__text">面接後、採用／不採用に関わらず、1週間以内にお電話にて結果をご連絡いたします。採用となった場合はお住まいの区役所の福祉窓口にて福祉サービス受給者証の交付申請をお願いします。</p>
+                    </div>
+                </li>
+                <li class="step__item">
+                    <div class="step__aside">
+                        <p class="step__number">STEP 05</p>
+                        <img src="" alt="STEP 05"  class="step__step-image">
+                    </div>
+                    <div class="step__content">
+                        <h4 class="step-item__title">利用開始・雇用契約締結</h4>
+                        <p class="step-item__text">雇用契約を結び、業務開始となります。勤務にあたりご不明点等があれば、いつでもスタッフへお尋ねください。</p>
                     </div>
                 </li>
             </ol>

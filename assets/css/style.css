@@ -397,7 +397,7 @@ main {
     aspect-ratio: 375 / 212;
     background-color: #fff;
     background-image:
-    url("../img/users-voice__header.svg"),
+    url("../img/users-voice__header_sp.svg"),
     linear-gradient(
         to bottom,
         #fff 0%,
@@ -563,7 +563,7 @@ main {
     aspect-ratio: 375 / 133;
     background-color: #fff;
     background-image:
-    url("../img/staffs-voice__header.svg"),
+    url("../img/staffs-voice__header_sp.svg"),
     linear-gradient(
         to bottom,
         var(--color-text-bg) 0%,
@@ -718,7 +718,7 @@ main {
     background-color: var(--color-sub);
 }
 .flow {
-    
+
 }
 @media (min-width: 1024px) {
     .about .container{
