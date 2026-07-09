@@ -745,6 +745,7 @@ main {
 .flow .flow__item {
     display: flex;
     gap: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 .flow .flow__step-number {
     background-color: var(--color-main);
@@ -767,6 +768,7 @@ main {
 }
 .flow .flow__step-image {
     width: 60px;
+    background-color: var(--color-bg);
 }
 .flow .flow__item-title {
     font-weight: var(--font-weight-medium);
@@ -778,7 +780,36 @@ main {
     background-color: var(--color-main);
     padding: 1rem;
     border-radius: 1rem;
-    margin-bottom: 1.5rem;
+}
+.flow .flow__item .flow__aside {
+    position: relative;
+    width: 3.75rem;
+    flex: 0 0 3.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flow .flow__item .flow__aside::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: var(--color-sub);
+    transform: translateX(-50%);
+}
+.flow .flow__item:nth-child(1) .flow__aside::after {
+    top: calc(0.5rem + 4.5rem + 0.75rem + 60px);
+}
+.flow .flow__item:nth-child(2) .flow__aside::after {
+    top: calc(0.5rem + 2rem + 0.75rem + 60px);
+}
+.flow .flow__item:nth-child(3) .flow__aside::after {
+    top: calc(0.5rem + 3.125rem + 0.75rem + 60px);
+}
+.flow .flow__item:nth-child(4) .flow__aside::after {
+    top: calc(0.5rem + 3.375rem + 0.75rem + 60px);
 }
 @media (min-width: 1024px) {
     .about .container{
