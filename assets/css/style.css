@@ -836,7 +836,33 @@ main {
     display: inline-block;
     transform: scaleX(-1);
 }
-.inquiry 
+.inquiry .inquiry__button {
+    display: block;
+    width: fit-content;
+    margin: 1rem auto 0;
+    padding: 0.5rem 1rem;
+    font-size: var(--size-text-small);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-sub);
+    background-color: var(--color-sec-yellow);
+    border: 1px solid var(--color-sub);
+    border-radius: var(--radius-pill);
+    transition: background-color 0.3s ease;
+}
+.inquiry .inquiry__button:after {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.5em;
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(45deg) translateY(-2px);
+}
+.inquiry .inquiry__button:hover {
+    background-color: var(--color-main);
+    text-decoration: none;
+}
 @media (min-width: 1024px) {
     .about .container{
         display: flex;
