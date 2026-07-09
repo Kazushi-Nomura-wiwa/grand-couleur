@@ -811,6 +811,32 @@ main {
 .flow .flow__item:nth-child(4) .flow__aside::after {
     top: calc(0.5rem + 3.375rem + 0.75rem + 60px);
 }
+/* inquiry */
+.inquiry .inquiry__title {
+    text-align: center;
+    color: var(--color-sub);
+}
+.inquiry .inquiry__title .inquiry__title-emphasis {
+    font-size: var(--size-text-body);
+    font-weight: var(--font-weight-regular);
+    background-color: var(--color-sec-yellow);
+}
+.inquiry .inquiry__title::before {
+    content: "";
+    background-image: url('../img/inquiry__title-emphasis_.svg');
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+}
+.inquiry .inquiry__title::after {
+    content: "";
+    background-image: url('../img/inquiry__title-emphasis_.svg');
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    transform: scaleX(-1);
+}
+.inquiry 
 @media (min-width: 1024px) {
     .about .container{
         display: flex;

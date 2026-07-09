@@ -332,7 +332,7 @@
         </div>
     </section>
     <section class="inquiry">
-        <h2>まずはお気軽にご相談ください</h2>
+        <h2 class="inquiry__title"><strong class="inquiry__title-emphasis">まずはお気軽にご相談ください</strong></h2>
         <a href="#" class="inquiry__button">お問い合わせはこちら</a>
     </section>
     <section class="faq">
