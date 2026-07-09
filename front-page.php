@@ -92,9 +92,6 @@
             <ul class="users-voice__list">
                 <li class="users-voice__item">
                     <article class="users-voice-card">
-                        <figure class="users-voice-card__figure">
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_01.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
-                        </figure>
                         <h3 class="users-voice-card__title">利用者Tさんの声1</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
@@ -108,9 +105,6 @@
                 </li>
                 <li class="users-voice__item">
                     <article class="users-voice-card">
-                        <figure class="users-voice-card__figure">
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_02.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
-                        </figure>
                         <h3 class="users-voice-card__title">利用者Tさんの声2</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
@@ -124,9 +118,6 @@
                 </li>
                 <li class="users-voice__item">
                     <article class="users-voice-card">
-                        <figure class="users-voice-card__figure">
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_03.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
-                        </figure>
                         <h3 class="users-voice-card__title">利用者Tさんの声3</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
@@ -140,9 +131,6 @@
                 </li>
                 <li class="users-voice__item">
                     <article class="users-voice-card">
-                        <figure class="users-voice-card__figure">
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_04.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
-                        </figure>
                         <h3 class="users-voice-card__title">利用者Tさんの声4</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
@@ -156,9 +144,6 @@
                 </li>
                 <li class="users-voice__item">
                     <article class="users-voice-card">
-                        <figure class="users-voice-card__figure">
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/users-voice_05.webp'); ?>" class="users-voice-card__image" alt="利用者Tさん">
-                        </figure>
                         <h3 class="users-voice-card__title">利用者Tさんの声5</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
@@ -186,7 +171,7 @@
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="" class="staffs-voice-card__image" alt="職員Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_01.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
                         <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
@@ -202,7 +187,7 @@
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="" class="staffs-voice-card__image" alt="職員Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_01.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
                         <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
@@ -218,7 +203,7 @@
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="" class="staffs-voice-card__image" alt="職員Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_01.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
                         <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
@@ -234,7 +219,7 @@
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="" class="staffs-voice-card__image" alt="職員Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_01.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
                         <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
@@ -250,7 +235,7 @@
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="" class="staffs-voice-card__image" alt="職員Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_01.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
                         <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
@@ -266,7 +251,7 @@
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="" class="staffs-voice-card__image" alt="職員Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_01.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
                         <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
@@ -287,60 +272,60 @@
             <button type="button" class="staffs-voice__button staffs-voice__button--next" aria-label="次の声へ"></button>
         </div>
     </section>
-    <section class="step">
+    <section class="flow">
         <div class="container">
             <p class="eyeblow">FLOW</p>
-            <h2 class="step__title">ご利用の流れ</h2>
-            <h3 class="step__subtitle">サービスご利用の流れを紹介いたします。</h3>
-            <ol class="step__list">
-                <li class="step__item">
-                    <div class="step__aside">
-                        <p class="step__number">STEP 01</p>
-                        <img src="" alt="STEP 01"  class="step__step-image">
+            <h2 class="flow__title">ご利用の流れ</h2>
+            <h3 class="flow__subtitle">サービスご利用の流れを紹介いたします。</h3>
+            <ol class="flow__list">
+                <li class="flow__item">
+                    <div class="flow__aside">
+                        <p class="flow__step-number"><small class="flow__step-number-small">STEP</small>01</p>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/flow01.webp'); ?>" alt="STEP 01"  class="flow__step-image">
                     </div>
-                    <div class="step__content">
-                        <h4 class="step-item__title">お問い合わせ・見学</h4>
-                        <p class="step-item__text">ホームページやパンフレット、元気さーちなどをご覧いただきお電話、またはメールにてお問い合わせください。お電話でのやり取りですとスムーズに日程を決定することができます。</p>
-                    </div>
-                </li>
-                <li class="step__item">
-                    <div class="step__aside">
-                        <p class="step__number">STEP 02</p>
-                        <img src="" alt="STEP 02"  class="step__step-image">
-                    </div>
-                    <div class="step__content">
-                        <h4 class="step-item__title">ハローワークにて紹介状の発行</h4>
-                        <p class="step-item__text">お住まいの近くにあるハローワークにて当事業所の求人に応募し紹介状を発行していただきますようお願いします。ハローワークからのお電話上にて面接日時を決定いたします。</p>
+                    <div class="flow__content">
+                        <h4 class="flow-item__title">お問い合わせ・見学</h4>
+                        <p class="flow-item__text">ホームページやパンフレット、元気さーちなどをご覧いただきお電話、またはメールにてお問い合わせください。お電話でのやり取りですとスムーズに日程を決定することができます。</p>
                     </div>
                 </li>
-                <li class="step__item">
-                    <div class="step__aside">
-                        <p class="step__number">STEP 03</p>
-                        <img src="" alt="STEP 03"  class="step__step-image">
+                <li class="flow__item">
+                    <div class="flow__aside">
+                        <p class="flow__step-number"><small class="flow__step-number-small">STEP</small>02</p>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/flow02.webp'); ?>" alt="STEP 02"  class="flow__step-image">
                     </div>
-                    <div class="step__content">
-                        <h4 class="step-item__title">面接</h4>
-                        <p class="step-item__text">ハローワークからの紹介状を必ずお持ちください。面接では見学時の感想をお聞きしながら仕事内容や勤務に関するご本人の希望をお伺いします。</p>
-                    </div>
-                </li>
-                <li class="step__item">
-                    <div class="step__aside">
-                        <p class="step__number">STEP 04</p>
-                        <img src="" alt="STEP 04"  class="step__step-image">
-                    </div>
-                    <div class="step__content">
-                        <h4 class="step-item__title">雇用確定・受給者証交付申請</h4>
-                        <p class="step-item__text">面接後、採用／不採用に関わらず、1週間以内にお電話にて結果をご連絡いたします。採用となった場合はお住まいの区役所の福祉窓口にて福祉サービス受給者証の交付申請をお願いします。</p>
+                    <div class="flow__content">
+                        <h4 class="flow-item__title">ハローワークにて紹介状の発行</h4>
+                        <p class="flow-item__text">お住まいの近くにあるハローワークにて当事業所の求人に応募し紹介状を発行していただきますようお願いします。ハローワークからのお電話上にて面接日時を決定いたします。</p>
                     </div>
                 </li>
-                <li class="step__item">
-                    <div class="step__aside">
-                        <p class="step__number">STEP 05</p>
-                        <img src="" alt="STEP 05"  class="step__step-image">
+                <li class="flow__item">
+                    <div class="flow__aside">
+                        <p class="flow__step-number"><small class="flow__step-number-small">STEP</small>03</p>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/flow03.webp'); ?>" alt="STEP 03"  class="flow__step-image">
                     </div>
-                    <div class="step__content">
-                        <h4 class="step-item__title">利用開始・雇用契約締結</h4>
-                        <p class="step-item__text">雇用契約を結び、業務開始となります。勤務にあたりご不明点等があれば、いつでもスタッフへお尋ねください。</p>
+                    <div class="flow__content">
+                        <h4 class="flow-item__title">面接</h4>
+                        <p class="flow-item__text">ハローワークからの紹介状を必ずお持ちください。面接では見学時の感想をお聞きしながら仕事内容や勤務に関するご本人の希望をお伺いします。</p>
+                    </div>
+                </li>
+                <li class="flow__item">
+                    <div class="flow__aside">
+                        <p class="flow__step-number"><small class="flow__step-number-small">STEP</small>04</p>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/flow04.webp'); ?>" alt="STEP 04"  class="flow__step-image">
+                    </div>
+                    <div class="flow__content">
+                        <h4 class="flow-item__title">雇用確定・受給者証交付申請</h4>
+                        <p class="flow-item__text">面接後、採用／不採用に関わらず、1週間以内にお電話にて結果をご連絡いたします。採用となった場合はお住まいの区役所の福祉窓口にて福祉サービス受給者証の交付申請をお願いします。</p>
+                    </div>
+                </li>
+                <li class="flow__item">
+                    <div class="flow__aside">
+                        <p class="flow__step-number"><small class="flow__step-number-small">STEP</small>05</p>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/flow05.webp'); ?>" alt="STEP 05"  class="flow__step-image">
+                    </div>
+                    <div class="flow__content">
+                        <h4 class="flow-item__title">利用開始・雇用契約締結</h4>
+                        <p class="flow-item__text">雇用契約を結び、業務開始となります。勤務にあたりご不明点等があれば、いつでもスタッフへお尋ねください。</p>
                     </div>
                 </li>
             </ol>
