@@ -179,7 +179,6 @@ main {
 .site-footer {
     background-color: var(--color-main);
     padding: 2rem;
-    text-align: center;
     margin-top: 3rem;
 }
 .site-footer__copyright {
@@ -187,7 +186,26 @@ main {
     color: var(--color-text-small);
     margin: 0;
 }
+.site-footer__title {
+    font-size: 0;
+    aspect-ratio: 833/134;
+    height: 3rem;
+    background-image: url('../img/logo.svg');
+    background-size: contain;
+    margin-bottom: 1rem;
+}
+ {
+    font-size: 0;
+    aspect-ratio: 833/134;
+    height: 3rem;
+    background-image: url('../img/logo.svg');
+    background-size: contain;
+    margin-bottom: 1rem;
+}
 
+.site-footer__address {
+    font-style: normal;
+}
 /* hero */
 .hero {
     width: 100%;
@@ -966,6 +984,50 @@ main {
     font-weight: var(--font-weight-medium);
     color: var(--color-header-text);
 }
+.access .access__subtitle {
+    font-size: var(--size-text-small);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-sub);
+    margin-bottom: 1.25rem;
+}
+.access .location,
+.access .company {
+    width: 100%;
+    background-color: var(--color-bg);
+    padding: 0.75rem;
+    box-shadow: var(--shadow-base);
+}
+.access .location {
+    margin-bottom: 1.25rem;
+}
+.access .location .location__heading,
+.access .company .company__heading {
+    color: var(--color-sub);
+    font-size: var(--size-text-body);
+    font-weight: var(--font-weight-medium);
+}
+.access .location .location__term, 
+.access .company .company__term {
+    color: var(--color-sub);
+    font-size: var(--size-text-extra-small);
+    font-weight: var(--font-weight-medium);
+}
+.access .location .location__description,
+.access .company .company__description {
+    color: var(--color-header-text);
+    font-size: var(--size-text-extra-small);
+}
+.access .location .location__map {
+    display: block;
+    margin: 0.5rem auto;
+}
+.access .company .company__list {
+    display: grid;
+    grid-template-columns: 5rem minmax(0, 1fr);
+    row-gap: 0.75rem;
+    margin: 0;
+}
+
 @media (min-width: 1024px) {
     .about .container{
         display: flex;

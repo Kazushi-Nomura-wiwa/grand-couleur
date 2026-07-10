@@ -505,11 +505,13 @@
             <h3 class="access__subtitle">グランクルールへのご案内</h3>
             <div class="location">
                 <h4 class="location__heading">位置情報</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.2719526830892!2d141.363957!3d43.07777759999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b29144a38b6cb%3A0x21b389a93dcc4621!2z44K744Os44K544K_5pyt5bmM!5e0!3m2!1sja!2sjp!4v1782868014563!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                <h4 class="location__heading">最寄り駅</h4>
-                <p class="location__text">札幌市営地下鉄東豊線 東区役所前駅4番出口から徒歩1分</p>
-                <h4 class="location__heading">対応可能時間</h4>
-                <p class="location__text">月〜金 10:00～17:00</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.2719526830892!2d141.363957!3d43.07777759999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b29144a38b6cb%3A0x21b389a93dcc4621!2z44K744Os44K544K_5pyt5bmM!5e0!3m2!1sja!2sjp!4v1782868014563!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="location__map"></iframe>
+                <dl class="location__list">
+                    <dt class="location__term">最寄り駅</dt>
+                    <dd class="location__description">札幌市営地下鉄東豊線 東区役所前駅4番出口から徒歩1分</dd>
+                    <dt class="location__term">対応可能時間</dt>
+                    <dd class="location__description">月〜金 10:00～17:00</dd>
+                </dl>
             </div>
             <div class="company">
                 <h4 class="company__heading">会社概要</h4>
