@@ -812,6 +812,9 @@ main {
     top: calc(0.5rem + 3.375rem + 0.75rem + 60px);
 }
 /* inquiry */
+.inquiry {
+    margin-bottom: 14rem;
+}
 .inquiry .inquiry__title {
     text-align: center;
     color: var(--color-sub);
@@ -863,6 +866,13 @@ main {
     background-color: var(--color-main);
     text-decoration: none;
 }
+/* faq */
+.faq .eyeblow,
+.faq .faq__title,
+.faq .faq__subtitle {
+    text-align: center;
+}
+
 @media (min-width: 1024px) {
     .about .container{
         display: flex;
