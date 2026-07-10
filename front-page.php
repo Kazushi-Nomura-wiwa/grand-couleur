@@ -501,8 +501,8 @@
     <section class="access">
         <div class="container">
             <p class="eyeblow">ACCESS</p>
-            <h2 class="flow__title">アクセス</h2>
-            <h3 class="flow__subtitle">グランクルールへのご案内</h3>
+            <h2 class="access__title">アクセス</h2>
+            <h3 class="access__subtitle">グランクルールへのご案内</h3>
             <div class="location">
                 <h4 class="location__heading">位置情報</h4>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.2719526830892!2d141.363957!3d43.07777759999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b29144a38b6cb%3A0x21b389a93dcc4621!2z44K744Os44K544K_5pyt5bmM!5e0!3m2!1sja!2sjp!4v1782868014563!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -513,15 +513,20 @@
             </div>
             <div class="company">
                 <h4 class="company__heading">会社概要</h4>
-                <dl>
-                    <dt>事業所名</dt>
-                    <dd>グランクルール</dd>
-                    <dt>事業所番号</dt>
-                    <dd>0110302684</dd>
-                    <dt>所在地</dt>
-                    <dd>〒065-0012 札幌市東区北12条東7丁目1-15 セレスタ札幌1F</dd>
-                    <dt>代表者</dt>
-                    <dd>酒井麻衣</dd>
+                <dl class="company__list">
+                    <dt class="company__term">事業所名</dt>
+                    <dd class="company__description">グランクルール</dd>
+
+                    <dt class="company__term">事業所番号</dt>
+                    <dd class="company__description">0110302684</dd>
+
+                    <dt class="company__term">所在地</dt>
+                    <dd class="company__description">
+                        〒065-0012 札幌市東区北12条東7丁目1-15 セレスタ札幌1F
+                    </dd>
+
+                    <dt class="company__term">代表者</dt>
+                    <dd class="company__description">酒井麻衣</dd>
                 </dl>
             </div>
         </div>

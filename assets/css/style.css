@@ -952,6 +952,20 @@ main {
     opacity: 0;
     transform: translate(-50%, -50%) rotate(90deg) scaleY(0);
 }
+/* access */
+.access {
+    background: linear-gradient(
+        to bottom,
+        var(--color-bg) 0%,
+        var(--color-main) 50%,
+        var(--color-bg) 100%
+    );
+}
+.access .access__title {
+    font-size: var(--size-heading_h4);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-header-text);
+}
 @media (min-width: 1024px) {
     .about .container{
         display: flex;
