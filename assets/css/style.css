@@ -909,11 +909,9 @@ main {
     left: 50%;
     width: 18px;
     height: 2px;
-    background: #2f7fd6;
+    background: var(--color-sub);
     transform: translate(-50%, -50%);
-    transition:
-        opacity 0.25s ease,
-        transform 0.25s ease;
+    transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 .faq__icon::after {
