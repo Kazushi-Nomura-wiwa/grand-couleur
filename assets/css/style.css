@@ -194,17 +194,11 @@ main {
     background-size: contain;
     margin-bottom: 1rem;
 }
- {
-    font-size: 0;
-    aspect-ratio: 833/134;
-    height: 3rem;
-    background-image: url('../img/logo.svg');
-    background-size: contain;
-    margin-bottom: 1rem;
-}
-
 .site-footer__address {
     font-style: normal;
+    font-size: var(--size-text-body);
+    color: var(--color-header-text);
+    margin-bottom: 0.75rem;
 }
 /* hero */
 .hero {
