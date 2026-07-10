@@ -901,9 +901,8 @@ main {
     width: 18px;
     height: 18px;
 }
-
-.faq .faq__icon::before,
-.faq .faq__icon::after {
+.faq__icon::before,
+.faq__icon::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -912,12 +911,22 @@ main {
     height: 2px;
     background: #2f7fd6;
     transform: translate(-50%, -50%);
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
 }
-.faq .faq__icon::after {
+
+.faq__icon::after {
     transform: translate(-50%, -50%) rotate(90deg);
 }
-.faq .faq__item.is-open .faq__icon::after {
+
+.faq__item.is-open .faq__icon::before {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.faq__item.is-open .faq__icon::after {
     opacity: 0;
+    transform: translate(-50%, -50%) rotate(90deg) scaleY(0);
 }
 @media (min-width: 1024px) {
     .about .container{

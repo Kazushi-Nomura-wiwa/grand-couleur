@@ -83,7 +83,7 @@ function grand_couleur_enqueue() {
     );
 
     wp_enqueue_script(
-        'menu',
+        'faq',
         get_template_directory_uri() . '/assets/js/faq.js',
         [],
         filemtime(get_template_directory() . '/assets/js/faq.js'),
