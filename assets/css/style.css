@@ -200,6 +200,22 @@ main {
     color: var(--color-header-text);
     margin-bottom: 0.75rem;
 }
+.site-footer__contact {
+    font-size: var(--size-text-small);
+}
+.site-footer__social-link-instagram {
+    display: block;
+    font-size: 0;
+    aspect-ratio: 1 / 1;
+    background-image: url('../img/instagram_logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+}
+.site-footer__subtitle {
+    
+}
 /* hero */
 .hero {
     width: 100%;
@@ -494,6 +510,7 @@ main {
     font-weight: var(--font-weight-bold);
     color: var(--color-sub);
     border-bottom: 2px solid var(--color-main);
+    line-height: 1.2;
 }
 
 .users-voice-card__label {
@@ -651,6 +668,7 @@ main {
     font-size: var(--size-text-body);
     font-weight: var(--font-weight-bold);
     color: var(--color-sub);
+    line-height: 1.2;
     border-bottom: 2px solid var(--color-main);
 }
 .staffs-voice-card__label {
