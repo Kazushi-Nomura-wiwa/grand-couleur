@@ -74,6 +74,11 @@ main {
     width: 90%;
     margin-inline: auto;
 }
+.eyeblow {
+    font-size: var(--size-text-extra-small);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-sub);
+}
 
 /* header menu */
 .site-header {
@@ -214,8 +219,12 @@ main {
     height: 2rem;
 }
 .site-footer__subtitle {
-    
+    font-family: "Noto Serif JP", serif;
+    font-size: var(--size-heading_h4);
+    color: var(--color-sub);
+    text-align: center;
 }
+
 /* hero */
 .hero {
     width: 100%;
@@ -292,11 +301,6 @@ main {
     text-decoration: none;
 }
 
-.eyeblow {
-    font-size: var(--size-text-extra-small);
-    font-weight: var(--font-weight-bold);
-    color: var(--color-sub);
-}
 /* worries */
 .worries {
     background-image: url('../img/worry_bg.svg');

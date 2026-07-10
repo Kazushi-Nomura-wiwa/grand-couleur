@@ -13,6 +13,17 @@
             <h3 class="site-footer__subtitle">安心して一歩踏み出せる場へ。</h3>
             <a href="#" class="site-footer__inquiry-link">お問い合わせはこちら</a>
         </div>
+        <nav id="footer-nav" class="footer-nav">
+            <?php
+                wp_nav_menu([
+                    'theme_location' => 'global-nav',
+                    'container'     => false,
+                    'menu_class'    => 'footer-nav__list',
+                    'items_wrap'    => '<ul class="%2$s">%3$s</ul>',
+                    'fallback_cb'   => false,
+                ]);
+            ?>
+        </nav>
         <p class="site-footer__copyright">&copy; <?php echo date('Y'); ?> Grand Couleur inc.</p>
     </footer>
 
