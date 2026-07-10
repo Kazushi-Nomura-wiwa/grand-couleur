@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         question.addEventListener('click', function () {
             const isOpen = item.classList.toggle('is-open');
 
-            question.setAttribute('aria-expanded', isOpen);
+            question.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
     });
 });
