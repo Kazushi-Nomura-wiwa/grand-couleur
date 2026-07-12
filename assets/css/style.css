@@ -217,6 +217,7 @@ main {
     background-size: contain;
     width: 2rem;
     height: 2rem;
+    margin-left: auto;
 }
 .site-footer__subtitle {
     font-family: "Noto Serif JP", serif;
