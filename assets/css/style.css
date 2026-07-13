@@ -67,13 +67,6 @@
     --font-weight-black: 900;
 }
 
-/*
- * 余白の方針
- * margin: 要素同士の間隔・外側の余白
- * padding: 要素内部の余白
- * gap: Flexbox・Grid内の要素間隔
- * 横方向の中央寄せには margin-inline: auto を使用
- */
 html {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 100%;
@@ -1161,6 +1154,40 @@ main {
 }
 
 @media (min-width: 1024px) {
+    .container,
+    .site-header-container {
+        width: 84%;
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+    .site-header {
+        background-image: url(../img/header_bg_pc.webp);
+        display: flex;
+        align-items: center;
+    }
+    .site-header-container {
+        width: 84%;
+
+    }
+    .site-header__toggle {
+        display: none;
+    }
+    .site-header h1 {
+        display: block;
+        width: auto;
+        height: 3rem;
+        aspect-ratio: 157 / 134;
+        background-image: url(../img/logo_mark.svg);
+    }
+    .hero {
+        aspect-ratio: 1440 / 995;
+        width: 100%;
+        height: auto;
+        background-image: url('../img/header_bg_pc.webp');
+        background-repeat: no-repeat;
+        background-position: center -90px;
+        background-size: contain;
+    }
     .about .container {
         display: flex;
         align-items: center;
