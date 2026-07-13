@@ -225,6 +225,33 @@ main {
     color: var(--color-sub);
     text-align: center;
 }
+.site-footer__inquiry-link {
+    display: block;
+    width: fit-content;
+    margin: 1rem auto 0;
+    padding: 0.5rem 1rem;
+    font-size: var(--size-text-small);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-sub);
+    background-color: var(--color-sec-yellow);
+    border: 1px solid var(--color-sub);
+    border-radius: var(--radius-pill);
+    transition: background-color 0.3s ease;
+}
+.site-footer__inquiry-link:after {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.5em;
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(45deg) translateY(-2px);
+}
+.site-footer__inquiry-link:hover {
+    background-color: var(--color-main);
+    text-decoration: none;
+}
 
 /* hero */
 .hero {
