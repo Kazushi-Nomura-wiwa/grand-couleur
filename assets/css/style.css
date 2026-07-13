@@ -183,7 +183,7 @@ main {
 /* footer */
 .site-footer {
     background-color: var(--color-main);
-    padding: 2rem;
+    padding: 2rem 0;
     margin-top: 3rem;
 }
 .site-footer__copyright {
@@ -257,6 +257,27 @@ main {
     background: var(--color-sub);
     border: none;
     margin: 4.5rem auto 1.5rem;
+}
+.site-footer-nav__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.site-footer-nav__list li {
+    margin: 0;
+}
+.site-footer-nav__list li:last-child {
+    display: none;
+}
+.site-footer-nav__list a {
+    color: var(--color-sub);
+    font-size: var(--size-text-extra-small);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
 }
 .site-footer__copyright {
     text-align: center;
