@@ -347,6 +347,8 @@
     <section class="inquiry">
         <h2 class="inquiry__title"><strong class="inquiry__title-emphasis">まずはお気軽にご相談ください</strong></h2>
         <a href="#" class="inquiry__button">お問い合わせはこちら</a>
+        <p class="inquiry__note"><span class="inquiry__note-text">お急ぎの場合はお電話にてお問い合わせください</span></p>
+        <a href="tel:0116000998" class="inquiry__phone-link">&#x1F4DE;011-600-0998</a>
     </section>
     <section class="faq">
         <div class="container">
