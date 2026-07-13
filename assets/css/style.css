@@ -183,8 +183,16 @@ main {
 /* footer */
 .site-footer {
     background-color: var(--color-main);
-    padding: 2rem 0;
+    padding: 0 0 2rem;
     margin-top: 3rem;
+}
+.site-footer::before {
+    content: "";
+    background-image: url('../img/footer_wave_sp.svg');
+    background-color: var(--color-bg);
+    aspect-ratio: 375 / 137;
+    width: 100%;
+    display: block;
 }
 .site-footer__copyright {
     font-size: var(--size-text-small);
@@ -236,6 +244,7 @@ main {
     background-color: var(--color-sec-yellow);
     border: 1px solid var(--color-sub);
     border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-base);
     transition: background-color 0.3s ease;
 }
 .site-footer__inquiry-link:after {
@@ -281,6 +290,13 @@ main {
 .site-footer__copyright {
     text-align: center;
     color: var(--color-sub);
+}
+.site-footer__copyright::before {
+    content: "";
+    background-image: url('../img/footer_bubble_sp.svg');
+    aspect-ratio: 63 / 70;
+    height: 70px;
+    display: block;
 }
 /* hero */
 .hero {

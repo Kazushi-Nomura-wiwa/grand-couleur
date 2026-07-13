@@ -41,7 +41,7 @@ add_action('after_setup_theme', 'grand_couleur_setup');
  */
 function grand_couleur_enqueue() {
 
-    // Google Fonts
+    // Google Fonts Noto Sans JP
     wp_enqueue_style(
         'google-fonts',
         'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap',
@@ -49,10 +49,10 @@ function grand_couleur_enqueue() {
         null
     );
 
-    // Google Fonts
+    // Google Fonts Noto Serif JP
     wp_enqueue_style(
         'google-fonts-serif',
-        '<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">',
+        'https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap',
         [],
         null
     );
