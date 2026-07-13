@@ -276,11 +276,11 @@ main {
 .site-footer-nav__list a {
     color: var(--color-sub);
     font-size: var(--size-text-extra-small);
-    font-weight: var(--font-weight-bold);
     text-decoration: none;
 }
 .site-footer__copyright {
     text-align: center;
+    color: var(--color-sub);
 }
 /* hero */
 .hero {
