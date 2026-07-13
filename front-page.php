@@ -92,66 +92,79 @@
             <ul class="users-voice__list">
                 <li class="users-voice__item">
                     <article class="users-voice-card">
-                        <h3 class="users-voice-card__title">利用者Tさんの声1</h3>
-                        <p class="users-voice-card__position">担当業務：事務</p>
+                        <h3 class="users-voice-card__title">利用者Aさんの声</h3>
+                        <p class="users-voice-card__position">担当業務：SNS</p>
                         <section class="users-voice-card__section">
-                            <h4 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
+                            <h4 class="users-voice-card__heading">人の中で過ごしたり、仕事をすることがどういうことなのかを学んでいます。</h4>
                             <p class="users-voice-card__label">印象に残っているエピソードや工夫</p>
-                            <p class="users-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
+                            <p class="users-voice-card__text">体調と気分が優れないことがあり、ネガティブに考えないようにしたり伝え方を工夫する努力をしました。</p>
                             <p class="users-voice-card__label">魅力・今後の目標</p>
-                            <p class="users-voice-card__text">利用者さんから「明日からも頑張ります」などポジティブな反応が返ってきたときがとても嬉しい瞬間です。事務作業を覚え自発的に動けるよう頑張りたいです！</p>
+                            <p class="users-voice-card__text">人の中で過ごしたり、仕事をすることがどういうことなのかを学んでいます。デザインを作成することが楽しいです。</p>
                         </section>
                     </article>
                 </li>
                 <li class="users-voice__item">
                     <article class="users-voice-card">
-                        <h3 class="users-voice-card__title">利用者Tさんの声2</h3>
-                        <p class="users-voice-card__position">担当業務：事務</p>
+                        <h3 class="users-voice-card__title">利用者Bさんの声</h3>
+                        <p class="users-voice-card__position">担当業務：オークション</p>
                         <section class="users-voice-card__section">
-                            <h4 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
+                            <h4 class="users-voice-card__heading">ご指導いただきながら楽しく取り組んでいます。</h4>
                             <p class="users-voice-card__label">印象に残っているエピソードや工夫</p>
-                            <p class="users-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
+                            <p class="users-voice-card__text">メンタル的に調子が悪くなることが多かったのですが、ため過ぎず自分の気持ちを出すように工夫しています。</p>
                             <p class="users-voice-card__label">魅力・今後の目標</p>
-                            <p class="users-voice-card__text">利用者さんから「明日からも頑張ります」などポジティブな反応が返ってきたときがとても嬉しい瞬間です。事務作業を覚え自発的に動けるよう頑張りたいです！</p>
+                            <p class="users-voice-card__text">仕事を次のステップへ進められるよう、ご指導いただきながら楽しく取り組んでいます。</p>
                         </section>
                     </article>
                 </li>
                 <li class="users-voice__item">
                     <article class="users-voice-card">
-                        <h3 class="users-voice-card__title">利用者Tさんの声3</h3>
+                        <h3 class="users-voice-card__title">利用者Cさんの声</h3>
                         <p class="users-voice-card__position">担当業務：事務</p>
                         <section class="users-voice-card__section">
-                            <h4 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
+                            <h4 class="users-voice-card__heading">制度について詳しく学べているのが楽しいです。</h4>
                             <p class="users-voice-card__label">印象に残っているエピソードや工夫</p>
-                            <p class="users-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
+                            <p class="users-voice-card__text">役割分担をしつつ、こまめな報連相と確認作業を行い、ミスを極力少なくするように努力致しました。</p>
                             <p class="users-voice-card__label">魅力・今後の目標</p>
-                            <p class="users-voice-card__text">利用者さんから「明日からも頑張ります」などポジティブな反応が返ってきたときがとても嬉しい瞬間です。事務作業を覚え自発的に動けるよう頑張りたいです！</p>
+                            <p class="users-voice-card__text">福祉は制度が複雑なのもあり、難しいですが、元々就労支援のスタッフをしてたこともあるのでより制度について詳しく学べているのが楽しいです。</p>
                         </section>
                     </article>
                 </li>
                 <li class="users-voice__item">
                     <article class="users-voice-card">
-                        <h3 class="users-voice-card__title">利用者Tさんの声4</h3>
-                        <p class="users-voice-card__position">担当業務：事務</p>
+                        <h3 class="users-voice-card__title">利用者Dさんの声</h3>
+                        <p class="users-voice-card__position">担当業務：SNS</p>
                         <section class="users-voice-card__section">
-                            <h4 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
+                            <h4 class="users-voice-card__heading">報連相を心掛けながら取り組んでいます。</h4>
                             <p class="users-voice-card__label">印象に残っているエピソードや工夫</p>
-                            <p class="users-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
+                            <p class="users-voice-card__text">持病で在宅でできる仕事がなかなか見つからず苦労しました。業務では分からないことがあればこまめに質問し、報連相を心掛けながら取り組んでいます。</p>
                             <p class="users-voice-card__label">魅力・今後の目標</p>
-                            <p class="users-voice-card__text">利用者さんから「明日からも頑張ります」などポジティブな反応が返ってきたときがとても嬉しい瞬間です。事務作業を覚え自発的に動けるよう頑張りたいです！</p>
+                            <p class="users-voice-card__text">デザインの仕事に携われることにやりがいを感じています。今後も経験を積みながら、できる仕事の幅を広げていきたいです。</p>
                         </section>
                     </article>
                 </li>
                 <li class="users-voice__item">
                     <article class="users-voice-card">
-                        <h3 class="users-voice-card__title">利用者Tさんの声5</h3>
-                        <p class="users-voice-card__position">担当業務：事務</p>
+                        <h3 class="users-voice-card__title">利用者Eさんの声</h3>
+                        <p class="users-voice-card__position">担当業務：コーダー</p>
                         <section class="users-voice-card__section">
-                            <h4 class="users-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
+                            <h4 class="users-voice-card__heading">できる仕事の幅を広げられるよう取り組んでいます。</h4>
                             <p class="users-voice-card__label">印象に残っているエピソードや工夫</p>
-                            <p class="users-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
+                            <p class="users-voice-card__text">人間関係で悩むことがありましたが、現在はコーディングスキルを伸ばしながら、できる仕事の幅を広げられるよう取り組んでいます。</p>
                             <p class="users-voice-card__label">魅力・今後の目標</p>
-                            <p class="users-voice-card__text">利用者さんから「明日からも頑張ります」などポジティブな反応が返ってきたときがとても嬉しい瞬間です。事務作業を覚え自発的に動けるよう頑張りたいです！</p>
+                            <p class="users-voice-card__text">自分のデザインを考えて実現することに達成感を感じています</p>
+                        </section>
+                    </article>
+                </li>
+                <li class="users-voice__item">
+                    <article class="users-voice-card">
+                        <h3 class="users-voice-card__title">利用者Fさんの声</h3>
+                        <p class="users-voice-card__position">担当業務：AIライティング</p>
+                        <section class="users-voice-card__section">
+                            <h4 class="users-voice-card__heading">分からないことも質問しやすくなりました。</h4>
+                            <p class="users-voice-card__label">印象に残っているエピソードや工夫</p>
+                            <p class="users-voice-card__text">仕事が忙しく大変な時期もありましたが、親切に対応していただけるので、分からないことも質問しやすくなりました。</p>
+                            <p class="users-voice-card__label">魅力・今後の目標</p>
+                            <p class="users-voice-card__text">ブログ記事などが採用されたりするとやりがいを感じます。</p>
                         </section>
                     </article>
                 </li>
@@ -187,80 +200,80 @@
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_01.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_02.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
-                        <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
-                        <p class="staffs-voice-card__position">担当業務：事務</p>
+                        <h3 class="staffs-voice-card__title">職員Kさんの声</h3>
+                        <p class="staffs-voice-card__position">担当業務：システム開発</p>
                         <section class="staffs-voice-card__section">
-                            <h4 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
+                            <h4 class="staffs-voice-card__heading">褒め合いながらお互いを高めていく姿勢を大事にしています。</h4>
                             <p class="staffs-voice-card__label">印象に残っているエピソードや工夫</p>
-                            <p class="staffs-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
+                            <p class="staffs-voice-card__text">自発的な発言や提案が増えてきて、褒め合いながらお互いを高めていく姿勢を大事にしています。</p>
                             <p class="staffs-voice-card__label">魅力・今後の目標</p>
-                            <p class="staffs-voice-card__text">利用者さんから「明日からも頑張ります」などポジティブな反応が返ってきたときがとても嬉しい瞬間です。事務作業を覚え自発的に動けるよう頑張りたいです！</p>
+                            <p class="staffs-voice-card__text">役割分担を明確にしたり、自身が目指しているものをチームとしてどうなっていきたいかを口に出すように今後ともスキルアップ等を頑張りたいです！</p>
                         </section>
                     </article>
                 </li>
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_01.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_03.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
-                        <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
-                        <p class="staffs-voice-card__position">担当業務：事務</p>
+                        <h3 class="staffs-voice-card__title">職員Nさんの声</h3>
+                        <p class="staffs-voice-card__position">担当業務：SNS運用</p>
                         <section class="staffs-voice-card__section">
-                            <h4 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
+                            <h4 class="staffs-voice-card__heading">コメントを頂けることに大きなやりがいを感じています。</h4>
                             <p class="staffs-voice-card__label">印象に残っているエピソードや工夫</p>
-                            <p class="staffs-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
+                            <p class="staffs-voice-card__text">未経験で始めたSNS運用ですが、利用者さんから「自作キャラが斬新で分かりやすい」と好評で自信に繋がりました！ </p>
                             <p class="staffs-voice-card__label">魅力・今後の目標</p>
-                            <p class="staffs-voice-card__text">利用者さんから「明日からも頑張ります」などポジティブな反応が返ってきたときがとても嬉しい瞬間です。事務作業を覚え自発的に動けるよう頑張りたいです！</p>
+                            <p class="staffs-voice-card__text">SNSを見て体験に来てくださる方や、温かいコメントを頂けることに大きなやりがいを感じています。 </p>
                         </section>
                     </article>
                 </li>
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_01.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_04.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
-                        <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
-                        <p class="staffs-voice-card__position">担当業務：事務</p>
+                        <h3 class="staffs-voice-card__title">職員Uさんの声</h3>
+                        <p class="staffs-voice-card__position">担当業務：ブログ</p>
                         <section class="staffs-voice-card__section">
-                            <h4 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
+                            <h4 class="staffs-voice-card__heading">利用者の成長を見守っています</h4>
                             <p class="staffs-voice-card__label">印象に残っているエピソードや工夫</p>
-                            <p class="staffs-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
+                            <p class="staffs-voice-card__text">積極的な声かけ、見守りをして利用者の成長を見守っています！</p>
                             <p class="staffs-voice-card__label">魅力・今後の目標</p>
-                            <p class="staffs-voice-card__text">利用者さんから「明日からも頑張ります」などポジティブな反応が返ってきたときがとても嬉しい瞬間です。事務作業を覚え自発的に動けるよう頑張りたいです！</p>
+                            <p class="staffs-voice-card__text">一緒に現場を回せる仕組みづくりなど頑張りたいです！</p>
                         </section>
                     </article>
                 </li>
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_01.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_05.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
-                        <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
-                        <p class="staffs-voice-card__position">担当業務：事務</p>
+                        <h3 class="staffs-voice-card__title">職員Iさんの声</h3>
+                        <p class="staffs-voice-card__position">担当業務：EC</p>
                         <section class="staffs-voice-card__section">
-                            <h4 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
+                            <h4 class="staffs-voice-card__heading">否定せずまずは実行してもらうことを意識しています。</h4>
                             <p class="staffs-voice-card__label">印象に残っているエピソードや工夫</p>
-                            <p class="staffs-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
+                            <p class="staffs-voice-card__text">率先して意見交換や自発的に考え行動に移せるようにしています。意見を出せる雰囲気づくりをして、否定せずまずは実行してもらうことを意識しています。</p>
                             <p class="staffs-voice-card__label">魅力・今後の目標</p>
-                            <p class="staffs-voice-card__text">利用者さんから「明日からも頑張ります」などポジティブな反応が返ってきたときがとても嬉しい瞬間です。事務作業を覚え自発的に動けるよう頑張りたいです！</p>
+                            <p class="staffs-voice-card__text">一から教えた人が、次は人に教えて育っている瞬間がとても嬉しいです。出来ることはすべてやりたいと思っています！</p>
                         </section>
                     </article>
                 </li>
                 <li class="staffs-voice__item">
                     <article class="staffs-voice-card">
                         <figure class="staffs-voice-card__figure">
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_01.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/staffs-voice_06.webp'); ?>" class="staffs-voice-card__image" alt="職員Tさん">
                         </figure>
-                        <h3 class="staffs-voice-card__title">職員Tさんの声</h3>
+                        <h3 class="staffs-voice-card__title">職員Hさんの声</h3>
                         <p class="staffs-voice-card__position">担当業務：事務</p>
                         <section class="staffs-voice-card__section">
-                            <h4 class="staffs-voice-card__heading">簡単な言葉で相手へ伝えるよう考え、工夫しております。</h4>
+                            <h4 class="staffs-voice-card__heading">やっていることがどう未来の選択肢につながるかを伝えています</h4>
                             <p class="staffs-voice-card__label">印象に残っているエピソードや工夫</p>
-                            <p class="staffs-voice-card__text">業務内容を伝える際には自分なりにわかりやすい、簡単な言葉で相手へ伝えるよう考え、工夫しております。</p>
+                            <p class="staffs-voice-card__text">一般就労に踏み出せたり職員になったり案件で売上を上げれるようになった時ですね！</p>
                             <p class="staffs-voice-card__label">魅力・今後の目標</p>
-                            <p class="staffs-voice-card__text">利用者さんから「明日からも頑張ります」などポジティブな反応が返ってきたときがとても嬉しい瞬間です。事務作業を覚え自発的に動けるよう頑張りたいです！</p>
+                            <p class="staffs-voice-card__text">一から教えた人が、次は人に教えて育っている瞬間がとても嬉しいです。出来ることはすべてやりたいと思っています！</p>
                         </section>
                     </article>
                 </li>
