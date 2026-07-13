@@ -13,6 +13,7 @@
             <h3 class="site-footer__subtitle">安心して一歩踏み出せる場へ。</h3>
             <a href="#" class="site-footer__inquiry-link">お問い合わせはこちら</a>
         </div>
+        <hr class="site-footer__divider">
         <nav id="footer-nav" class="footer-nav">
             <?php
                 wp_nav_menu([

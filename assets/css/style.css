@@ -170,10 +170,10 @@ main {
 .global-nav__list {
     position: absolute;
     top: 5rem;
-    right: 1.5rem;
+    left: 1.5rem;
 }
 .global-nav__list .menu-item {
-    text-align: right;
+    text-align: left;
     margin-bottom: 3rem;
 }
 .global-nav__list .menu-item:last-child {
@@ -252,7 +252,15 @@ main {
     background-color: var(--color-main);
     text-decoration: none;
 }
-
+.site-footer__divider{
+    height: 1px;
+    background: var(--color-sub);
+    border: none;
+    margin: 4.5rem auto 1.5rem;
+}
+.site-footer__copyright {
+    text-align: center;
+}
 /* hero */
 .hero {
     width: 100%;
