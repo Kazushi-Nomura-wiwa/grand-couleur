@@ -214,6 +214,8 @@ main {
     aspect-ratio: 375 / 137;
     background-color: var(--color-bg);
     background-image: url('../img/footer_wave_sp.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .site-footer__copyright {
     margin: 0;
@@ -988,6 +990,7 @@ main {
 .flow .flow__item:nth-child(4) .flow__aside::after {
     top: calc(0.5rem + 3.375rem + 0.75rem + 60px);
 }
+
 /* inquiry */
 .inquiry {
     margin-block-end: var(--space-56);
