@@ -323,8 +323,8 @@ main {
 }
 /* hero */
 .hero {
+    aspect-ratio: 375 / 904;
     width: 100%;
-    height: 994px;
     background-image: url('../img/header_bg_sp.webp');
     background-repeat: no-repeat;
     background-position: center -90px;
@@ -358,7 +358,7 @@ main {
     color: var(--color-header-text);
 }
 .hero .hero__text {
-    width: 210px;
+    width: 236px;
     font-family: "Noto Serif JP", serif;
     font-size: var(--size-text-extra-small);
     color: var(--color-header-text);
@@ -367,6 +367,9 @@ main {
     font-size: var(--size-text-body);
     font-weight: var(--font-weight-medium);
     color: var(--color-sub);
+}
+.hero .hero__text br {
+    display: none;
 }
 .global-nav__list .menu-item:last-child a,
 .hero .hero__link {
@@ -403,14 +406,25 @@ main {
 .worries {
     margin-block-end: var(--space-30);
     padding-block-end: var(--space-18);
-    background-image: url('../img/worry_bg.svg');
+    background-image: url('../img/worries_sp_bg.svg');
     background-repeat: no-repeat;
     background-position: center bottom;
+    background-size: contain;
 }
 .worries .worries__title {
     font-family: "Noto Serif JP", serif;
     font-size: var(--size-heading_h3);
     color: var(--color-header-text);
+}
+.worries .worries__subtitle_pc {
+    display: none;
+}
+.worries .worries__subtitle_sp {
+    font-family: "Noto Serif JP", serif;
+    font-size: var(--size-heading_h4);
+    font-weight: var(--font-weight-semi-bold);
+    text-align: center;
+    color: var(--color-sub);
 }
 .worries .worries__item {
     margin-block-end: var(--space-4);
@@ -1217,7 +1231,7 @@ main {
     }
     .global-nav__list .menu-item {
         margin: 0;
-        font-size: clamp(0.75rem, 0.9vw, 0.875rem);
+        font-size: var(--size-text-body);
         font-weight: var(--font-weight-medium);
         line-height: 1.4;
         text-align: center;
@@ -1243,7 +1257,55 @@ main {
         background-position: center -90px;
         background-size: contain;
     }
-    
+    .hero .hero__catch {
+        font-size: var(--size-heading_h0);
+    }
+    .hero .hero__lead {
+        font-size: var(--size-heading_h1);
+    }
+    .hero .hero__text {
+        width: 674px;
+        font-size: var(--size-heading_h3);
+    }
+    .hero .hero__text strong {
+        font-size: var(--size-heading_h2);
+    }
+    .hero .hero__link {
+        display: none;
+    }
+    /* worries */
+    .worries {
+        background-image: url('../img/worries_pc_bg.svg');
+        background-size: cover;
+        background-position: left bottom;
+    }
+    .worries .eyeblow {
+        text-align: center;
+    }
+    .worries .worries__title {
+        font-size: var(--size-heading_h1);
+        text-align: center;
+    }
+    .worries .worries__subtitle_pc{
+        display: block;
+        text-align: center;
+        font-family: "Noto Serif JP", serif;
+        font-size: var(--size-heading_h2);
+        font-weight: var(--font-weight-semi-bold);
+        color: var(--color-sub);
+        margin-bottom: var(--space-5);
+    }
+    .worries .worries__subtitle_sp{
+        display: none;
+    }
+    .worries .worries__list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
     /* about */
     .about .container {
         display: flex;
