@@ -1349,10 +1349,50 @@ main {
         padding-block-start: var(--space-36);
         background: url(../img/job-description_bg_header_pc.svg) top center / 100% auto no-repeat, linear-gradient(var(--color-bg) 7rem, var(--color-main) 7rem);
     }
+    .job-description::after {
+        content: "";
+        display: block;
+        width: 100%;
+        aspect-ratio: 1440 / 297;
+        background: url("../img/job-description_bg_footer_pc.svg") top center / 100% auto no-repeat, linear-gradient(var(--color-main) 4rem,var(--color-bg) 7rem);
+    }
     .job-description .job-description__title {
         font-size: var(--size-heading_h1-5)
     }
     .job-description .job-description__subtitle {
         font-size: var(--size-heading_h4);
+    }
+    .job-description__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 1.5rem;
+        row-gap: 2.5rem;
+
+        max-width: 1200px;
+        margin-inline: auto;
+        padding: 0;
+        list-style: none;
+    }
+
+    .job-description .job-description__item {
+        flex: 0 0 calc((100% - 3rem) / 3);
+        margin-block-end: 0;
+        overflow: hidden;
+    }
+
+    .job-description .job-description__item .job-description__item-image {
+        display: block;
+        width: 100%;
+        height: 13.75rem;
+        object-fit: cover;
+    }
+
+    .job-description .job-description__item .job-description__content {
+        padding: 1.5rem;
+    }
+    /* users-voice */
+    .users-voice-card {
+        width: 540px;
     }
 }
