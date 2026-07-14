@@ -1345,7 +1345,14 @@ main {
         display: none;
     }
     /* job description */
+    .job-description {
+        padding-block-start: var(--space-36);
+        background: url(../img/job-description_bg_header_pc.svg) top center / 100% auto no-repeat, linear-gradient(var(--color-bg) 7rem, var(--color-main) 7rem);
+    }
     .job-description .job-description__title {
         font-size: var(--size-heading_h1-5)
+    }
+    .job-description .job-description__subtitle {
+        font-size: var(--size-heading_h4);
     }
 }
