@@ -24,7 +24,7 @@
                 <li class="worries__item"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/worries_06.png'); ?>" alt="お悩み6">自分のペースで少しずつ始めたい</li>
             </ul>
             <h3 class="worries__subtitle_sp">一人で抱え込まないでも大丈夫</h3>
-            <p class="worries__text">そんな思いに<strong class="worries__emphasis">寄り添いながら</strong><br>一人ひとりのペースを大切に<br><strong class="worries__emphasis">サポートします</strong></p>
+            <p class="worries__text">そんな思いに<strong class="worries__emphasis">寄り添いながら</strong><br>一人ひとりのペースを大切に<strong class="worries__emphasis">サポートします</strong></p>
         </div>
     </section>
     <section class="about">

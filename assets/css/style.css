@@ -24,6 +24,7 @@
     /* size */
     --size-heading_h0: 4rem;
     --size-heading_h1: 3rem;
+    --size-heading_h1-5: 2.5rem;
     --size-heading_h2: 2rem;
     --size-heading_h3: 1.5rem;
     --size-heading_h4: 1.25rem;
@@ -1168,6 +1169,9 @@ main {
     margin: 0;
 }
 @media (min-width: 1024px) {
+    .eyeblow {
+        font-size: var(--size-heading_h4);
+    }
     .container,
     .site-header-container,
     .hero .container {
@@ -1306,6 +1310,12 @@ main {
         padding: 0;
         list-style: none;
     }
+    .worries .worries__item {
+        font-size: var(--size-heading_h4);
+    }
+    .worries .worries__text {
+        font-size: var(--size-heading_h2);
+    }
     /* about */
     .about .container {
         display: flex;
@@ -1315,6 +1325,8 @@ main {
     }
     .about .about__image {
         display: block;
+        flex: 0 0 550px;
+        width: 550px;
     }
     .about .about__content {
         display: block;
