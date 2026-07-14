@@ -1371,7 +1371,7 @@ main {
     /* job description */
     .job-description {
         padding-block-start: var(--space-144px);
-        margin-block-end: ;
+        margin-block-end: var(--space-96px);
         background: url(../img/job-description_bg_header_pc.svg) top center / 100% auto no-repeat, linear-gradient(var(--color-bg) 7rem, var(--color-main) 7rem);
     }
     .job-description::after {
@@ -1438,9 +1438,48 @@ main {
         background-size: 100% auto;
     }
 
+    /* staffs-voice */
+/*    .staffs-voice::before {
+        content: "";
+        display: block;
+        width: 100%;
+        aspect-ratio: 1462 / 208;
+        background-color: #fff;
+        background-image:
+        url("../img/staffs-voice__header_pc.svg"),
+        linear-gradient(
+            to bottom,
+            var(--color-text-bg) 0%,
+            var(--color-text-bg) 58%,
+            var(--color-bg2) 58%,
+            var(--color-bg2) 100%
+        );
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }*/
+
     /* flow 以下要確認 */
-    .flow {
-        padding-block: 2rem 4rem;
+
+    .flow::before {
+        content: "";
+        display: block;
+        width: 100%;
+        aspect-ratio: 1462 / 208;
+        margin-block-end: var(--space-112px);
+        background-color: #fff;
+        background-image:
+        url("../img/flow__header_pc.svg"),
+        linear-gradient(
+            to bottom,
+            var(--color-bg2) 0%,
+            var(--color-bg2) 50%,
+            var(--color-bg) 50%,
+            var(--color-bg) 100%
+        );
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
     }
     .flow .container {
         width: 84%;
@@ -1593,5 +1632,49 @@ main {
         font-size: 1rem;
         line-height: 1.8;
         color: var(--color-header-text);
+    }
+}
+@media (min-width: 1024px) {
+    .staffs-voice {
+        overflow: hidden;
+        background-color: var(--color-bg2);
+    }
+
+    .staffs-voice::after {
+        content: "";
+        display: block;
+
+        width: 100%;
+        aspect-ratio: 1462 / 208;
+
+        background-image:
+            url("../img/職員の声_下.svg"),
+            linear-gradient(
+                to bottom,
+                var(--color-bg2) 0%,
+                var(--color-bg2) 50%,
+                var(--color-bg) 50%,
+                var(--color-bg) 100%
+            );
+
+        background-repeat:
+            no-repeat,
+            no-repeat;
+
+        background-position:
+            center top,
+            center;
+
+        background-size:
+            100% auto,
+            100% 100%;
+    }
+
+    .flow {
+        background-color: var(--color-bg);
+    }
+
+    .flow::before {
+        display: none;
     }
 }
