@@ -1,221 +1,249 @@
-document.addEventListener('DOMContentLoaded', function() {
-	var toggle = document.querySelector('.site-header__toggle');
-	var nav = document.querySelector('.global-nav');
-	var toggleText = document.querySelector('.site-header__toggle-text');
-	if (!toggle || !nav) return;
+document.addEventListener("DOMContentLoaded", function () {
+    /*
+     * ヘッダーメニュー
+     */
+    const toggle = document.querySelector(".site-header__toggle");
+    const nav = document.querySelector(".global-nav");
+    const toggleText = document.querySelector(".site-header__toggle-text");
 
-	function setExpandedState() {
-		toggle.setAttribute('aria-expanded', nav.classList.contains('is_open'));
-	}
-
-	function updateToggleText() {
-		if (toggleText) {
-			toggleText.textContent = nav.classList.contains('is_open') ? 'CLOSE' : 'MENU';
-		}
-	}
-
-	toggle.addEventListener('click', function(e) {
-		nav.classList.toggle('is_open');
-		setExpandedState();
-		updateToggleText();
-	});
-
-	toggle.addEventListener('keydown', function(e) {
-		if (e.key === 'Enter' || e.key === ' ') {
-			e.preventDefault();
-			nav.classList.toggle('is_open');
-			setExpandedState();
-			updateToggleText();
-		}
-	});
-
-	// 初期状態のaria属性を設定
-	setExpandedState();
-	updateToggleText();
-
-
-	// ユーザーの声スライダー
-	const userVoice = document.querySelector(".users-voice");
-    if (!userVoice) return;
-
-    const userList = userVoice.querySelector(".users-voice__list");
-    const userItems = [...userVoice.querySelectorAll(".users-voice__item")];
-    const userPrevButton = userVoice.querySelector(".users-voice__button--prev");
-    const userNextButton = userVoice.querySelector(".users-voice__button--next");
-    const userPagination = userVoice.querySelector(".users-voice__pagination");
-
-    let userCurrentIndex = 0;
-
-    // ドット生成
-    userItems.forEach((_, index) => {
-        const userDot = document.createElement("button");
-        userDot.type = "button";
-        userDot.className = "users-voice__dot";
-        userDot.setAttribute("aria-label", `${index + 1}枚目へ`);
-
-        userDot.addEventListener("click", () => {
-            userCurrentIndex = index;
-            userUpdateSlider();
-        });
-
-        userPagination.appendChild(userDot);
-    });
-
-    const userDots = [...userPagination.querySelectorAll(".users-voice__dot")];
-
-    function userUpdateSlider() {
-        const userContainerWidth = userVoice.querySelector(".flow-container").clientWidth;
-        const userItemWidth = userItems[userCurrentIndex].offsetWidth;
-
-        const userOffset =
-            userItems[userCurrentIndex].offsetLeft
-            - (userContainerWidth - userItemWidth) / 2;
-
-        userList.style.transform = `translateX(${-userOffset}px)`;
-
-        userPrevButton.disabled = userCurrentIndex === 0;
-        userNextButton.disabled = userCurrentIndex === userItems.length - 1;
-
-        userDots.forEach((dot, index) => {
-            dot.classList.toggle("is-active", index === userCurrentIndex);
-        });
-
-        userItems.forEach((item, index) => {
-            item.classList.toggle("is-active", index === userCurrentIndex);
-        });
-    }
-
-    function userGoPrev() {
-        if (userCurrentIndex > 0) {
-            userCurrentIndex--;
-            userUpdateSlider();
+    if (toggle && nav) {
+        function setExpandedState() {
+            toggle.setAttribute(
+                "aria-expanded",
+                String(nav.classList.contains("is_open"))
+            );
         }
-    }
 
-    function userGoNext() {
-        if (userCurrentIndex < userItems.length - 1) {
-            userCurrentIndex++;
-            userUpdateSlider();
+        function updateToggleText() {
+            if (!toggleText) {
+                return;
+            }
+
+            toggleText.textContent = nav.classList.contains("is_open")
+                ? "CLOSE"
+                : "MENU";
         }
-    }
 
-    userPrevButton.addEventListener("click", userGoPrev);
-    userNextButton.addEventListener("click", userGoNext);
-
-    // スワイプ
-    let userStartX = 0;
-    let userCurrentX = 0;
-
-    userList.addEventListener("touchstart", e => {
-        userStartX = e.touches[0].clientX;
-    });
-
-    userList.addEventListener("touchmove", e => {
-        userCurrentX = e.touches[0].clientX;
-    });
-
-    userList.addEventListener("touchend", () => {
-        const diff = userCurrentX - userStartX;
-
-        if (diff > 50) userGoPrev();
-        if (diff < -50) userGoNext();
-
-        userStartX = 0;
-        userCurrentX = 0;
-    });
-
-    userUpdateSlider();
-
-    // 職員の声スライダー
-	const staffVoice = document.querySelector(".staffs-voice");
-    if (!staffVoice) return;
-
-    const staffList = staffVoice.querySelector(".staffs-voice__list");
-    const staffItems = [...staffVoice.querySelectorAll(".staffs-voice__item")];
-    const staffPrevButton = staffVoice.querySelector(".staffs-voice__button--prev");
-    const staffNextButton = staffVoice.querySelector(".staffs-voice__button--next");
-    const staffPagination = staffVoice.querySelector(".staffs-voice__pagination");
-
-    let staffCurrentIndex = 0;
-
-    // ドット生成
-    staffItems.forEach((_, index) => {
-        const staffDot = document.createElement("button");
-        staffDot.type = "button";
-        staffDot.className = "staffs-voice__dot";
-        staffDot.setAttribute("aria-label", `${index + 1}枚目へ`);
-
-        staffDot.addEventListener("click", () => {
-            staffCurrentIndex = index;
-            staffUpdateSlider();
+        toggle.addEventListener("click", function () {
+            nav.classList.toggle("is_open");
+            setExpandedState();
+            updateToggleText();
         });
 
-        staffPagination.appendChild(staffDot);
-    });
+        setExpandedState();
+        updateToggleText();
+    }
 
-    const staffDots = [...staffPagination.querySelectorAll(".staffs-voice__dot")];
+    /*
+     * 利用者の声・職員の声に共通するスライダー
+     */
+    function initializeVoiceSlider({
+        rootSelector,
+        listSelector,
+        itemSelector,
+        prevButtonSelector,
+        nextButtonSelector,
+        paginationSelector,
+        dotClass
+    }) {
+        const root = document.querySelector(rootSelector);
 
-    function staffUpdateSlider() {
-        const staffContainerWidth = staffVoice.querySelector(".flow-container").clientWidth;
-        const staffItemWidth = staffItems[staffCurrentIndex].offsetWidth;
+        if (!root) {
+            return;
+        }
 
-        const staffOffset =
-            staffItems[staffCurrentIndex].offsetLeft
-            - (staffContainerWidth - staffItemWidth) / 2;
+        const viewport = root.querySelector(".flow-container");
+        const list = root.querySelector(listSelector);
+        const items = [...root.querySelectorAll(itemSelector)];
+        const prevButton = root.querySelector(prevButtonSelector);
+        const nextButton = root.querySelector(nextButtonSelector);
+        const pagination = root.querySelector(paginationSelector);
 
-        staffList.style.transform = `translateX(${-staffOffset}px)`;
+        if (
+            !viewport ||
+            !list ||
+            items.length === 0 ||
+            !prevButton ||
+            !nextButton ||
+            !pagination
+        ) {
+            return;
+        }
 
-        staffPrevButton.disabled = staffCurrentIndex === 0;
-        staffNextButton.disabled = staffCurrentIndex === staffItems.length - 1;
+        let currentIndex = 0;
+        let resizeAnimationFrameId = 0;
 
-        staffDots.forEach((dot, index) => {
-            dot.classList.toggle("is-active", index === staffCurrentIndex);
+        /*
+         * ページネーションのドットを生成
+         */
+        pagination.replaceChildren();
+
+        items.forEach(function (_, index) {
+            const dot = document.createElement("button");
+
+            dot.type = "button";
+            dot.className = dotClass;
+            dot.setAttribute("aria-label", `${index + 1}枚目へ`);
+
+            dot.addEventListener("click", function () {
+                currentIndex = index;
+                updateSlider();
+            });
+
+            pagination.appendChild(dot);
         });
 
-        staffItems.forEach((item, index) => {
-            item.classList.toggle("is-active", index === staffCurrentIndex);
+        const dots = [
+            ...pagination.querySelectorAll(`.${dotClass}`)
+        ];
+
+        /*
+         * 選択中のitemの中心と表示領域の中心を一致させる
+         */
+        function updateSlider() {
+            const activeItem = items[currentIndex];
+
+            if (!activeItem) {
+                return;
+            }
+
+            const itemCenter =
+                activeItem.offsetLeft +
+                activeItem.offsetWidth / 2;
+
+            const viewportCenter =
+                viewport.clientWidth / 2;
+
+            const translateX =
+                viewportCenter - itemCenter;
+
+            list.style.transform =
+                `translate3d(${translateX}px, 0, 0)`;
+
+            items.forEach(function (item, index) {
+                const isActive = index === currentIndex;
+
+                item.classList.toggle("is-active", isActive);
+            });
+
+            dots.forEach(function (dot, index) {
+                const isActive = index === currentIndex;
+
+                dot.classList.toggle("is-active", isActive);
+
+                if (isActive) {
+                    dot.setAttribute("aria-current", "true");
+                } else {
+                    dot.removeAttribute("aria-current");
+                }
+            });
+
+            prevButton.disabled = currentIndex === 0;
+            nextButton.disabled =
+                currentIndex === items.length - 1;
+        }
+
+        function goPrev() {
+            if (currentIndex === 0) {
+                return;
+            }
+
+            currentIndex -= 1;
+            updateSlider();
+        }
+
+        function goNext() {
+            if (currentIndex === items.length - 1) {
+                return;
+            }
+
+            currentIndex += 1;
+            updateSlider();
+        }
+
+        prevButton.addEventListener("click", goPrev);
+        nextButton.addEventListener("click", goNext);
+
+        /*
+         * タッチ操作
+         */
+        let startX = 0;
+        let currentX = 0;
+
+        list.addEventListener(
+            "touchstart",
+            function (event) {
+                startX = event.touches[0].clientX;
+                currentX = startX;
+            },
+            { passive: true }
+        );
+
+        list.addEventListener(
+            "touchmove",
+            function (event) {
+                currentX = event.touches[0].clientX;
+            },
+            { passive: true }
+        );
+
+        list.addEventListener("touchend", function () {
+            const difference = currentX - startX;
+
+            if (difference > 50) {
+                goPrev();
+            } else if (difference < -50) {
+                goNext();
+            }
+
+            startX = 0;
+            currentX = 0;
         });
-    }
 
-    function staffGoPrev() {
-        if (staffCurrentIndex > 0) {
-            staffCurrentIndex--;
-            staffUpdateSlider();
+        /*
+         * ブラウザ幅やコンテナ幅が変化したら位置を再計算
+         */
+        function scheduleUpdate() {
+            cancelAnimationFrame(resizeAnimationFrameId);
+
+            resizeAnimationFrameId = requestAnimationFrame(
+                updateSlider
+            );
         }
-    }
 
-    function staffGoNext() {
-        if (staffCurrentIndex < staffItems.length - 1) {
-            staffCurrentIndex++;
-            staffUpdateSlider();
+        window.addEventListener("resize", scheduleUpdate);
+
+        if ("ResizeObserver" in window) {
+            const resizeObserver = new ResizeObserver(
+                scheduleUpdate
+            );
+
+            resizeObserver.observe(viewport);
         }
+
+        /*
+         * 初期表示
+         */
+        requestAnimationFrame(updateSlider);
     }
 
-    staffPrevButton.addEventListener("click", staffGoPrev);
-    staffNextButton.addEventListener("click", staffGoNext);
-
-    // スワイプ
-    let staffStartX = 0;
-    let staffCurrentX = 0;
-
-    staffList.addEventListener("touchstart", e => {
-        staffStartX = e.touches[0].clientX;
+    initializeVoiceSlider({
+        rootSelector: ".users-voice",
+        listSelector: ".users-voice__list",
+        itemSelector: ".users-voice__item",
+        prevButtonSelector: ".users-voice__button--prev",
+        nextButtonSelector: ".users-voice__button--next",
+        paginationSelector: ".users-voice__pagination",
+        dotClass: "users-voice__dot"
     });
 
-    staffList.addEventListener("touchmove", e => {
-        staffCurrentX = e.touches[0].clientX;
+    initializeVoiceSlider({
+        rootSelector: ".staffs-voice",
+        listSelector: ".staffs-voice__list",
+        itemSelector: ".staffs-voice__item",
+        prevButtonSelector: ".staffs-voice__button--prev",
+        nextButtonSelector: ".staffs-voice__button--next",
+        paginationSelector: ".staffs-voice__pagination",
+        dotClass: "staffs-voice__dot"
     });
-
-    staffList.addEventListener("touchend", () => {
-        const diff = staffCurrentX - staffStartX;
-
-        if (diff > 50) staffGoPrev();
-        if (diff < -50) staffGoNext();
-
-        staffStartX = 0;
-        staffCurrentX = 0;
-    });
-
-    staffUpdateSlider();
-
 });
