@@ -1641,4 +1641,16 @@ main {
         font-size: var(--font-size-display-md);
         padding-inline: var(--space-128px);
     }
+    .inquiry .inquiry__button:after {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-top: 4px solid currentColor;
+        border-right: 4px solid currentColor;
+    }
+    /* faq */
+    .faq .faq__title {
+        font-size: var(--font-size-heading-sm);
+        font-weight: var(--font-weight-medium);
+        color: var(--color-header-text);
+    }
 }
