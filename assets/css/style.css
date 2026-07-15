@@ -1326,6 +1326,11 @@ main {
         background-size: contain;
         font-size: 0;
     }
+    .site-footer__inquiry {
+        flex: 1;
+        margin-inline-start: auto;
+        align-self: flex-end;
+    }
     .site-footer__address {
         margin-block-end: var(--space-12px);
         font-size: var(--font-size-body);
@@ -1357,30 +1362,15 @@ main {
         display: none;
     }
     .site-footer__inquiry-link {
-        display: block;
-        width: fit-content;
-        margin-block: var(--space-16px) 0;
-        margin-inline: auto;
-        padding-block: var(--space-8px);
-        padding-inline: var(--space-16px);
-        border: 1px solid var(--color-sub);
-        border-radius: var(--radius-pill);
-        background-color: var(--color-sec-yellow);
-        box-shadow: var(--shadow-base);
-        font-size: var(--font-size-small);
-        font-weight: var(--font-weight-medium);
-        color: var(--color-sub);
-        transition: background-color 0.3s ease;
+        font-size: var(--font-size-heading-md);
+        margin-inline: auto 0;
     }
     .site-footer__inquiry-link:after {
-        content: "";
-        display: inline-block;
-        width: 0.5rem;
-        height: 0.5rem;
+        width: 1rem;
+        height: 1rem;
         margin-inline-start: 0.5em;
-        border-top: 2px solid currentColor;
-        border-right: 2px solid currentColor;
-        transform: rotate(45deg) translateY(-2px);
+        border-top: 4px solid currentColor;
+        border-right: 4px solid currentColor;
     }
     .site-footer__inquiry-link:hover {
         background-color: var(--color-main);
