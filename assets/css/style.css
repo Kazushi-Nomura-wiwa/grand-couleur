@@ -1660,4 +1660,12 @@ main {
     .faq .faq__item {
         font-size: var(--font-size-heading-sm);
     }
+    /* access */
+    .access .access__title {
+        font-size: var(--font-size-display-md);
+    }
+    .access .access__subtitle {
+        font-size: var(--font-size-heading-sm);
+    }
+
 }
