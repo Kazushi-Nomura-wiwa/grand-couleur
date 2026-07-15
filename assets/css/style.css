@@ -1035,8 +1035,8 @@ main {
     border: 1px solid var(--color-sub);
     border-radius: var(--radius-pill);
     background-color: var(--color-sec-yellow);
-    font-size: var(--font-size-small);
-    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-heading-sm);
+    font-weight: var(--font-weight-bold);
     color: var(--color-sub);
     box-shadow: var(--shadow-base);
     transition: background-color 0.3s ease;
@@ -1054,6 +1054,17 @@ main {
 .inquiry .inquiry__button:hover {
     background-color: var(--color-main);
     text-decoration: none;
+}
+.inquiry .inquiry__note {
+    margin-bottom: var(--space-12px);
+}
+.inquiry .inquiry__note-text {
+    font-size: var(--font-size-small);
+    color: var(--color-text-small);
+}
+.inquiry .inquiry__phone-link {
+    font-size: var(--font-size-heading-sm);
+    font-weight: var(--font-weight-bold);
 }
 /* faq */
 .faq {

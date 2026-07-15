@@ -356,7 +356,7 @@
         <div class="container">
             <p class="eyeblow">FAQ</p>
             <h2 class="faq__title">よくある質問</h2>
-            <h3 class="faq__subtitle">ダミー</h3>
+            <h3 class="faq__subtitle">グランクルールのサービス管理責任者が回答しています！</h3>
             <div class="faq__list">
                 <article class="faq__item">
                     <div class="faq__question">
