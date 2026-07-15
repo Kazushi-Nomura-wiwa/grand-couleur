@@ -1648,9 +1648,16 @@ main {
         border-right: 4px solid currentColor;
     }
     /* faq */
+    .faq .eyeblow, .faq .faq__title, .faq .faq__subtitle {
+        text-align: left;
+    }
     .faq .faq__title {
+        font-size: var(--font-size-display-md);
+    }
+    .faq .faq__subtitle {
         font-size: var(--font-size-heading-sm);
-        font-weight: var(--font-weight-medium);
-        color: var(--color-header-text);
+    }
+    .faq .faq__item {
+        font-size: var(--font-size-heading-sm);
     }
 }
