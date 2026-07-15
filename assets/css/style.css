@@ -571,6 +571,7 @@ main {
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-medium);
     color: var(--color-sub);
+    margin-bottom: var(--space-32px);
 }
 .users-voice__list {
     position: relative;
@@ -749,6 +750,7 @@ main {
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-medium);
     color: var(--color-sub);
+    margin-bottom: var(--space-32px);
 }
 .staffs-voice__list {
     position: relative;
@@ -1452,7 +1454,9 @@ main {
         background-position: top center;
         background-size: 105%;
     }
-
+    .users-voice .users-voice__title {
+        font-size: var(--font-size-display-md);
+    }
     /* staffs-voice */
     .staffs-voice::before {
         content: "";
@@ -1473,7 +1477,12 @@ main {
         background-position: center bottom;
         background-size: 105%;
     }
-
+    .staffs-voice .staffs-voice__title {
+        font-size: var(--font-size-display-md);
+    }
+    .staffs-voice .flow-container {
+        padding-block-start: var(--space-120px);
+    }
     /* flow 以下要確認 */
 
     .flow::before {
