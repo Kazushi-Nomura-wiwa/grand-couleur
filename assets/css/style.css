@@ -1403,6 +1403,7 @@ main {
     }
     .job-description .job-description__subtitle {
         font-size: var(--font-size-heading-sm);
+        font-weight: var(--font-weight-medium);
     }
     .job-description__list {
         display: flex;
@@ -1516,14 +1517,14 @@ main {
     }
     .flow .flow__title {
         margin-block-end: 0.75rem;
-        font-size: var(--font-size-heading-sm);
+        font-size: var(--font-size-display-md);
         font-weight: var(--font-weight-medium);
         color: var(--color-header-text);
         text-align: center;
     }
     .flow .flow__subtitle {
         margin-block-end: 0;
-        font-size: 1rem;
+        font-size: var(--font-size-heading-sm);
         font-weight: var(--font-weight-regular);
         color: var(--color-sub);
         text-align: center;
@@ -1531,7 +1532,7 @@ main {
     .flow .flow__list {
         width: 100%;
         max-width: 1020px;
-        margin-block: 3rem 0;
+        margin-block: var(--space-48px) var(--space-160px);
         margin-inline: auto;
         padding: 0;
     }
@@ -1540,7 +1541,6 @@ main {
         grid-template-columns: 200px minmax(0, 1fr);
         align-items: stretch;
         column-gap: 28px;
-
         min-height: 256px;
         margin-block-end: 32px;
     }
@@ -1551,53 +1551,42 @@ main {
     .flow .flow__item .flow__aside {
         position: relative;
         display: block;
-
         width: 200px;
         min-height: 256px;
     }
     .flow .flow__step-number {
         position: relative;
         z-index: 2;
-
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
         width: 128px;
         height: 128px;
         margin: 0;
-
         border-radius: 50%;
         background-color: var(--color-text-bg);
-
-        font-size: 3rem;
+        font-size: var(--font-size-display-lg);
         line-height: 1;
         color: var(--color-sub);
         text-align: center;
     }
     .flow .flow__step-number-small {
         display: block;
-
         margin: 0 0 0.25rem;
-
-        font-size: 0.875rem;
-        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-body);
+        font-weight: var(--font-weight-black);
         line-height: 1;
     }
     /* 各STEPをつなぐ縦線 */
     .flow .flow__item .flow__aside::after {
         content: "";
-
         position: absolute;
         top: 128px;
         bottom: -32px;
         left: 63px;
-
         width: 2px;
-
         background-color: var(--color-sub);
-
         transform: none;
     }
     .flow .flow__item:last-child .flow__aside::after {
@@ -1624,8 +1613,7 @@ main {
     }
     .flow .flow__item-title {
         margin-block-end: 0.5rem;
-
-        font-size: 2rem;
+        font-size: var(--font-size-heading-lg);
         font-weight: var(--font-weight-medium);
         line-height: 1.4;
         color: var(--color-sub);
@@ -1641,5 +1629,16 @@ main {
         font-size: 1rem;
         line-height: 1.8;
         color: var(--color-header-text);
+    }
+    /* inquiry */
+    .inquiry .inquiry__title {
+        margin-block-end: var(--space-32px);
+    }
+    .inquiry .inquiry__title .inquiry__title-emphasis {
+        font-size: var(--font-size-heading-lg);
+    }
+    .inquiry .inquiry__button {
+        font-size: var(--font-size-display-md);
+        padding-inline: var(--space-128px);
     }
 }
