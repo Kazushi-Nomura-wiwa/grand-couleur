@@ -1000,26 +1000,30 @@ main {
 .inquiry .inquiry__title {
     color: var(--color-sub);
     text-align: center;
+    border-bottom: var(--space-8px) solid var(--color-sec-yellow);
+    width: fit-content;
+    margin-inline: auto;
 }
 .inquiry .inquiry__title .inquiry__title-emphasis {
-    background-color: var(--color-sec-yellow);
-    font-size: var(--font-size-body);
-    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-heading-sm);
+    font-weight: var(--font-weight-bold);
 }
 .inquiry .inquiry__title::before {
     content: "";
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-image: url('../img/inquiry__title-emphasis_.svg');
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../img/inquiry__title-emphasis.svg');
+    background-repeat: no-repeat;
 }
 .inquiry .inquiry__title::after {
     content: "";
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-image: url('../img/inquiry__title-emphasis_.svg');
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../img/inquiry__title-emphasis.svg');
     transform: scaleX(-1);
+    background-repeat: no-repeat;
 }
 .inquiry .inquiry__button {
     display: block;
@@ -1435,18 +1439,18 @@ main {
         );
         background-repeat: no-repeat;
         background-position: top center;
-        background-size: 100% auto;
+        background-size: 105%;
     }
 
     /* staffs-voice */
-/*    .staffs-voice::before {
+    .staffs-voice::before {
         content: "";
         display: block;
         width: 100%;
         aspect-ratio: 1462 / 208;
         background-color: #fff;
         background-image:
-        url("../img/staffs-voice__header_pc.svg"),
+        url("../img/users-voice__header_pc.svg"),
         linear-gradient(
             to bottom,
             var(--color-text-bg) 0%,
@@ -1455,9 +1459,9 @@ main {
             var(--color-bg2) 100%
         );
         background-repeat: no-repeat;
-        background-position: center top;
-        background-size: cover;
-    }*/
+        background-position: center bottom;
+        background-size: 105%;
+    }
 
     /* flow 以下要確認 */
 
@@ -1478,8 +1482,8 @@ main {
             var(--color-bg) 100%
         );
         background-repeat: no-repeat;
-        background-position: center top;
-        background-size: cover;
+        background-position: center bottom;
+        background-size: 105%;
     }
     .flow .container {
         width: 84%;
@@ -1632,49 +1636,5 @@ main {
         font-size: 1rem;
         line-height: 1.8;
         color: var(--color-header-text);
-    }
-}
-@media (min-width: 1024px) {
-    .staffs-voice {
-        overflow: hidden;
-        background-color: var(--color-bg2);
-    }
-
-    .staffs-voice::after {
-        content: "";
-        display: block;
-
-        width: 100%;
-        aspect-ratio: 1462 / 208;
-
-        background-image:
-            url("../img/職員の声_下.svg"),
-            linear-gradient(
-                to bottom,
-                var(--color-bg2) 0%,
-                var(--color-bg2) 50%,
-                var(--color-bg) 50%,
-                var(--color-bg) 100%
-            );
-
-        background-repeat:
-            no-repeat,
-            no-repeat;
-
-        background-position:
-            center top,
-            center;
-
-        background-size:
-            100% auto,
-            100% 100%;
-    }
-
-    .flow {
-        background-color: var(--color-bg);
-    }
-
-    .flow::before {
-        display: none;
     }
 }
