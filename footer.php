@@ -1,5 +1,6 @@
     <footer class="site-footer">
         <div class="container">
+            <p class="site-footer__subtitle--pc">安心して一歩踏み出せる場へ。</hp>
             <h2 class="site-footer__title">合同会社グランクルール</h2>
             <address class="site-footer__address">
                 〒065-0012<br>
@@ -11,7 +12,7 @@
             </div>
             <div class="site-footer__inquiry">
                 <a href="https://www.instagram.com/gran.couleur/" class="site-footer__social-link-instagram" target="_blank">インスタグラム</a>
-                <h3 class="site-footer__subtitle">安心して一歩踏み出せる場へ。</h3>
+                <p class="site-footer__subtitle--sp">安心して一歩踏み出せる場へ。</p>
                 <a href="#" class="site-footer__inquiry-link">お問い合わせはこちら</a>
             </div>
             <hr class="site-footer__divider">

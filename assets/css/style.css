@@ -201,7 +201,6 @@ main {
 .global-nav__list .menu-item:last-child {
     margin-block-end: 0;
 }
-
 /* footer */
 .site-footer {
     margin-block-start: var(--space-48px);
@@ -251,7 +250,10 @@ main {
     background-size: contain;
     font-size: 0;
 }
-.site-footer__subtitle {
+.site-footer__subtitle--pc {
+    display: none;
+}
+.site-footer__subtitle--sp {
     font-family: "Noto Serif JP", serif;
     font-size: var(--font-size-heading-sm);
     color: var(--color-sub);
@@ -1295,6 +1297,132 @@ main {
         margin-top: 0;
         padding: 0.55rem clamp(1rem, 1.7vw, 1.6rem);
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+    }
+    /* footer */
+    .site-footer {
+        margin-block-start: var(--space-48px);
+        padding-block-end: var(--space-32px);
+        background-color: var(--color-main);
+    }
+    .site-footer::before {
+        content: "";
+        display: block;
+        width: 100%;
+        aspect-ratio: 375 / 137;
+        background-color: var(--color-bg);
+        background-image: url('../img/footer_wave_sp.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .site-footer__copyright {
+        margin: 0;
+        font-size: var(--font-size-small);
+        color: var(--color-text-small);
+    }
+    .site-footer__title {
+        height: 3rem;
+        aspect-ratio: 833/134;
+        margin-block-end: var(--space-16px);
+        background-image: url('../img/logo.svg');
+        background-size: contain;
+        font-size: 0;
+    }
+    .site-footer__address {
+        margin-block-end: var(--space-12px);
+        font-size: var(--font-size-body);
+        font-style: normal;
+        color: var(--color-header-text);
+    }
+    .site-footer__contact {
+        font-size: var(--font-size-small);
+    }
+    .site-footer__social-link-instagram {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        aspect-ratio: 1 / 1;
+        margin-inline-start: auto;
+        background-image: url('../img/instagram_logo.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: 0;
+    }
+    .site-footer__subtitle--pc {
+        display: none;
+    }
+    .site-footer__subtitle--sp {
+        font-family: "Noto Serif JP", serif;
+        font-size: var(--font-size-heading-sm);
+        color: var(--color-sub);
+        text-align: center;
+    }
+    .site-footer__inquiry-link {
+        display: block;
+        width: fit-content;
+        margin-block: var(--space-16px) 0;
+        margin-inline: auto;
+        padding-block: var(--space-8px);
+        padding-inline: var(--space-16px);
+        border: 1px solid var(--color-sub);
+        border-radius: var(--radius-pill);
+        background-color: var(--color-sec-yellow);
+        box-shadow: var(--shadow-base);
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-medium);
+        color: var(--color-sub);
+        transition: background-color 0.3s ease;
+    }
+    .site-footer__inquiry-link:after {
+        content: "";
+        display: inline-block;
+        width: 0.5rem;
+        height: 0.5rem;
+        margin-inline-start: 0.5em;
+        border-top: 2px solid currentColor;
+        border-right: 2px solid currentColor;
+        transform: rotate(45deg) translateY(-2px);
+    }
+    .site-footer__inquiry-link:hover {
+        background-color: var(--color-main);
+        text-decoration: none;
+    }
+    .site-footer__divider {
+        height: 1px;
+        margin-block: var(--space-72px) var(--space-24px);
+        margin-inline: auto;
+        border: none;
+        background: var(--color-sub);
+    }
+    .site-footer-nav__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        list-style: none;
+    }
+    .site-footer-nav__list li {
+        margin: 0;
+    }
+    .site-footer-nav__list li:last-child {
+        display: none;
+    }
+    .site-footer-nav__list a {
+        font-size: var(--font-size-xsmall);
+        color: var(--color-sub);
+        text-decoration: none;
+    }
+    .site-footer__copyright {
+        color: var(--color-sub);
+        text-align: center;
+    }
+    .site-footer__copyright::before {
+        content: "";
+        display: block;
+        height: 70px;
+        aspect-ratio: 63 / 70;
+        background-image: url('../img/footer_bubble_sp.svg');
     }
     /* hero */
     .hero {
