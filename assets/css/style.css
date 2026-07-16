@@ -1304,7 +1304,7 @@ main {
         background-repeat: no-repeat;
         background-size: cover;
         background-color: #fff;
-        padding-block: var(--space-120px) var(--space-32px);
+        padding-block: var(--space-224px) var(--space-32px);
     }
     .site-footer::before {
         display: none;
@@ -1364,6 +1364,7 @@ main {
     .site-footer__inquiry-link {
         font-size: var(--font-size-heading-md);
         margin-inline: auto 0;
+        margin-block-start: var(--space-48px);
     }
     .site-footer__inquiry-link:after {
         width: 1rem;
@@ -1372,36 +1373,29 @@ main {
         border-top: 4px solid currentColor;
         border-right: 4px solid currentColor;
     }
-    .site-footer__inquiry-link:hover {
-        background-color: var(--color-main);
-        text-decoration: none;
-    }
     .site-footer__divider {
-        height: 1px;
-        margin-block: var(--space-72px) var(--space-24px);
-        margin-inline: auto;
-        border: none;
-        background: var(--color-sub);
+        height: 0;
     }
     .site-footer-nav__list {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 0;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        list-style: none;
+        display: flex;
+        gap: 1rem;
+        margin: 0 auto;
+        width: fit-content;
     }
     .site-footer-nav__list li {
         margin: 0;
+        border-right: 1px solid var(--color-header-text);
+        padding-inline-end: 1rem;
+    }
+    .site-footer-nav__list li:nth-child(7) {
+        border: none;
+        padding-inline-end: 0;
     }
     .site-footer-nav__list li:last-child {
         display: none;
     }
     .site-footer-nav__list a {
-        font-size: var(--font-size-xsmall);
-        color: var(--color-sub);
-        text-decoration: none;
+        font-size: var(--font-size-heading-sm);
     }
     .site-footer__copyright {
         color: var(--color-sub);
