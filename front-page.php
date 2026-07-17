@@ -7,7 +7,7 @@
             <h4 class="hero__lead">あなたの夢を一緒に育てる</h4>
             <p class="hero__text">就労継続支援A型事業所グランクルールは<br>地下鉄東豊線東区役所前4番出口から徒歩一分</p>
             <p class="hero__text"><strong>『IT』</strong>と<strong>『飲食業務』</strong><br>を中心に行っている事業所です。</p>
-            <a href="<?php echo esc_url(home_url('/inquiry/')); ?>" class="hero__link">お問い合わせ</a>
+            <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="hero__link">お問い合わせ</a>
         </div>
     </section>
     <section class="worries">
@@ -346,11 +346,11 @@
             </ol>
         </div>
     </section>
-    <section class="inquiry">
-        <h2 class="inquiry__title"><strong class="inquiry__title-emphasis">まずはお気軽にご相談ください</strong></h2>
-        <a href="#" class="inquiry__button">お問い合わせはこちら</a>
-        <p class="inquiry__note"><span class="inquiry__note-text">お急ぎの場合はお電話にてお問い合わせください</span></p>
-        <a href="tel:0116000998" class="inquiry__phone-link">&#x1F4DE;011-600-0998</a>
+    <section class="contact">
+        <h2 class="contact__title"><strong class="contact__title-emphasis">まずはお気軽にご相談ください</strong></h2>
+        <a href="/contact" class="contact__button">お問い合わせはこちら</a>
+        <p class="contact__note"><span class="contact__note-text">お急ぎの場合はお電話にてお問い合わせください</span></p>
+        <a href="tel:0116000998" class="contact__phone-link">&#x1F4DE;011-600-0998</a>
     </section>
     <section class="faq">
         <div class="container">

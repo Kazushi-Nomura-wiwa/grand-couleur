@@ -259,7 +259,7 @@ main {
     color: var(--color-sub);
     text-align: center;
 }
-.site-footer__inquiry-link {
+.site-footer__contact-link {
     display: block;
     width: fit-content;
     margin-block: var(--space-16px) 0;
@@ -275,7 +275,7 @@ main {
     color: var(--color-sub);
     transition: background-color 0.3s ease;
 }
-.site-footer__inquiry-link:after {
+.site-footer__contact-link:after {
     content: "";
     display: inline-block;
     width: 0.5rem;
@@ -285,7 +285,7 @@ main {
     border-right: 2px solid currentColor;
     transform: rotate(45deg) translateY(-2px);
 }
-.site-footer__inquiry-link:hover {
+.site-footer__contact-link:hover {
     background-color: var(--color-main);
     text-decoration: none;
 }
@@ -996,40 +996,40 @@ main {
     top: calc(0.5rem + 3.375rem + 0.75rem + 60px);
 }
 
-/* inquiry */
-.inquiry {
+/* contact */
+.contact {
     margin-block-end: var(--space-224px);
     text-align: center;
 }
-.inquiry .inquiry__title {
+.contact .contact__title {
     color: var(--color-sub);
     text-align: center;
     border-bottom: var(--space-8px) solid var(--color-sec-yellow);
     width: fit-content;
     margin-inline: auto;
 }
-.inquiry .inquiry__title .inquiry__title-emphasis {
+.contact .contact__title .contact__title-emphasis {
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-bold);
 }
-.inquiry .inquiry__title::before {
+.contact .contact__title::before {
     content: "";
     display: inline-block;
     width: 2rem;
     height: 2rem;
-    background-image: url('../img/inquiry__title-emphasis.svg');
+    background-image: url('../img/contact__title-emphasis.svg');
     background-repeat: no-repeat;
 }
-.inquiry .inquiry__title::after {
+.contact .contact__title::after {
     content: "";
     display: inline-block;
     width: 2rem;
     height: 2rem;
-    background-image: url('../img/inquiry__title-emphasis.svg');
+    background-image: url('../img/contact__title-emphasis.svg');
     transform: scaleX(-1);
     background-repeat: no-repeat;
 }
-.inquiry .inquiry__button {
+.contact .contact__button {
     display: block;
     width: fit-content;
     margin-block: var(--space-16px);
@@ -1045,7 +1045,7 @@ main {
     box-shadow: var(--shadow-base);
     transition: background-color 0.3s ease;
 }
-.inquiry .inquiry__button:after {
+.contact .contact__button:after {
     content: "";
     display: inline-block;
     width: 0.5rem;
@@ -1055,18 +1055,18 @@ main {
     border-right: 2px solid currentColor;
     transform: rotate(45deg) translateY(-2px);
 }
-.inquiry .inquiry__button:hover {
+.contact .contact__button:hover {
     background-color: var(--color-main);
     text-decoration: none;
 }
-.inquiry .inquiry__note {
+.contact .contact__note {
     margin-bottom: var(--space-12px);
 }
-.inquiry .inquiry__note-text {
+.contact .contact__note-text {
     font-size: var(--font-size-small);
     color: var(--color-text-small);
 }
-.inquiry .inquiry__phone-link {
+.contact .contact__phone-link {
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-bold);
 }
@@ -1326,7 +1326,7 @@ main {
         background-size: contain;
         font-size: 0;
     }
-    .site-footer__inquiry {
+    .site-footer__contact {
         flex: 1;
         margin-inline-start: auto;
         align-self: flex-end;
@@ -1361,12 +1361,12 @@ main {
     .site-footer__subtitle--sp {
         display: none;
     }
-    .site-footer__inquiry-link {
+    .site-footer__contact-link {
         font-size: var(--font-size-heading-md);
         margin-inline: auto 0;
         margin-block-start: var(--space-48px);
     }
-    .site-footer__inquiry-link:after {
+    .site-footer__contact-link:after {
         width: 1rem;
         height: 1rem;
         margin-inline-start: 0.5em;
@@ -1742,18 +1742,18 @@ main {
         line-height: 1.8;
         color: var(--color-header-text);
     }
-    /* inquiry */
-    .inquiry .inquiry__title {
+    /* contact */
+    .contact .contact__title {
         margin-block-end: var(--space-32px);
     }
-    .inquiry .inquiry__title .inquiry__title-emphasis {
+    .contact .contact__title .contact__title-emphasis {
         font-size: var(--font-size-heading-lg);
     }
-    .inquiry .inquiry__button {
+    .contact .contact__button {
         font-size: var(--font-size-display-md);
         padding-inline: var(--space-128px);
     }
-    .inquiry .inquiry__button:after {
+    .contact .contact__button:after {
         width: 1.5rem;
         height: 1.5rem;
         border-top: 4px solid currentColor;

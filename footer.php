@@ -13,10 +13,10 @@
                         <p class="site-footer__email">Mail: <a href="mailto:grancouleur@gmail.com">grancouleur@gmail.com</a></p>
                     </div>
                 </div>
-                <div class="site-footer__inquiry">
+                <div class="site-footer__contact">
                     <a href="https://www.instagram.com/gran.couleur/" class="site-footer__social-link-instagram" target="_blank">インスタグラム</a>
                     <p class="site-footer__subtitle site-footer__subtitle--sp">安心して一歩踏み出せる場へ。</p>
-                    <a href="#" class="site-footer__inquiry-link">お問い合わせはこちら</a>
+                    <a href="#" class="site-footer__contact-link">お問い合わせはこちら</a>
                 </div>
             </div>
             <hr class="site-footer__divider">
