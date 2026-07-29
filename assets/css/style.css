@@ -1311,6 +1311,9 @@ input[type="submit"].wpcf7-form-control:hover {
     background-color: var(--color-main);
     text-decoration: none;
 }
+.contact-address{
+    
+}
 @media (min-width: 1024px) {
     .eyeblow {
         font-size: var(--font-size-heading-sm);
