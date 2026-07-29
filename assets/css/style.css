@@ -1311,7 +1311,7 @@ input[type="submit"].wpcf7-form-control:hover {
     background-color: var(--color-main);
     text-decoration: none;
 }
-.contact-address{
+.page-contact__address {
     
 }
 @media (min-width: 1024px) {
