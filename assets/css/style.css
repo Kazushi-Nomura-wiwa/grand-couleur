@@ -1215,6 +1215,102 @@ main {
     row-gap: 0.75rem;
     margin: 0;
 }
+/* お問い合わせページ */
+.wpcf7-form .required,
+.wpcf7-form .not-required {
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-header-text);
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+.wpcf7-form .required::after {
+    content: "必須";
+    font-size: var(--font-size-xsmall);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-bg);
+    background-color: var(--color-required);
+    border-radius: var(--radius-pill);
+    padding: 0.125rem 0.5rem;
+    margin-left: 0.75rem;
+}
+.wpcf7-form-control {
+    border: 1px solid var(--color-sub);
+    padding: 0.75rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    width: 100%;
+}
+input[type="submit"].wpcf7-form-control {
+    display: inline-block;
+    margin-block-start: var(--space-16px);
+    padding-block: var(--space-8px);
+    padding-inline: var(--space-16px);
+    border: 1px solid var(--color-sub);
+    border-radius: var(--radius-pill);
+    background-color: var(--color-sec-yellow);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-sub);
+    transition: background-color 0.3s ease;
+}
+.submit-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-wrapper > p {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+.submit-wrapper input[type="submit"] {
+    appearance: none;
+    width: 160px;
+    height: 48px;
+    padding: 0 44px 0 24px;
+
+    color: #3598e5;
+    font-size: 1rem;
+
+    background-color: #ffffb5;
+    border: 1px solid #3598e5;
+    border-radius: 9999px;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+/* 「＞」部分 */
+.submit-wrapper > p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 28px;
+
+    width: 7px;
+    height: 7px;
+
+    border-top: 1px solid #3598e5;
+    border-right: 1px solid #3598e5;
+
+    transform: translateY(-160%) rotate(45deg);
+    pointer-events: none;
+}
+
+/* CF7の送信中スピナー */
+.submit-wrapper .wpcf7-spinner {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 8px);
+    margin: 0;
+    transform: translateY(-50%);
+}
+input[type="submit"].wpcf7-form-control:hover {
+    background-color: var(--color-main);
+    text-decoration: none;
+}
 @media (min-width: 1024px) {
     .eyeblow {
         font-size: var(--font-size-heading-sm);
@@ -1806,5 +1902,15 @@ main {
     .location__list {
         flex: 1 1 auto;
         min-width: 0;
+    }
+    /* お問い合わせページ */
+    input[name="your-name"],
+    input[name="your-company"] {
+        width: 312px;
+    }
+    input[name="your-email"],
+    input[name="your-subject"],
+    textarea[name="your-message"] {
+        width: 656px;
     }
 }
