@@ -10,18 +10,24 @@
         </div>
         <div class="page-contact__address">
             <h3 class="page-contact__address-title">ご連絡先</h3>
-            <div class="page-contact__business-hours">
-                <h4 class="page-contact__business-hours-title">受付時間</h4>
-                <p class="page-contact__business-hours-text">平日 10:00～17:00</p>
-                <span class="page-contact__business-hours-note">※土日祝日を除く</span>
+            <div class="page-contact-container page-contact-container--business-hours">
+                <div class="page-contact__business-hours">
+                    <h4 class="page-contact__business-hours-title">受付時間</h4>
+                    <p class="page-contact__business-hours-text">平日 10:00～17:00</p>
+                    <span class="page-contact__business-hours-note">※土日祝日を除く</span>
+                </div>
             </div>
-            <div class="page-contact__telephone">
-                <h4 class="page-contact__telephone-title">お電話</h4>
-                <a class="page-contact__telephone-link" href="tel:0116000998">011-600-0998</a>
+            <div class="page-contact-container page-contact-container--telephone">
+                <div class="page-contact__telephone">
+                    <h4 class="page-contact__telephone-title">お電話</h4>
+                    <a class="page-contact__telephone-link" href="tel:0116000998">011-600-0998</a>
+                </div>
             </div>
-            <div class="page-contact__email">
-                <h4 class="page-contact__email-title">メール</h4>
-                <a class="page-contact__email-link" href="mailto:grancouleur@gmail.com">grancouleur@gmail.com</a>
+            <div class="page-contact-container page-contact-container--email">
+                <div class="page-contact__email">
+                    <h4 class="page-contact__email-title">メール</h4>
+                    <a class="page-contact__email-link" href="mailto:grancouleur@gmail.com">grancouleur@gmail.com</a>
+                </div>
             </div>
         </div>
     </div>

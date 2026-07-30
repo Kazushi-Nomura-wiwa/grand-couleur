@@ -1311,8 +1311,57 @@ input[type="submit"].wpcf7-form-control:hover {
     background-color: var(--color-main);
     text-decoration: none;
 }
+/* ページ内お問い合わせ連絡先 */
 .page-contact__address {
-    
+    width: 100%;
+    border-radius: var(--radius-heavy);
+    background-color: var(--color-text-card-bg);
+    padding: var(--space-32px);
+    box-shadow: var(--shadow-base);
+}
+.page-contact__address-title {
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-header-text);
+    border-bottom: 2px solid var(--color-sub);
+    padding-bottom: var(--space-20px);
+}
+.page-contact-container {
+    margin-top: var(--space-24px);
+    display: flex;
+}
+.page-contact-container::before {
+    content: "";
+    width: 54px;
+    height: 54px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+}
+.page-contact-container--business-hours::before {
+    background-image: url('../img/page-contact__business-hours-title.svg');
+}
+.page-contact-container--telephone::before {
+    background-image: url('../img/page-contact__telephone-title.svg');
+}
+.page-contact-container--email::before {
+    background-image: url('../img/page-contact__email-title.svg');
+}
+.page-contact__business-hours-title,
+.page-contact__telephone-title,
+.page-contact__email-title {
+    font-size: var(--font-size-xsmall);
+    color: var(--color-sub);
+}
+.page-contact__business-hours-text,
+.page-contact__telephone-link,
+.page-contact__email-link {
+    font-size: var(--font-size-small);
+    color: var(--color-header-text);
+}
+.page-contact__business-hours-note {
+    font-size: var(--font-size-xsmall);
+    color: var(--color-text-small);
 }
 @media (min-width: 1024px) {
     .eyeblow {
@@ -1915,5 +1964,43 @@ input[type="submit"].wpcf7-form-control:hover {
     input[name="your-subject"],
     textarea[name="your-message"] {
         width: 656px;
+    }
+
+    .page-contact__address {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        row-gap: var(--space-24px);
+        width: 100%;
+        max-width: 794px;
+        padding: var(--space-16px) var(--space-24px);
+    }
+
+    /* 見出しと罫線を3列全体に広げる */
+    .page-contact__address-title {
+        grid-column: 1 / -1;
+        margin: 0;
+        padding-bottom: 16px;
+    }
+
+    /* SP用の縦方向余白を解除 */
+    .page-contact-container {
+        align-items: flex-start;
+        gap: 12px;
+        min-width: 0;
+        margin-top: 0;
+    }
+
+    /* アイコンの幅を固定 */
+    .page-contact-container::before {
+        flex: 0 0 54px;
+    }
+
+    /* アイコン右側のテキスト領域 */
+    .page-contact-container > div {
+        min-width: 0;
+    }
+
+    .page-contact__email-link {
+        overflow-wrap: anywhere;
     }
 }
