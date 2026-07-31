@@ -4,8 +4,8 @@
         <p class="page-contact__eyebrow eyeblow">CONTACT</p>
         <h2 class="page-contact__title">お問い合わせ</h2>
         <h3 class="page-contact__lead">見学・ご相談を受け付けています、まずはご気軽にご相談ください。<br>以下のフォームに必要事項をご記入の上、送信してください。</h3>
-        <a class="page-contact__faq-link" href="/">よくある質問</a>
         <div class="page-contact__form">
+            <a class="page-contact__faq-link" href="/">よくある質問</a>
             <?php echo do_shortcode('[contact-form-7 id="64e4be3" title="お問い合わせ"]'); ?>
         </div>
         <div class="page-contact__address">

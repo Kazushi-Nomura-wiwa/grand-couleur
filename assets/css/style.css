@@ -1216,6 +1216,24 @@ main {
     margin: 0;
 }
 /* お問い合わせページ */
+.page-contact {
+    margin-top: var(--space-160px);
+}
+.page-contact__title {
+    font-size: var(--font-size-heading-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-header-text);
+}
+.page-contact__lead {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-sub);
+}
+.page-contact__eyebrow,
+.page-contact__title,
+.page-contact__lead {
+    text-align: center;
+}
 .wpcf7-form .required,
 .wpcf7-form .not-required {
     font-size: var(--font-size-body);
