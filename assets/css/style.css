@@ -1217,7 +1217,7 @@ main {
 }
 /* お問い合わせページ */
 .page-contact {
-    margin-top: var(--space-160px);
+    margin-top: var(--space-72px);
 }
 .page-contact__title {
     font-size: var(--font-size-heading-lg);
@@ -1233,6 +1233,14 @@ main {
 .page-contact__title,
 .page-contact__lead {
     text-align: center;
+}
+.page-contact__faq-link {
+    font-size: var(--font-size-heading-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-sub);
+    background: linear-gradient(transparent 60%, var(--color-sec-yellow) 60%);
+    margin-block: var(--space-48px) var(--space-24px);
+    display: inline-block;
 }
 .wpcf7-form .required,
 .wpcf7-form .not-required {
