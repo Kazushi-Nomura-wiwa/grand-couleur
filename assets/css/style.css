@@ -1,6 +1,28 @@
 @charset "utf-8";
+
+/* ==========================================================================
+   Grand Couleur - Main stylesheet
+
+   構成
+   01. デザイン変数
+   02. ベーススタイル
+   03. 共通レイアウト・共通パーツ
+   04. ヘッダー・グローバルナビ
+   05. フッター
+   06. トップページ
+   07. お問い合わせページ
+   08. サンクスページ
+   09. PC表示（1024px以上）の上書き
+
+   SPを基準に記述し、PC固有の差分はファイル末尾のメディアクエリで
+   上書きするモバイルファースト構成。BEMクラスは既存HTMLに合わせて維持。
+   ========================================================================== */
+
+/* ==========================================================================
+   01. デザイン変数
+   ========================================================================== */
 :root {
-    /* color */
+    /* カラー */
     --color-main: rgba(220 238 249 / 100%);
     --color-sub: rgba(16 128 195 / 100%);
     --color-sub-light: rgba(205 234 231 / 100%);
@@ -21,7 +43,7 @@
     --color-bg-staff: rgba(254 234 234 / 100%);
     --color-error-box: rgba(255 238 174 / 100%);
 
-    /* font size */
+    /* フォントサイズ */
     --font-size-display-xl: 4rem;
     --font-size-display-lg: 3rem;
     --font-size-display-md: 2.5rem;
@@ -32,7 +54,7 @@
     --font-size-small: 0.875rem;
     --font-size-xsmall: 0.75rem;
 
-    /* spacing: 変数名は16px基準での実寸を表す */
+    /* 余白：変数名は16px基準での実寸を表す */
     --space-4px: 0.25rem;
     --space-8px: 0.5rem;
     --space-12px: 0.75rem;
@@ -51,16 +73,16 @@
     --space-176px: 11rem;
     --space-224px: 14rem;
 
-    /* radius */
+    /* 角丸 */
     --radius-light: 0.5rem;
     --radius-regular: 1rem;
     --radius-heavy: 1.5rem;
     --radius-pill: 999px;
 
-    /* shadow */
+    /* 影 */
     --shadow-base: 0 3px 6px rgba(0, 0, 0, 0.25);
 
-    /* font weight */
+    /* フォントウェイト */
     --font-weight-extra-light: 200;
     --font-weight-light: 300;
     --font-weight-regular: 400;
@@ -70,59 +92,80 @@
     --font-weight-black: 900;
 }
 
+/* ==========================================================================
+   02. ベーススタイル
+   ========================================================================== */
 html {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 100%;
 }
+
 body {
     background-color: var(--color-bg);
     font-size: var(--font-size-body);
     line-height: 1.7;
     color: var(--color-text-body);
 }
+
 a {
     color: var(--color-sub);
     text-decoration: none;
 }
+
 a:hover {
     color: var(--color-header-text);
     text-decoration: underline;
 }
+
 main {
     width: 100%;
     margin-inline: auto;
 }
+
+/* ==========================================================================
+   03. 共通レイアウト・共通パーツ
+   ========================================================================== */
+
+/* コンテンツ幅：SPでは画面幅の90%、PCではメディアクエリ内で上書き */
 .container {
     width: 90%;
     margin-inline: auto;
 }
+
+/* セクション上部の英字ラベル */
 .eyeblow {
     font-size: var(--font-size-xsmall);
     font-weight: var(--font-weight-bold);
     color: var(--color-sub);
 }
 
-/* header menu */
+/* ==========================================================================
+   04. ヘッダー・グローバルナビ
+   ========================================================================== */
+
+/* ヘッダー本体 */
 .site-header {
     position: sticky;
     top: 0;
     z-index: 300;
     height: 5.625rem;
-    background-image: url('../img/header_bg_sp.webp');
+    background-image: url("../img/header_bg_sp.webp");
     background-position: top center;
     background-size: cover;
     box-shadow: var(--shadow-base);
 }
+
 .site-header h1 {
     display: none;
     width: 5rem;
     aspect-ratio: 833/134;
-    background-image: url('../img/logo.svg');
+    background-image: url("../img/logo.svg");
     background-repeat: no-repeat;
     background-size: contain;
     font-size: 0;
 }
-/* toggle button */
+
+/* SP用ハンバーガーボタン */
 .site-header__toggle {
     position: absolute;
     top: 2rem;
@@ -139,9 +182,11 @@ main {
     background: transparent;
     cursor: pointer;
 }
+
 .site-header__toggle.active {
     display: flex;
 }
+
 .site-header__toggle span:not(.site-header__toggle-text) {
     display: block;
     width: 28px;
@@ -149,6 +194,7 @@ main {
     border-radius: 999px;
     background: var(--color-sub);
 }
+
 .site-header__toggle-text {
     margin-block-start: 2px;
     font-size: 0.5rem;
@@ -157,19 +203,24 @@ main {
     letter-spacing: 0.1em;
     color: var(--color-sub);
 }
+
 .site-header__toggle[aria-expanded="true"] span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
+
 .site-header__toggle[aria-expanded="true"] span:nth-child(2) {
     opacity: 0;
 }
+
 .site-header__toggle[aria-expanded="true"] span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
+
 .site-header__toggle span:not(.site-header__toggle-text) {
     transition: transform .3s, opacity .3s;
 }
-/* toggle menu */
+
+/* SP用全画面メニュー */
 .global-nav {
     position: fixed;
     top: 0;
@@ -179,86 +230,102 @@ main {
     overscroll-behavior: contain;
     width: 100%;
     height: 100%;
-    background-image: url('../img/header_bg_sp.webp');
+    background-image: url("../img/header_bg_sp.webp");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
 }
+
 .global-nav.is_open {
     transform: translateY(0);
 }
+
 .global-nav__list {
     position: absolute;
     top: 5rem;
     left: 1.5rem;
 }
+
 .global-nav__list .menu-item {
     margin-block-end: var(--space-48px);
     text-align: left;
 }
+
 .global-nav__list .menu-item:last-child {
     margin-block-end: 0;
 }
-/* footer */
+
+/* ==========================================================================
+   05. フッター
+   ========================================================================== */
 .site-footer {
     margin-block-start: var(--space-48px);
     padding-block-end: var(--space-32px);
     background-color: var(--color-main);
 }
+
 .site-footer::before {
     content: "";
     display: block;
     width: 100%;
     aspect-ratio: 375 / 137;
     background-color: var(--color-bg);
-    background-image: url('../img/footer_wave_sp.svg');
+    background-image: url("../img/footer_wave_sp.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .site-footer__copyright {
     margin: 0;
     font-size: var(--font-size-small);
     color: var(--color-text-small);
 }
+
 .site-footer__title {
     height: 3rem;
     aspect-ratio: 833/134;
     margin-block-end: var(--space-16px);
-    background-image: url('../img/logo.svg');
+    background-image: url("../img/logo.svg");
     background-size: contain;
     font-size: 0;
 }
+
 .site-footer__address {
     margin-block-end: var(--space-12px);
     font-size: var(--font-size-body);
     font-style: normal;
     color: var(--color-header-text);
 }
+
 .site-footer__contact {
     font-size: var(--font-size-small);
 }
+
 .site-footer__social-link-instagram {
     display: block;
     width: 2rem;
     height: 2rem;
     aspect-ratio: 1 / 1;
     margin-inline-start: auto;
-    background-image: url('../img/instagram_logo.svg');
+    background-image: url("../img/instagram_logo.svg");
     background-repeat: no-repeat;
     background-size: contain;
     font-size: 0;
 }
+
 .site-footer__subtitle--pc {
     display: none;
 }
+
 .site-footer__subtitle {
     font-family: "Noto Serif JP", serif;
     font-size: var(--font-size-heading-sm);
     color: var(--color-sub);
     text-align: center;
 }
+
 .site-footer__contact-link {
     display: block;
     width: fit-content;
@@ -275,7 +342,8 @@ main {
     color: var(--color-sub);
     transition: background-color 0.3s ease;
 }
-.site-footer__contact-link:after {
+
+.site-footer__contact-link::after {
     content: "";
     display: inline-block;
     width: 0.5rem;
@@ -285,10 +353,12 @@ main {
     border-right: 2px solid currentColor;
     transform: rotate(45deg) translateY(-2px);
 }
+
 .site-footer__contact-link:hover {
     background-color: var(--color-main);
     text-decoration: none;
 }
+
 .site-footer__divider {
     height: 1px;
     margin-block: var(--space-72px) var(--space-24px);
@@ -296,6 +366,7 @@ main {
     border: none;
     background: var(--color-sub);
 }
+
 .site-footer-nav__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -305,57 +376,71 @@ main {
     text-align: center;
     list-style: none;
 }
+
 .site-footer-nav__list li {
     margin: 0;
 }
+
 .site-footer-nav__list li:last-child {
     display: none;
 }
+
 .site-footer-nav__list a {
     font-size: var(--font-size-xsmall);
     color: var(--color-sub);
     text-decoration: none;
 }
+
 .site-footer__copyright {
     color: var(--color-sub);
     text-align: center;
 }
+
 .site-footer__copyright::before {
     content: "";
     display: block;
     height: 70px;
     aspect-ratio: 63 / 70;
-    background-image: url('../img/footer_bubble_sp.svg');
+    background-image: url("../img/footer_bubble_sp.svg");
 }
-/* hero */
+
+/* ==========================================================================
+   06. トップページ
+   ========================================================================== */
+
+/* 06-01. メインビジュアル */
 .hero {
     aspect-ratio: 375 / 904;
     width: 100%;
-    background-image: url('../img/header_bg_sp.webp');
+    background-image: url("../img/header_bg_sp.webp");
     background-repeat: no-repeat;
     background-position: center -90px;
     background-size: cover;
 }
+
 .hero .container {
     position: relative;
     width: calc(100% - 2rem);
     padding-block: 9.375rem;
     padding-inline: 0;
 }
+
 .hero .hero__title {
     height: 3rem;
     aspect-ratio: 833/134;
     margin-block-end: var(--space-16px);
-    background-image: url('../img/logo.svg');
+    background-image: url("../img/logo.svg");
     background-size: contain;
     font-size: 0;
 }
+
 .hero .hero__catch {
     font-family: "Noto Serif JP", serif;
     font-size: var(--font-size-heading-lg);
     font-weight: var(--font-weight-medium);
     color: var(--color-header-text);
 }
+
 .hero .hero__lead {
     margin-block-end: var(--space-16px);
     font-family: "Noto Serif JP", serif;
@@ -363,20 +448,24 @@ main {
     font-weight: var(--font-weight-medium);
     color: var(--color-header-text);
 }
+
 .hero .hero__text {
     width: 236px;
     font-family: "Noto Serif JP", serif;
     font-size: var(--font-size-xsmall);
     color: var(--color-header-text);
 }
+
 .hero .hero__text strong {
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-medium);
     color: var(--color-sub);
 }
+
 .hero .hero__text br {
     display: none;
 }
+
 .global-nav__list .menu-item:last-child a,
 .hero .hero__link {
     display: inline-block;
@@ -391,8 +480,9 @@ main {
     color: var(--color-sub);
     transition: background-color 0.3s ease;
 }
+
 .global-nav__list .menu-item:last-child a::after,
-.hero .hero__link:after {
+.hero .hero__link::after {
     content: "";
     display: inline-block;
     width: 0.5rem;
@@ -402,29 +492,33 @@ main {
     border-right: 2px solid currentColor;
     transform: rotate(45deg) translateY(-2px);
 }
+
 .global-nav__list .menu-item:last-child a:hover,
 .hero .hero__link:hover {
     background-color: var(--color-main);
     text-decoration: none;
 }
 
-/* worries */
+/* 06-02. お悩み・課題 */
 .worries {
     margin-block-end: var(--space-120px);
     padding-block-end: var(--space-72px);
-    background-image: url('../img/worries_sp_bg.svg');
+    background-image: url("../img/worries_sp_bg.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
 }
+
 .worries .worries__title {
     font-family: "Noto Serif JP", serif;
     font-size: var(--font-size-heading-md);
     color: var(--color-header-text);
 }
+
 .worries .worries__subtitle_pc {
     display: none;
 }
+
 .worries .worries__subtitle_sp {
     font-family: "Noto Serif JP", serif;
     font-size: var(--font-size-heading-sm);
@@ -432,6 +526,7 @@ main {
     text-align: center;
     color: var(--color-sub);
 }
+
 .worries .worries__item {
     margin-block-end: var(--space-16px);
     padding: var(--space-16px);
@@ -444,10 +539,12 @@ main {
     color: var(--color-sub);
     text-align: center;
 }
+
 .worries .worries__item img {
     margin-inline: auto;
     margin-block-end: 0.625rem;
 }
+
 .worries .worries__text {
     font-family: "Noto Serif JP", serif;
     font-size: var(--font-size-heading-sm);
@@ -455,48 +552,58 @@ main {
     color: var(--color-header-text);
     text-align: center;
 }
+
 .worries .worries__text strong {
     font-weight: var(--font-weight-semi-bold);
     color: var(--color-sub);
 }
-/* about */
+
+/* 06-03. 事業所紹介 */
 .about {
     padding-block-end: var(--space-176px);
-    background-image: url('../img/about_bg_sp.svg');
+    background-image: url("../img/about_bg_sp.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
 }
+
 .about .about__title {
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-medium);
     color: var(--color-header-text);
 }
+
 .about .about__subtitle {
     font-family: "Noto Serif JP", serif;
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-semi-bold);
     color: var(--color-sub);
 }
+
 .about .about__image {
     display: none;
 }
+
 .about .about__text {
     margin-block-end: var(--space-16px);
 }
+
 .about .about__text:last-child {
     margin-block-end: 0;
 }
+
 .about .about__emphasis {
     background: linear-gradient(transparent 60%, var(--color-sec-yellow) 60%);
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-regular);
     color: var(--color-sub);
 }
-/* job-description */
+
+/* 06-04. 業務内容 */
 .job-description {
     padding-block-start: var(--space-144px);
     background: url("../img/job-description_bg_header_sp.svg") top center / 100% auto no-repeat, linear-gradient(var(--color-bg) 7rem,var(--color-main) 7rem);
 }
+
 .job-description::after {
     content: "";
     display: block;
@@ -504,62 +611,70 @@ main {
     aspect-ratio: 375 / 147;
     background: url("../img/job-description_bg_footer_sp.svg") top center / 100% auto no-repeat, linear-gradient(var(--color-main) 4rem,var(--color-bg) 7rem);
 }
+
 .job-description .eyeblow,
 .job-description .job-description__title,
 .job-description .job-description__subtitle {
     text-align: center;
 }
+
 .job-description .job-description__title {
     margin-block-end: var(--space-8px);
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-regular);
     color: var(--color-header-text);
 }
+
 .job-description .job-description__subtitle {
     font-size: var(--font-size-small);
     color: var(--color-sub);
 }
+
 .job-description .job-description__item {
     margin-block-end: var(--space-32px);
     border-radius: var(--radius-regular);
     background: linear-gradient(135deg,var(--color-bg) 55%, var(--color-text-card-bg) 100%);
     box-shadow: var(--shadow-base);
 }
+
 .job-description .job-description__item .job-description__item-image {
     border-radius: var(--radius-regular) var(--radius-regular) 0 0;
 }
+
 .job-description .job-description__item .job-description__content {
     padding: var(--space-16px);
 }
+
 .job-description .job-description__item .job-description__item-title {
     margin-block-end: var(--space-8px);
     font-size: var(--font-size-heading-md);
     font-weight: var(--font-weight-medium);
     color: var(--color-sub);
 }
-/* users-voice */
+
+/* 06-05. 利用者の声 */
 .users-voice {
     overflow: hidden;
     padding-block-end: var(--space-128px);
     background-color: var(--color-text-bg);
 }
 
-/* 白背景 + 波SVG */
+/* 白背景から利用者の声エリアへつなぐ波形 */
 .users-voice::before {
     content: "";
     display: block;
     width: 100%;
     aspect-ratio: 375 / 212;
-    background-color: #fff;
+    background-color: var(--color-bg);
     background-image:
-    url("../img/users-voice__header_sp.svg"),
-    linear-gradient(
-        to bottom,
-        #fff 0%,
-        #fff 58%,
-        var(--color-text-bg) 58%,
-        var(--color-text-bg) 100%
-    );
+        url("../img/users-voice__header_sp.svg"),
+        linear-gradient(
+            to bottom,
+            var(--color-bg) 0%,
+            var(--color-bg) 58%,
+            var(--color-text-bg) 58%,
+            var(--color-text-bg) 100%
+        );
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% auto;
@@ -569,191 +684,58 @@ main {
 .users-voice .users-voice__title {
     text-align: center;
 }
+
 .users-voice .users-voice__title {
-    font-size: var(--font-size-heading-sm);
-    font-weight: var(--font-weight-medium);
-    color: var(--color-sub);
-    margin-bottom: var(--space-32px);
-}
-.users-voice__list {
-    position: relative;
-    display: flex;
-    width: max-content;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    touch-action: pan-y;
-    will-change: transform;
-    transition: transform 0.3s ease;
-}
-.users-voice__item {
-    flex: 0 0 clamp(17.5rem, 75vw, 33.75rem);
-    padding-block: 0;
-    padding-inline: 0.375rem;
-    opacity: 0.35;
-    filter: blur(1px);
-    transform: scale(0.9);
-    transition:
-        opacity 0.35s ease,
-        filter 0.35s ease,
-        transform 0.35s ease;
-}
-
-.users-voice__item.is-active {
-    opacity: 1;
-    filter: none;
-    transform: scale(1);
-}
-.users-voice-card {
-    width: 100%;
-    height: 100%;
-    padding: var(--space-16px);
-    border: 1px solid var(--color-text-card-border);
-    border-radius: 6px;
-    background: #fff;
-    box-shadow: var(--shadow-base);
-}
-
-.users-voice-card__figure {
-    float: left;
-    width: 64px;
-    margin-block: 0 0.375rem;
-    margin-inline: 0 0.625rem;
-}
-
-.users-voice-card__image {
-    display: block;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-}
-
-.users-voice-card__title {
+    margin-block-end: var(--space-32px);
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-medium);
     color: var(--color-sub);
 }
 
-.users-voice-card__position {
-    font-size: var(--font-size-small);
-    font-weight: var(--font-weight-medium);
-    color: var(--color-header-text);
-}
-
-.users-voice-card__section {
-    clear: both;
-}
-
-.users-voice-card__heading {
-    margin-block-end: var(--space-8px);
-    padding-block: var(--space-8px);
-    border-bottom: 2px solid var(--color-main);
-    font-size: var(--font-size-body);
-    font-weight: var(--font-weight-bold);
-    line-height: 1.2;
-    color: var(--color-sub);
-}
-
-.users-voice-card__label {
-    font-size: var(--font-size-small);
-    font-weight: var(--font-weight-bold);
-    color: var(--color-sub);
-}
-
-.users-voice-card__text {
-    font-size: var(--font-size-body);
-    color: var(--color-header-text);
-}
-.users-voice__button {
-    display: grid;
-    place-items: center;
-    width: 2rem;
-    height: 2rem;
-    padding: 0;
-    border: none;
-    border-radius: 50%;
-    background: var(--color-sub);
-    cursor: pointer;
-}
-.users-voice__button::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid var(--color-bg);
-    border-right: 2px solid var(--color-bg);
-}
-.users-voice__button--prev::before {
-    transform: translateX(2px) rotate(-135deg);
-}
-.users-voice__button--next::before {
-    transform: translateX(-2px) rotate(45deg);
-}
-.users-voice__button:disabled {
-    opacity: 0.35;
-    cursor: default;
-}
-.users-voice__controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    margin-block-start: var(--space-32px);
-}
-.users-voice__pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-.users-voice__dot {
-    display: block;
-    width: 0.75rem;
-    height: 0.75rem;
-    padding: 0;
-    border: none;
-    border-radius: var(--radius-pill);
-    background-color: var(--color-button);
-    box-shadow: var(--shadow-base);
-    appearance: none;
-    cursor: pointer;
-}
-.users-voice__dot.is-active {
-    background-color: var(--color-sub);
-}
-/* staffs voice */
+/* 06-06. 職員の声 */
 .staffs-voice {
     overflow: hidden;
     background-color: var(--color-bg2);
 }
+
+/* 利用者の声エリアから職員の声エリアへつなぐ波形 */
 .staffs-voice::before {
     content: "";
     display: block;
     width: 100%;
     aspect-ratio: 375 / 133;
-    background-color: #fff;
+    background-color: var(--color-bg);
     background-image:
-    url("../img/staffs-voice__header_sp.svg"),
-    linear-gradient(
-        to bottom,
-        var(--color-text-bg) 0%,
-        var(--color-text-bg) 58%,
-        var(--color-bg2) 58%,
-        var(--color-bg2) 100%
-    );
+        url("../img/staffs-voice__header_sp.svg"),
+        linear-gradient(
+            to bottom,
+            var(--color-text-bg) 0%,
+            var(--color-text-bg) 58%,
+            var(--color-bg2) 58%,
+            var(--color-bg2) 100%
+        );
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
 }
+
 .staffs-voice .eyeblow,
 .staffs-voice .staffs-voice__title {
     text-align: center;
 }
+
 .staffs-voice .staffs-voice__title {
+    margin-block-end: var(--space-32px);
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-medium);
     color: var(--color-sub);
-    margin-bottom: var(--space-32px);
 }
+
+/* --------------------------------------------------------------------------
+   声スライダー共通
+   利用者・職員のHTMLクラスは別だが、見た目と動作が同じためCSSを共通化。
+   -------------------------------------------------------------------------- */
+.users-voice__list,
 .staffs-voice__list {
     position: relative;
     display: flex;
@@ -765,6 +747,8 @@ main {
     will-change: transform;
     transition: transform 0.3s ease;
 }
+
+.users-voice__item,
 .staffs-voice__item {
     flex: 0 0 clamp(17.5rem, 75vw, 33.75rem);
     padding-block: 0;
@@ -777,45 +761,61 @@ main {
         filter 0.35s ease,
         transform 0.35s ease;
 }
+
+.users-voice__item.is-active,
 .staffs-voice__item.is-active {
     opacity: 1;
     filter: none;
     transform: scale(1);
 }
+
+.users-voice-card,
 .staffs-voice-card {
     width: 100%;
     height: 100%;
     padding: var(--space-16px);
     border: 1px solid var(--color-text-card-border);
     border-radius: 6px;
-    background: #fff;
+    background-color: var(--color-bg);
     box-shadow: var(--shadow-base);
 }
+
+.users-voice-card__figure,
 .staffs-voice-card__figure {
     float: left;
     width: 64px;
     margin-block: 0 0.375rem;
     margin-inline: 0 0.625rem;
 }
+
+.users-voice-card__image,
 .staffs-voice-card__image {
     display: block;
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
+
+.users-voice-card__title,
 .staffs-voice-card__title {
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-medium);
     color: var(--color-sub);
 }
+
+.users-voice-card__position,
 .staffs-voice-card__position {
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-medium);
     color: var(--color-header-text);
 }
+
+.users-voice-card__section,
 .staffs-voice-card__section {
     clear: both;
 }
+
+.users-voice-card__heading,
 .staffs-voice-card__heading {
     margin-block-end: var(--space-8px);
     padding-block: var(--space-8px);
@@ -825,26 +825,35 @@ main {
     line-height: 1.2;
     color: var(--color-sub);
 }
+
+.users-voice-card__label,
 .staffs-voice-card__label {
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-bold);
     color: var(--color-sub);
 }
+
+.users-voice-card__text,
 .staffs-voice-card__text {
     font-size: var(--font-size-body);
     color: var(--color-header-text);
 }
+
+/* 前へ・次へボタン */
+.users-voice__button,
 .staffs-voice__button {
     display: grid;
     place-items: center;
-    width: 2rem;
-    height: 2rem;
+    width: var(--space-32px);
+    height: var(--space-32px);
     padding: 0;
     border: none;
     border-radius: 50%;
-    background: var(--color-sub);
+    background-color: var(--color-sub);
     cursor: pointer;
 }
+
+.users-voice__button::before,
 .staffs-voice__button::before {
     content: "";
     width: 10px;
@@ -852,33 +861,46 @@ main {
     border-top: 2px solid var(--color-bg);
     border-right: 2px solid var(--color-bg);
 }
+
+.users-voice__button--prev::before,
 .staffs-voice__button--prev::before {
     transform: translateX(2px) rotate(-135deg);
 }
+
+.users-voice__button--next::before,
 .staffs-voice__button--next::before {
     transform: translateX(-2px) rotate(45deg);
 }
+
+.users-voice__button:disabled,
 .staffs-voice__button:disabled {
     opacity: 0.35;
     cursor: default;
 }
+
+/* スライダー操作領域 */
+.users-voice__controls,
 .staffs-voice__controls {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: var(--space-16px);
     margin-block-start: var(--space-32px);
 }
+
+.users-voice__pagination,
 .staffs-voice__pagination {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: var(--space-16px);
 }
+
+.users-voice__dot,
 .staffs-voice__dot {
     display: block;
-    width: 0.75rem;
-    height: 0.75rem;
+    width: var(--space-12px);
+    height: var(--space-12px);
     padding: 0;
     border: none;
     border-radius: var(--radius-pill);
@@ -887,10 +909,13 @@ main {
     appearance: none;
     cursor: pointer;
 }
+
+.users-voice__dot.is-active,
 .staffs-voice__dot.is-active {
     background-color: var(--color-sub);
 }
-/* flow */
+
+/* 06-07. ご利用の流れ */
 .flow::before {
     content: "";
     display: block;
@@ -911,26 +936,31 @@ main {
     background-position: center top;
     background-size: cover;
 }
+
 .flow .eyeblow,
 .flow .flow__title,
 .flow .flow__subtitle {
     text-align: center;
 }
+
 .flow .flow__title {
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-medium);
     color: var(--color-header-text);
 }
+
 .flow .flow__subtitle {
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-regular);
     color: var(--color-sub);
 }
+
 .flow .flow__item {
     display: flex;
     gap: 1.25rem;
     margin-block-end: var(--space-24px);
 }
+
 .flow .flow__step-number {
     display: flex;
     flex-direction: column;
@@ -945,19 +975,23 @@ main {
     color: var(--color-sub);
     text-align: center;
 }
+
 .flow .flow__step-number-small {
     display: block;
     margin-block-end: calc(var(--space-12px) * -1);
     font-size: var(--font-size-xsmall);
 }
+
 .flow .flow__step-image {
     width: 60px;
     background-color: var(--color-bg);
 }
+
 .flow .flow__item-title {
     font-weight: var(--font-weight-medium);
     color: var(--color-sub);
 }
+
 .flow .flow__item-text {
     padding: var(--space-16px);
     border-radius: 1rem;
@@ -965,6 +999,7 @@ main {
     font-size: var(--font-size-xsmall);
     color: var(--color-header-text);
 }
+
 .flow .flow__item .flow__aside {
     position: relative;
     display: flex;
@@ -983,24 +1018,29 @@ main {
     background-color: var(--color-sub);
     transform: translateX(-50%);
 }
+
 .flow .flow__item:nth-child(1) .flow__aside::after {
     top: calc(0.5rem + 4.5rem + 0.75rem + 60px);
 }
+
 .flow .flow__item:nth-child(2) .flow__aside::after {
     top: calc(0.5rem + 2rem + 0.75rem + 60px);
 }
+
 .flow .flow__item:nth-child(3) .flow__aside::after {
     top: calc(0.5rem + 3.125rem + 0.75rem + 60px);
 }
+
 .flow .flow__item:nth-child(4) .flow__aside::after {
     top: calc(0.5rem + 3.375rem + 0.75rem + 60px);
 }
 
-/* contact */
+/* 06-08. お問い合わせCTA */
 .contact {
     margin-block-end: var(--space-224px);
     text-align: center;
 }
+
 .contact .contact__title {
     color: var(--color-sub);
     text-align: center;
@@ -1008,27 +1048,31 @@ main {
     width: fit-content;
     margin-inline: auto;
 }
+
 .contact .contact__title .contact__title-emphasis {
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-bold);
 }
+
 .contact .contact__title::before {
     content: "";
     display: inline-block;
     width: 2rem;
     height: 2rem;
-    background-image: url('../img/contact__title-emphasis.svg');
+    background-image: url("../img/contact__title-emphasis.svg");
     background-repeat: no-repeat;
 }
+
 .contact .contact__title::after {
     content: "";
     display: inline-block;
     width: 2rem;
     height: 2rem;
-    background-image: url('../img/contact__title-emphasis.svg');
+    background-image: url("../img/contact__title-emphasis.svg");
     transform: scaleX(-1);
     background-repeat: no-repeat;
 }
+
 .contact .contact__button {
     display: block;
     width: fit-content;
@@ -1045,7 +1089,8 @@ main {
     box-shadow: var(--shadow-base);
     transition: background-color 0.3s ease;
 }
-.contact .contact__button:after {
+
+.contact .contact__button::after {
     content: "";
     display: inline-block;
     width: 0.5rem;
@@ -1055,45 +1100,55 @@ main {
     border-right: 2px solid currentColor;
     transform: rotate(45deg) translateY(-2px);
 }
+
 .contact .contact__button:hover {
     background-color: var(--color-main);
     text-decoration: none;
 }
+
 .contact .contact__note {
     margin-bottom: var(--space-12px);
 }
+
 .contact .contact__note-text {
     font-size: var(--font-size-small);
     color: var(--color-text-small);
 }
+
 .contact .contact__phone-link {
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-bold);
 }
-/* faq */
+
+/* 06-09. よくある質問 */
 .faq {
     margin-block-end: var(--space-160px);
 }
+
 .faq .eyeblow,
 .faq .faq__title,
 .faq .faq__subtitle {
     text-align: center;
 }
+
 .faq .faq__title {
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-medium);
     color: var(--color-header-text);
 }
+
 .faq .faq__subtitle {
     margin-block-end: var(--space-32px);
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-regular);
     color: var(--color-sub);
 }
+
 .faq .faq__item {
     margin-block-end: var(--space-24px);
     font-size: var(--font-size-small);
 }
+
 .faq .faq__question {
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -1106,6 +1161,7 @@ main {
     background-color: var(--color-text-bg);
     box-shadow: var(--shadow-base);
 }
+
 .faq .faq__answer {
     display: flex;
     gap: 0.75rem;
@@ -1122,16 +1178,19 @@ main {
         padding 0.3s ease,
         border-bottom 0.3s ease;
 }
+
 .faq__item.is-open .faq__answer {
     max-height: 999px;
     padding: var(--space-16px);
     border-bottom: 1px solid var(--color-main);
 }
+
 .faq .faq__icon {
     position: relative;
     width: 18px;
     height: 18px;
 }
+
 .faq__icon::before,
 .faq__icon::after {
     content: "";
@@ -1157,7 +1216,8 @@ main {
     opacity: 0;
     transform: translate(-50%, -50%) rotate(90deg) scaleY(0);
 }
-/* access */
+
+/* 06-10. アクセス・会社情報 */
 .access {
     background: linear-gradient(
         to bottom,
@@ -1166,17 +1226,20 @@ main {
         var(--color-bg) 100%
     );
 }
+
 .access .access__title {
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-medium);
     color: var(--color-header-text);
 }
+
 .access .access__subtitle {
     margin-block-end: var(--space-20px);
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-regular);
     color: var(--color-sub);
 }
+
 .access .location,
 .access .company {
     width: 100%;
@@ -1184,56 +1247,71 @@ main {
     background-color: var(--color-bg);
     box-shadow: var(--shadow-base);
 }
+
 .access .location {
     margin-block-end: var(--space-20px);
 }
+
 .access .location .location__heading,
 .access .company .company__heading {
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-medium);
     color: var(--color-sub);
 }
+
 .access .location .location__term, 
 .access .company .company__term {
     font-size: var(--font-size-xsmall);
     font-weight: var(--font-weight-medium);
     color: var(--color-sub);
 }
+
 .access .location .location__description,
 .access .company .company__description {
     font-size: var(--font-size-xsmall);
     color: var(--color-header-text);
 }
+
 .access .location .location__map {
     display: block;
     margin-block: var(--space-8px);
     margin-inline: auto;
 }
+
 .access .company .company__list {
     display: grid;
     grid-template-columns: 5rem minmax(0, 1fr);
     row-gap: 0.75rem;
     margin: 0;
 }
-/* お問い合わせページ */
+
+/* ==========================================================================
+   07. お問い合わせページ
+   ========================================================================== */
+
+/* ページ見出し */
 .page-contact {
     margin-top: var(--space-72px);
 }
+
 .page-contact__title {
     font-size: var(--font-size-heading-lg);
     font-weight: var(--font-weight-bold);
     color: var(--color-header-text);
 }
+
 .page-contact__lead {
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-medium);
     color: var(--color-sub);
 }
+
 .page-contact__eyebrow,
 .page-contact__title,
 .page-contact__lead {
     text-align: center;
 }
+
 .page-contact__faq-link {
     font-size: var(--font-size-heading-sm);
     font-weight: var(--font-weight-bold);
@@ -1242,6 +1320,7 @@ main {
     margin-block: var(--space-48px) var(--space-24px);
     display: inline-block;
 }
+
 .wpcf7-form .required,
 .wpcf7-form .not-required {
     font-size: var(--font-size-body);
@@ -1250,6 +1329,7 @@ main {
     margin-bottom: 0.5rem;
     display: inline-block;
 }
+
 .wpcf7-form .required::after {
     content: "必須";
     font-size: var(--font-size-xsmall);
@@ -1260,33 +1340,24 @@ main {
     padding: 0.125rem 0.5rem;
     margin-left: 0.75rem;
 }
-.wpcf7-form-control-wrap{
+
+.wpcf7-form-control-wrap {
     display: block;
     margin-bottom: 2rem;
 }
+
 .wpcf7-form-control {
     border: 1px solid var(--color-sub);
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
     width: 100%;
 }
-input[type="submit"].wpcf7-form-control {
-    display: inline-block;
-    margin-block-start: var(--space-16px);
-    padding-block: var(--space-8px);
-    padding-inline: var(--space-16px);
-    border: 1px solid var(--color-sub);
-    border-radius: var(--radius-pill);
-    background-color: var(--color-sec-yellow);
-    font-size: var(--font-size-small);
-    font-weight: var(--font-weight-medium);
-    color: var(--color-sub);
-    transition: background-color 0.3s ease;
-}
+
+/* 送信ボタン：input自体には疑似要素を付けられないため、矢印は親要素に表示 */
 .submit-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-block-end: var(--space-32px);
 }
 
 .submit-wrapper > p {
@@ -1296,40 +1367,38 @@ input[type="submit"].wpcf7-form-control {
 }
 
 .submit-wrapper input[type="submit"] {
+    display: inline-block;
     appearance: none;
     width: 160px;
     height: 48px;
+    margin-block-start: var(--space-16px);
     padding: 0 44px 0 24px;
-
-    color: var(--color-sub);
-    font-size: 1rem;
-
-    background-color: var(--color-sec-yellow);
     border: 1px solid var(--color-sub);
-    border-radius: 9999px;
-
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: var(--radius-pill);
+    background-color: var(--color-sec-yellow);
+    box-shadow: var(--shadow-base);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-sub);
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* 「＞」部分 */
+/* 送信ボタン右側の「>」 */
 .submit-wrapper > p::after {
     content: "";
     position: absolute;
     top: 50%;
     right: 28px;
-
     width: 0.5rem;
     height: 0.5rem;
-
     border-top: 2px solid var(--color-sub);
     border-right: 2px solid var(--color-sub);
-
     transform: translateY(50%) rotate(45deg);
     pointer-events: none;
 }
 
-/* CF7の送信中スピナー */
+/* 送信中スピナーをボタン右側に配置 */
 .submit-wrapper .wpcf7-spinner {
     position: absolute;
     top: 50%;
@@ -1337,20 +1406,23 @@ input[type="submit"].wpcf7-form-control {
     margin: 0;
     transform: translateY(-50%);
 }
-input[type="submit"].wpcf7-form-control:hover {
+
+.submit-wrapper input[type="submit"]:hover {
     background-color: var(--color-main);
-    text-decoration: none;
 }
-/* CF7エラー時 */
-.wpcf7-not-valid-tip{
+
+/* Contact Form 7：入力エラー表示 */
+.wpcf7-not-valid-tip {
     color: var(--color-required);
     font-size: var(--font-size-xsmall);
 }
-.wpcf7-not-valid{
+
+.wpcf7-not-valid {
     border: 1px solid var(--color-required);
     background-color: var(--color-bg-staff);
 }
-/* ページ内お問い合わせ連絡先 */
+
+/* 連絡先カード */
 .page-contact__address {
     width: 100%;
     border-radius: var(--radius-heavy);
@@ -1358,6 +1430,7 @@ input[type="submit"].wpcf7-form-control:hover {
     padding: var(--space-32px);
     box-shadow: var(--shadow-base);
 }
+
 .page-contact__address-title {
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-bold);
@@ -1365,10 +1438,12 @@ input[type="submit"].wpcf7-form-control:hover {
     border-bottom: 2px solid var(--color-sub);
     padding-bottom: var(--space-20px);
 }
+
 .page-contact-container {
     margin-top: var(--space-24px);
     display: flex;
 }
+
 .page-contact-container::before {
     content: "";
     width: 54px;
@@ -1377,32 +1452,53 @@ input[type="submit"].wpcf7-form-control:hover {
     background-repeat: no-repeat;
     display: block;
 }
+
 .page-contact-container--business-hours::before {
-    background-image: url('../img/page-contact__business-hours-title.svg');
+    background-image: url("../img/page-contact__business-hours-title.svg");
 }
+
 .page-contact-container--telephone::before {
-    background-image: url('../img/page-contact__telephone-title.svg');
+    background-image: url("../img/page-contact__telephone-title.svg");
 }
+
 .page-contact-container--email::before {
-    background-image: url('../img/page-contact__email-title.svg');
+    background-image: url("../img/page-contact__email-title.svg");
 }
+
 .page-contact__business-hours-title,
 .page-contact__telephone-title,
 .page-contact__email-title {
     font-size: var(--font-size-xsmall);
     color: var(--color-sub);
 }
+
 .page-contact__business-hours-text,
 .page-contact__telephone-link,
 .page-contact__email-link {
     font-size: var(--font-size-small);
     color: var(--color-header-text);
 }
+
 .page-contact__business-hours-note {
     font-size: var(--font-size-xsmall);
     color: var(--color-text-small);
 }
+
+/* ==========================================================================
+   08. サンクスページ
+   ========================================================================== */
+.page-thanks {
+    margin-top: var(--space-72px);
+}
+
+/* ==========================================================================
+   09. PC表示（1024px以上）
+   SP側と異なる値だけを上書きする。
+   ========================================================================== */
 @media (min-width: 1024px) {
+    /* ----------------------------------------------------------------------
+       09-01. 共通レイアウト
+       ---------------------------------------------------------------------- */
     .eyeblow {
         font-size: var(--font-size-heading-sm);
     }
@@ -1413,8 +1509,11 @@ input[type="submit"].wpcf7-form-control:hover {
         max-width: 1200px;
         margin-inline: auto;
     }
+    /* ----------------------------------------------------------------------
+       09-02. ヘッダー・グローバルナビ
+       ---------------------------------------------------------------------- */
     .site-header {
-        background-image: url(../img/header_bg_pc.webp);
+        background-image: url("../img/header_bg_pc.webp");
     }
     .site-header-container {
         width: 84%;
@@ -1433,7 +1532,7 @@ input[type="submit"].wpcf7-form-control:hover {
         height: 3rem;
         margin: 0;
         aspect-ratio: 157 / 134;
-        background-image: url(../img/logo_mark.svg);
+        background-image: url("../img/logo_mark.svg");
     }
     .site-header__logo-link {
         display: block;
@@ -1485,9 +1584,11 @@ input[type="submit"].wpcf7-form-control:hover {
         padding: 0.55rem clamp(1rem, 1.7vw, 1.6rem);
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
     }
-    /* footer */
+    /* ==========================================================================
+   05. フッター
+   ========================================================================== */
     .site-footer {
-        background-image: url('../img/footer_wave_pc.svg');
+        background-image: url("../img/footer_wave_pc.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-color: #fff;
@@ -1496,47 +1597,14 @@ input[type="submit"].wpcf7-form-control:hover {
     .site-footer::before {
         display: none;
     }
-    .site-footer__copyright {
-        margin: 0;
-        font-size: var(--font-size-small);
-        color: var(--color-text-small);
-    }
     .site-footer__main {
         display: flex;
         width: 100%;
-    }
-    .site-footer__title {
-        height: 3rem;
-        aspect-ratio: 833/134;
-        margin-block-end: var(--space-16px);
-        background-image: url('../img/logo.svg');
-        background-size: contain;
-        font-size: 0;
     }
     .site-footer__contact {
         flex: 1;
         margin-inline-start: auto;
         align-self: flex-end;
-    }
-    .site-footer__address {
-        margin-block-end: var(--space-12px);
-        font-size: var(--font-size-body);
-        font-style: normal;
-        color: var(--color-header-text);
-    }
-    .site-footer__contact {
-        font-size: var(--font-size-small);
-    }
-    .site-footer__social-link-instagram {
-        display: block;
-        width: 2rem;
-        height: 2rem;
-        aspect-ratio: 1 / 1;
-        margin-inline-start: auto;
-        background-image: url('../img/instagram_logo.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        font-size: 0;
     }
     .site-footer__subtitle--pc {
         display: block;
@@ -1553,7 +1621,7 @@ input[type="submit"].wpcf7-form-control:hover {
         margin-inline: auto 0;
         margin-block-start: var(--space-48px);
     }
-    .site-footer__contact-link:after {
+    .site-footer__contact-link::after {
         width: 1rem;
         height: 1rem;
         margin-inline-start: 0.5em;
@@ -1578,9 +1646,6 @@ input[type="submit"].wpcf7-form-control:hover {
         border: none;
         padding-inline-end: 0;
     }
-    .site-footer-nav__list li:last-child {
-        display: none;
-    }
     .site-footer-nav__list a {
         font-size: var(--font-size-heading-sm);
     }
@@ -1588,20 +1653,15 @@ input[type="submit"].wpcf7-form-control:hover {
         color: var(--color-sub);
         text-align: center;
     }
-    .site-footer__copyright::before {
-        content: "";
-        display: block;
-        height: 70px;
-        aspect-ratio: 63 / 70;
-        background-image: url('../img/footer_bubble_sp.svg');
-    }
-    /* hero */
+    /* ==========================================================================
+   06. トップページ
+   ========================================================================== */
+
+/* 06-01. メインビジュアル */
     .hero {
         aspect-ratio: 1440 / 995;
-        width: 100%;
         height: auto;
-        background-image: url('../img/header_bg_pc.webp');
-        background-repeat: no-repeat;
+        background-image: url("../img/header_bg_pc.webp");
         background-position: center -90px;
         background-size: contain;
     }
@@ -1621,9 +1681,9 @@ input[type="submit"].wpcf7-form-control:hover {
     .hero .hero__link {
         display: none;
     }
-    /* worries */
+    /* 06-02. お悩み・課題 */
     .worries {
-        background-image: url('../img/worries_pc_bg.svg');
+        background-image: url("../img/worries_pc_bg.svg");
         background-size: cover;
         background-position: left bottom;
     }
@@ -1634,7 +1694,7 @@ input[type="submit"].wpcf7-form-control:hover {
         font-size: var(--font-size-display-lg);
         text-align: center;
     }
-    .worries .worries__subtitle_pc{
+    .worries .worries__subtitle_pc {
         display: block;
         text-align: center;
         font-family: "Noto Serif JP", serif;
@@ -1643,7 +1703,7 @@ input[type="submit"].wpcf7-form-control:hover {
         color: var(--color-sub);
         margin-bottom: var(--space-20px);
     }
-    .worries .worries__subtitle_sp{
+    .worries .worries__subtitle_sp {
         display: none;
     }
     .worries .worries__list {
@@ -1660,7 +1720,7 @@ input[type="submit"].wpcf7-form-control:hover {
     .worries .worries__text {
         font-size: var(--font-size-heading-lg);
     }
-    /* about */
+    /* 06-03. 事業所紹介 */
     .about .container {
         display: flex;
         align-items: center;
@@ -1684,11 +1744,13 @@ input[type="submit"].wpcf7-form-control:hover {
     .about .about__image-sp {
         display: none;
     }
-    /* job description */
+    /* ----------------------------------------------------------------------
+       09-07. 業務内容
+       ---------------------------------------------------------------------- */
     .job-description {
         padding-block-start: var(--space-144px);
         margin-block-end: var(--space-96px);
-        background: url(../img/job-description_bg_header_pc.svg) top center / 100% auto no-repeat, linear-gradient(var(--color-bg) 7rem, var(--color-main) 7rem);
+        background: url("../img/job-description_bg_header_pc.svg") top center / 100% auto no-repeat, linear-gradient(var(--color-bg) 7rem, var(--color-main) 7rem);
     }
     .job-description::after {
         content: "";
@@ -1698,7 +1760,7 @@ input[type="submit"].wpcf7-form-control:hover {
         background: url("../img/job-description_bg_footer_pc.svg") top center / 100% auto no-repeat, linear-gradient(var(--color-main) 4rem,var(--color-bg) 7rem);
     }
     .job-description .job-description__title {
-        font-size: var(--font-size-display-md)
+        font-size: var(--font-size-display-md);
     }
     .job-description .job-description__subtitle {
         font-size: var(--font-size-heading-sm);
@@ -1734,7 +1796,9 @@ input[type="submit"].wpcf7-form-control:hover {
         padding: 1.5rem;
     }
 
-    /* users-voice */
+    /* ----------------------------------------------------------------------
+       09-08. 利用者の声
+       ---------------------------------------------------------------------- */
     .users-voice::before {
         content: "";
         display: block;
@@ -1757,7 +1821,9 @@ input[type="submit"].wpcf7-form-control:hover {
     .users-voice .users-voice__title {
         font-size: var(--font-size-display-md);
     }
-    /* staffs-voice */
+    /* ----------------------------------------------------------------------
+       09-09. 職員の声
+       ---------------------------------------------------------------------- */
     .staffs-voice::before {
         content: "";
         display: block;
@@ -1783,7 +1849,9 @@ input[type="submit"].wpcf7-form-control:hover {
     .staffs-voice .flow-container {
         padding-block-start: var(--space-120px);
     }
-    /* flow 以下要確認 */
+    /* ----------------------------------------------------------------------
+       09-10. ご利用の流れ
+       ---------------------------------------------------------------------- */
 
     .flow::before {
         content: "";
@@ -1835,7 +1903,7 @@ input[type="submit"].wpcf7-form-control:hover {
         margin-inline: auto;
         padding: 0;
     }
-   .flow .flow__item {
+    .flow .flow__item {
         display: grid;
         grid-template-columns: 200px minmax(0, 1fr);
         align-items: stretch;
@@ -1929,7 +1997,7 @@ input[type="submit"].wpcf7-form-control:hover {
         line-height: 1.8;
         color: var(--color-header-text);
     }
-    /* contact */
+    /* 06-08. お問い合わせCTA */
     .contact .contact__title {
         margin-block-end: var(--space-32px);
     }
@@ -1940,13 +2008,13 @@ input[type="submit"].wpcf7-form-control:hover {
         font-size: var(--font-size-display-md);
         padding-inline: var(--space-128px);
     }
-    .contact .contact__button:after {
+    .contact .contact__button::after {
         width: 1.5rem;
         height: 1.5rem;
         border-top: 4px solid currentColor;
         border-right: 4px solid currentColor;
     }
-    /* faq */
+    /* 06-09. よくある質問 */
     .faq .eyeblow, .faq .faq__title, .faq .faq__subtitle {
         text-align: left;
     }
@@ -1959,7 +2027,7 @@ input[type="submit"].wpcf7-form-control:hover {
     .faq .faq__item {
         font-size: var(--font-size-heading-sm);
     }
-    /* access */
+    /* 06-10. アクセス・会社情報 */
     .access .access__title {
         font-size: var(--font-size-display-md);
     }
@@ -1994,7 +2062,11 @@ input[type="submit"].wpcf7-form-control:hover {
         flex: 1 1 auto;
         min-width: 0;
     }
-    /* お問い合わせページ */
+    /* ==========================================================================
+   07. お問い合わせページ
+   ========================================================================== */
+
+/* ページ見出し */
     .page-contact__eyebrow,
     .page-contact__title,
     .page-contact__lead {
