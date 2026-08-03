@@ -247,3 +247,6 @@ document.addEventListener("DOMContentLoaded", function () {
         dotClass: "staffs-voice__dot"
     });
 });
+document.addEventListener('wpcf7mailsent', function () {
+    window.location.href = '/thanks/';
+}, false);
