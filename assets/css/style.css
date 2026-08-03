@@ -1260,11 +1260,14 @@ main {
     padding: 0.125rem 0.5rem;
     margin-left: 0.75rem;
 }
+.wpcf7-form-control-wrap{
+    display: block;
+    margin-bottom: 2rem;
+}
 .wpcf7-form-control {
     border: 1px solid var(--color-sub);
     padding: 0.75rem 1rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     width: 100%;
 }
 input[type="submit"].wpcf7-form-control {
@@ -1283,6 +1286,7 @@ input[type="submit"].wpcf7-form-control {
 .submit-wrapper {
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .submit-wrapper > p {
@@ -1297,11 +1301,11 @@ input[type="submit"].wpcf7-form-control {
     height: 48px;
     padding: 0 44px 0 24px;
 
-    color: #3598e5;
+    color: var(--color-sub);
     font-size: 1rem;
 
-    background-color: #ffffb5;
-    border: 1px solid #3598e5;
+    background-color: var(--color-sec-yellow);
+    border: 1px solid var(--color-sub);
     border-radius: 9999px;
 
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
@@ -1315,13 +1319,13 @@ input[type="submit"].wpcf7-form-control {
     top: 50%;
     right: 28px;
 
-    width: 7px;
-    height: 7px;
+    width: 0.5rem;
+    height: 0.5rem;
 
-    border-top: 1px solid #3598e5;
-    border-right: 1px solid #3598e5;
+    border-top: 2px solid var(--color-sub);
+    border-right: 2px solid var(--color-sub);
 
-    transform: translateY(-160%) rotate(45deg);
+    transform: translateY(50%) rotate(45deg);
     pointer-events: none;
 }
 
@@ -1336,6 +1340,15 @@ input[type="submit"].wpcf7-form-control {
 input[type="submit"].wpcf7-form-control:hover {
     background-color: var(--color-main);
     text-decoration: none;
+}
+/* CF7エラー時 */
+.wpcf7-not-valid-tip{
+    color: var(--color-required);
+    font-size: var(--font-size-xsmall);
+}
+.wpcf7-not-valid{
+    border: 1px solid var(--color-required);
+    background-color: var(--color-bg-staff);
 }
 /* ページ内お問い合わせ連絡先 */
 .page-contact__address {
@@ -1982,6 +1995,11 @@ input[type="submit"].wpcf7-form-control:hover {
         min-width: 0;
     }
     /* お問い合わせページ */
+    .page-contact__eyebrow,
+    .page-contact__title,
+    .page-contact__lead {
+        text-align: left;
+    }
     input[name="your-name"],
     input[name="your-company"] {
         width: 312px;
