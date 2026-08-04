@@ -1490,17 +1490,34 @@ main {
 .page-thanks {
     margin-top: var(--space-72px);
 }
+.page-thanks__eyebrow {
+    margin-bottom: var(--space-48px);
+    text-align: center;
+}
+.page-thanks__title::before {
+    content: "";
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    background-image: url('../img/check-icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-inline: auto;
+    margin-bottom: var(--space-24px);
+}
 .page-thanks__title {
     font-size: var(--font-size-heading-md);
     font-weight: var(--font-weight-bold);
     color: var(--color-header-text);
     text-align: center;
+    margin-bottom: var(--space-48px);
 }
 .page-thanks__lead{
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-medium);
     color: var(--color-sub);
     text-align: center;
+    margin-bottom: var(--space-48px);
 }
 .page-thanks__telephone-text {
     font-size: var(--font-size-small);
@@ -2181,5 +2198,19 @@ main {
 
     .page-contact__email-link {
         overflow-wrap: anywhere;
+    }
+    /* ==========================================================================
+    08. サンクスページ
+    ========================================================================== */
+    .page-thanks__title::before {
+        display: inline;
+        margin: 0
+    }
+    .page-thanks__title {
+        display: flex;
+        width: fit-content;
+        margin-inline: auto;
+        align-items: center;
+        gap: var(--space-20px);
     }
 }
